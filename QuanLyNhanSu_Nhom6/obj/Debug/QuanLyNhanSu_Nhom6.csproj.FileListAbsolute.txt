@@ -1,0 +1,13 @@
+D:\Code\C#\QuanLyNhanSu_Window\QuanLyNhanSu_Nhom6\bin\Debug\QuanLyNhanSu_Nhom6.exe.config
+D:\Code\C#\QuanLyNhanSu_Window\QuanLyNhanSu_Nhom6\bin\Debug\QuanLyNhanSu_Nhom6.exe
+D:\Code\C#\QuanLyNhanSu_Window\QuanLyNhanSu_Nhom6\bin\Debug\QuanLyNhanSu_Nhom6.pdb
+D:\Code\C#\QuanLyNhanSu_Window\QuanLyNhanSu_Nhom6\bin\Debug\Guna.UI.dll
+D:\Code\C#\QuanLyNhanSu_Window\QuanLyNhanSu_Nhom6\obj\Debug\QuanLyNhanSu_Nhom6.csprojAssemblyReference.cache
+D:\Code\C#\QuanLyNhanSu_Window\QuanLyNhanSu_Nhom6\obj\Debug\QuanLyNhanSu_Nhom6.Views.frmDashboard.resources
+D:\Code\C#\QuanLyNhanSu_Window\QuanLyNhanSu_Nhom6\obj\Debug\QuanLyNhanSu_Nhom6.Form1.resources
+D:\Code\C#\QuanLyNhanSu_Window\QuanLyNhanSu_Nhom6\obj\Debug\QuanLyNhanSu_Nhom6.Properties.Resources.resources
+D:\Code\C#\QuanLyNhanSu_Window\QuanLyNhanSu_Nhom6\obj\Debug\QuanLyNhanSu_Nhom6.csproj.GenerateResource.cache
+D:\Code\C#\QuanLyNhanSu_Window\QuanLyNhanSu_Nhom6\obj\Debug\QuanLyNhanSu_Nhom6.csproj.CoreCompileInputs.cache
+D:\Code\C#\QuanLyNhanSu_Window\QuanLyNhanSu_Nhom6\obj\Debug\QuanLyNhanSu_Nhom6.csproj.CopyComplete
+D:\Code\C#\QuanLyNhanSu_Window\QuanLyNhanSu_Nhom6\obj\Debug\QuanLyNhanSu_Nhom6.exe
+D:\Code\C#\QuanLyNhanSu_Window\QuanLyNhanSu_Nhom6\obj\Debug\QuanLyNhanSu_Nhom6.pdb
