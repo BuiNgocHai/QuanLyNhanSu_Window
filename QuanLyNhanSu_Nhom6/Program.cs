@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanLyNhanSu_Nhom6.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,18 @@ namespace QuanLyNhanSu_Nhom6
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            var main = new frmLoading();
+            main.FormClosed += new FormClosedEventHandler(FormClosed);
+            main.Show();
+            Application.Run();
+            
+        }
+
+        static void FormClosed(object sender, FormClosedEventArgs e)
+        {
+            ((Form)sender).FormClosed -= FormClosed;
+            if (Application.OpenForms.Count == 0) Application.ExitThread();
+            else Application.OpenForms[0].FormClosed += FormClosed;
         }
     }
 }

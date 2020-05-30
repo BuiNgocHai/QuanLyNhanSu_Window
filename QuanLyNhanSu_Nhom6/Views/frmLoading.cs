@@ -8,11 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
-using QuanLyNhanSu_Nhom6.Views;
 
-namespace QuanLyNhanSu_Nhom6
+namespace QuanLyNhanSu_Nhom6.Views
 {
-    public partial class frmLogin : Form
+    public partial class frmLoading : Form
     {
 
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
@@ -25,35 +24,30 @@ namespace QuanLyNhanSu_Nhom6
            int nWidthEllipse, // height of ellipse
            int nHeightEllipse // width of ellipse
        );
-
-
-        public frmLogin()
+        public frmLoading()
         {
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.None;
-            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
+            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 15, 15));
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
+        int x=0;
+        private void timer1_Tick(object sender, EventArgs e)
         {
-
-            frmShowDialogYN d = new frmShowDialogYN();
-            d.ShowDialog();
-            if(d.DialogResult.Equals(DialogResult.Yes))
+            x++;
+            if(x==1)
             {
+                
+                frmLogin frm = new frmLogin();
+                frm.Show();
                 this.Close();
+               
             }
-
-
-
-
         }
 
-        private void btnMinimize_Click(object sender, EventArgs e)
+        private void frmLoading_Load(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Minimized;
-        }
 
-       
+        }
     }
 }
