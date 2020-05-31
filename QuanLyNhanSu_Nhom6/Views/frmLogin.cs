@@ -15,6 +15,13 @@ namespace QuanLyNhanSu_Nhom6
     public partial class frmLogin : Form
     {
 
+        public const int WM_NCLBUTTONDOWN = 0xA1;
+        public const int HT_CAPTION = 0x2;
+        [System.Runtime.InteropServices.DllImport("user32.dll")]
+        public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
+        [System.Runtime.InteropServices.DllImport("user32.dll")]
+        public static extern bool ReleaseCapture();
+
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
        (
@@ -54,6 +61,21 @@ namespace QuanLyNhanSu_Nhom6
             this.WindowState = FormWindowState.Minimized;
         }
 
-       
+        private void gunaGradientButton2_Click(object sender, EventArgs e)
+        {
+            
+            frmDashboard frm = new frmDashboard();
+            frm.Show();
+            this.Close();
+        }
+
+        private void gunaPanel1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                ReleaseCapture();
+                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+            }
+        }
     }
 }

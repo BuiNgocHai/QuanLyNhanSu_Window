@@ -64,6 +64,7 @@
             this.gunaPanel1.Name = "gunaPanel1";
             this.gunaPanel1.Size = new System.Drawing.Size(800, 529);
             this.gunaPanel1.TabIndex = 0;
+            this.gunaPanel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gunaPanel1_MouseMove);
             // 
             // gunaTextBox1
             // 
@@ -108,6 +109,7 @@
             this.gunaGradientButton2.TabIndex = 13;
             this.gunaGradientButton2.Text = "Đăng nhập";
             this.gunaGradientButton2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaGradientButton2.Click += new System.EventHandler(this.gunaGradientButton2_Click);
             // 
             // gunaPictureBox2
             // 

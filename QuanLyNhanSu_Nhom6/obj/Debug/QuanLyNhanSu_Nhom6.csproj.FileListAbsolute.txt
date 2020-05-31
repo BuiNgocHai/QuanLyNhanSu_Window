@@ -13,3 +13,4 @@ D:\Code\C#\QuanLyNhanSu_Window\QuanLyNhanSu_Nhom6\obj\Debug\QuanLyNhanSu_Nhom6.p
 D:\Code\C#\QuanLyNhanSu_Window\QuanLyNhanSu_Nhom6\obj\Debug\QuanLyNhanSu_Nhom6.frmLogin.resources
 D:\Code\C#\QuanLyNhanSu_Window\QuanLyNhanSu_Nhom6\obj\Debug\QuanLyNhanSu_Nhom6.Views.frmLoading.resources
 D:\Code\C#\QuanLyNhanSu_Window\QuanLyNhanSu_Nhom6\obj\Debug\QuanLyNhanSu_Nhom6.Views.frmShowDialogYN.resources
+D:\Code\C#\QuanLyNhanSu_Window\QuanLyNhanSu_Nhom6\bin\Debug\Guna.UI2.dll
