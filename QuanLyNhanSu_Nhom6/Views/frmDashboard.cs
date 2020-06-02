@@ -123,6 +123,12 @@ namespace QuanLyNhanSu_Nhom6.Views
         {
             timer3.Start();
         }
+
+        private void btnTDCM_Click(object sender, EventArgs e)
+        {
+            frmQuanLyTrinhDoChuyenMon frm = new frmQuanLyTrinhDoChuyenMon();
+            frm.Show();
+        }
     }
 }
 

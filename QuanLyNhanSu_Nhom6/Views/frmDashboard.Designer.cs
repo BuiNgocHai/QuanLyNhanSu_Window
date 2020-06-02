@@ -467,6 +467,7 @@
             this.btnTDCM.Size = new System.Drawing.Size(317, 50);
             this.btnTDCM.TabIndex = 5;
             this.btnTDCM.Text = "Thống kê trình độ chuyên môn";
+            this.btnTDCM.Click += new System.EventHandler(this.btnTDCM_Click);
             // 
             // gunaPictureBox1
             // 
