@@ -17,3 +17,16 @@ D:\Code\C#\QuanLyNhanSu_Window\QuanLyNhanSu_Nhom6\bin\Debug\Guna.UI2.dll
 D:\Code\C#\QuanLyNhanSu_Window\QuanLyNhanSu_Nhom6\obj\Debug\QuanLyNhanSu_Nhom6.Views.frmEmployee_Position.resources
 D:\Code\C#\QuanLyNhanSu_Window\QuanLyNhanSu_Nhom6\obj\Debug\QuanLyNhanSu_Nhom6.Views.frmQuanLyChucVu.resources
 D:\Code\C#\QuanLyNhanSu_Window\QuanLyNhanSu_Nhom6\obj\Debug\QuanLyNhanSu_Nhom6.Views.frmQuanLyTrinhDoChuyenMon.resources
+C:\Users\HIT.ishiki\Desktop\QuanLyNhanSu_Window\QuanLyNhanSu_Nhom6\obj\Debug\QuanLyNhanSu_Nhom6.csprojAssemblyReference.cache
+C:\Users\HIT.ishiki\Desktop\QuanLyNhanSu_Window\QuanLyNhanSu_Nhom6\obj\Debug\QuanLyNhanSu_Nhom6.Views.frmDashboard.resources
+C:\Users\HIT.ishiki\Desktop\QuanLyNhanSu_Window\QuanLyNhanSu_Nhom6\obj\Debug\QuanLyNhanSu_Nhom6.Views.frmLoading.resources
+C:\Users\HIT.ishiki\Desktop\QuanLyNhanSu_Window\QuanLyNhanSu_Nhom6\obj\Debug\QuanLyNhanSu_Nhom6.frmLogin.resources
+C:\Users\HIT.ishiki\Desktop\QuanLyNhanSu_Window\QuanLyNhanSu_Nhom6\obj\Debug\QuanLyNhanSu_Nhom6.Properties.Resources.resources
+C:\Users\HIT.ishiki\Desktop\QuanLyNhanSu_Window\QuanLyNhanSu_Nhom6\obj\Debug\QuanLyNhanSu_Nhom6.Views.frmQLDanhMucPhongBan.resources
+C:\Users\HIT.ishiki\Desktop\QuanLyNhanSu_Window\QuanLyNhanSu_Nhom6\obj\Debug\QuanLyNhanSu_Nhom6.Views.frmShowDialogYN.resources
+C:\Users\HIT.ishiki\Desktop\QuanLyNhanSu_Window\QuanLyNhanSu_Nhom6\obj\Debug\QuanLyNhanSu_Nhom6.csproj.GenerateResource.cache
+C:\Users\HIT.ishiki\Desktop\QuanLyNhanSu_Window\QuanLyNhanSu_Nhom6\obj\Debug\QuanLyNhanSu_Nhom6.csproj.CoreCompileInputs.cache
+C:\Users\HIT.ishiki\Desktop\QuanLyNhanSu_Window\QuanLyNhanSu_Nhom6\obj\Debug\QuanLyNhanSu_Nhom6.exe
+C:\Users\HIT.ishiki\Desktop\QuanLyNhanSu_Window\QuanLyNhanSu_Nhom6\obj\Debug\QuanLyNhanSu_Nhom6.pdb
+C:\Users\HIT.ishiki\Desktop\QuanLyNhanSu_Window\QuanLyNhanSu_Nhom6\obj\Debug\QuanLyNhanSu_Nhom6.Views.frmInHoSoNV.resources
+C:\Users\HIT.ishiki\Desktop\QuanLyNhanSu_Window\QuanLyNhanSu_Nhom6\obj\Debug\QuanLyNhanSu_Nhom6.Views.frmQLDanhMucChucVu.resources
