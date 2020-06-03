@@ -42,7 +42,6 @@
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Design" />
     <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
@@ -56,11 +55,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataClasses1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DataClasses1.dbml</DependentUpon>
-    </Compile>
     <Compile Include="Views\frmDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +72,11 @@
     </Compile>
     <Compile Include="Views\frmQuanLyNhanVienChucVu.Designer.cs">
       <DependentUpon>frmQuanLyNhanVienChucVu.cs</DependentUpon>
+    <Compile Include="Views\frmInHoSoNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmInHoSoNV.Designer.cs">
+      <DependentUpon>frmInHoSoNV.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\frmLoading.cs">
       <SubType>Form</SubType>
@@ -93,17 +92,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Views\frmQuanLyChucVu.cs">
+    <Compile Include="Views\frmQLDanhMucChucVu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\frmQuanLyChucVu.Designer.cs">
-      <DependentUpon>frmQuanLyChucVu.cs</DependentUpon>
+    <Compile Include="Views\frmQLDanhMucChucVu.Designer.cs">
+      <DependentUpon>frmQLDanhMucChucVu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\frmQuanLyTrinhDoChuyenMon.cs">
+    <Compile Include="Views\frmQLDanhMucPhongBan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\frmQuanLyTrinhDoChuyenMon.Designer.cs">
-      <DependentUpon>frmQuanLyTrinhDoChuyenMon.cs</DependentUpon>
+    <Compile Include="Views\frmQLDanhMucPhongBan.Designer.cs">
+      <DependentUpon>frmQLDanhMucPhongBan.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\frmShowDialogYN.cs">
       <SubType>Form</SubType>
@@ -120,11 +119,16 @@
     <EmbeddedResource Include="Views\frmDashboard.resx">
       <DependentUpon>frmDashboard.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="Views\frmInThongKePhongBanChucVu.resx">
       <DependentUpon>frmInThongKePhongBanChucVu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\frmQuanLyNhanVienChucVu.resx">
       <DependentUpon>frmQuanLyNhanVienChucVu.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="Views\frmInHoSoNV.resx">
+      <DependentUpon>frmInHoSoNV.cs</DependentUpon>
+>>>>>>> trungpt
     </EmbeddedResource>
     <EmbeddedResource Include="Views\frmLoading.resx">
       <DependentUpon>frmLoading.cs</DependentUpon>
@@ -141,11 +145,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Views\frmQuanLyChucVu.resx">
-      <DependentUpon>frmQuanLyChucVu.cs</DependentUpon>
+    <EmbeddedResource Include="Views\frmQLDanhMucChucVu.resx">
+      <DependentUpon>frmQLDanhMucChucVu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\frmQuanLyTrinhDoChuyenMon.resx">
-      <DependentUpon>frmQuanLyTrinhDoChuyenMon.cs</DependentUpon>
+    <EmbeddedResource Include="Views\frmQLDanhMucPhongBan.resx">
+      <DependentUpon>frmQLDanhMucPhongBan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\frmShowDialogYN.resx">
       <DependentUpon>frmShowDialogYN.cs</DependentUpon>
@@ -178,9 +182,6 @@
     <Folder Include="BLL\" />
     <Folder Include="DAL\" />
     <Folder Include="DTO\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
