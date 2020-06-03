@@ -37,7 +37,7 @@
             this.btnDMPB = new Guna.UI.WinForms.GunaButton();
             this.btnDMCV = new Guna.UI.WinForms.GunaButton();
             this.panelTTNV = new Guna.UI.WinForms.GunaPanel();
-            this.gunaButton5 = new Guna.UI.WinForms.GunaButton();
+            this.btnTKPBCV = new Guna.UI.WinForms.GunaButton();
             this.gunaButton4 = new Guna.UI.WinForms.GunaButton();
             this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
             this.btnQLNV = new Guna.UI.WinForms.GunaButton();
@@ -180,7 +180,7 @@
             // 
             // panelTTNV
             // 
-            this.panelTTNV.Controls.Add(this.gunaButton5);
+            this.panelTTNV.Controls.Add(this.btnTKPBCV);
             this.panelTTNV.Controls.Add(this.gunaButton4);
             this.panelTTNV.Controls.Add(this.gunaButton1);
             this.panelTTNV.Controls.Add(this.btnQLNV);
@@ -193,29 +193,30 @@
             this.panelTTNV.Size = new System.Drawing.Size(317, 50);
             this.panelTTNV.TabIndex = 6;
             // 
-            // gunaButton5
+            // btnTKPBCV
             // 
-            this.gunaButton5.AnimationHoverSpeed = 0.07F;
-            this.gunaButton5.AnimationSpeed = 0.03F;
-            this.gunaButton5.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(98)))), ((int)(((byte)(255)))));
-            this.gunaButton5.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton5.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton5.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaButton5.ForeColor = System.Drawing.Color.White;
-            this.gunaButton5.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton5.Image")));
-            this.gunaButton5.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton5.Location = new System.Drawing.Point(0, 250);
-            this.gunaButton5.Margin = new System.Windows.Forms.Padding(0);
-            this.gunaButton5.Name = "gunaButton5";
-            this.gunaButton5.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gunaButton5.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton5.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton5.OnHoverImage = null;
-            this.gunaButton5.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton5.Size = new System.Drawing.Size(317, 50);
-            this.gunaButton5.TabIndex = 8;
-            this.gunaButton5.Text = "Nhân viên - chức vụ";
+            this.btnTKPBCV.AnimationHoverSpeed = 0.07F;
+            this.btnTKPBCV.AnimationSpeed = 0.03F;
+            this.btnTKPBCV.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(98)))), ((int)(((byte)(255)))));
+            this.btnTKPBCV.BorderColor = System.Drawing.Color.Black;
+            this.btnTKPBCV.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnTKPBCV.FocusedColor = System.Drawing.Color.Empty;
+            this.btnTKPBCV.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnTKPBCV.ForeColor = System.Drawing.Color.White;
+            this.btnTKPBCV.Image = ((System.Drawing.Image)(resources.GetObject("btnTKPBCV.Image")));
+            this.btnTKPBCV.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnTKPBCV.Location = new System.Drawing.Point(0, 250);
+            this.btnTKPBCV.Margin = new System.Windows.Forms.Padding(0);
+            this.btnTKPBCV.Name = "btnTKPBCV";
+            this.btnTKPBCV.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnTKPBCV.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnTKPBCV.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnTKPBCV.OnHoverImage = null;
+            this.btnTKPBCV.OnPressedColor = System.Drawing.Color.Black;
+            this.btnTKPBCV.Size = new System.Drawing.Size(317, 50);
+            this.btnTKPBCV.TabIndex = 8;
+            this.btnTKPBCV.Text = "Nhân viên - chức vụ";
+            this.btnTKPBCV.Click += new System.EventHandler(this.btnTKPBCV_Click);
             // 
             // gunaButton4
             // 
@@ -689,7 +690,7 @@
         private Guna.UI.WinForms.GunaPanel panelDanhMuc;
         private System.Windows.Forms.Timer timer1;
         private Guna.UI.WinForms.GunaPanel panelTTNV;
-        private Guna.UI.WinForms.GunaButton gunaButton5;
+        private Guna.UI.WinForms.GunaButton btnTKPBCV;
         private Guna.UI.WinForms.GunaButton gunaButton4;
         private Guna.UI.WinForms.GunaButton gunaButton1;
         private Guna.UI.WinForms.GunaButton btnQLNV;

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Runtime.InteropServices;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
@@ -78,7 +77,7 @@ namespace QuanLyNhanSu_Nhom6.Views
                 panel.Height += 10;
                 if (panel.Size == panel.MaximumSize)
                 {
-                    time.Stop();                    
+                    time.Stop();
                     isCollapsed = false;
                 }
             }
@@ -87,7 +86,7 @@ namespace QuanLyNhanSu_Nhom6.Views
                 panel.Height -= 10;
                 if (panel.Size == panel.MinimumSize)
                 {
-                    time.Stop();                    
+                    time.Stop();
                     isCollapsed = true;
                 }
             }
@@ -95,8 +94,8 @@ namespace QuanLyNhanSu_Nhom6.Views
         }
 
         private void timer1_Tick(object sender, EventArgs e)
-        {            
-                time(panelDanhMuc,timer1);              
+        {
+            time(panelDanhMuc, timer1);
         }
 
         private void btnQLNV_Click(object sender, EventArgs e)
@@ -105,7 +104,7 @@ namespace QuanLyNhanSu_Nhom6.Views
         }
 
         private void btnQLDM_Click(object sender, EventArgs e)
-        {           
+        {
             timer1.Start();
         }
 
@@ -126,8 +125,26 @@ namespace QuanLyNhanSu_Nhom6.Views
 
         private void btnTDCM_Click(object sender, EventArgs e)
         {
-            frmQuanLyTrinhDoChuyenMon frm = new frmQuanLyTrinhDoChuyenMon();
-            frm.Show();
+            frmQuanLyTrinhDoChuyenMon frm2 = new frmQuanLyTrinhDoChuyenMon();
+            frm2.TopLevel = false;
+            panelMenu.Controls.Add(frm2);
+            frm2.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            frm2.Dock = DockStyle.Fill;
+            frm2.Show();
+        }
+
+        private void btnTKPBCV_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("hêl");
+            frmInThongKePhongBanChucVu frm2 = new frmInThongKePhongBanChucVu();
+            //frm2.TopLevel = false;            
+            //panelMenu.Controls.Add(frm2);            
+            //frm2.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;            
+            //frm2.Dock = DockStyle.Fill;
+            frm2.Show();
+            
+            
+           
         }
     }
 }

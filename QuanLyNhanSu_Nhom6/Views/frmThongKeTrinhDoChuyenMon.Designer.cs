@@ -107,7 +107,7 @@
             // 
             this.lbNgayThang.AutoSize = true;
             this.lbNgayThang.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lbNgayThang.Location = new System.Drawing.Point(107, 235);
+            this.lbNgayThang.Location = new System.Drawing.Point(81, 202);
             this.lbNgayThang.Name = "lbNgayThang";
             this.lbNgayThang.Size = new System.Drawing.Size(44, 20);
             this.lbNgayThang.TabIndex = 5;
@@ -127,7 +127,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(995, 598);
+            this.ClientSize = new System.Drawing.Size(1007, 598);
             this.Controls.Add(this.gunaLabel2);
             this.Controls.Add(this.lbNgayThang);
             this.Controls.Add(this.gunaLabel1);
