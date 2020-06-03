@@ -1,6 +1,6 @@
 ﻿namespace QuanLyNhanSu_Nhom6.Views
 {
-    partial class frmEmployee_Position
+    partial class frmQuanLyNhanVienChucVu
     {
         /// <summary>
         /// Required designer variable.

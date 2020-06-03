@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QuanLyNhanSu_Nhom6.Views
 {
-    public partial class frmEmployee_Position : Form
+    public partial class frmThongKeTrinhDoChuyenMon : Form
     {
-        public frmEmployee_Position()
+        public frmThongKeTrinhDoChuyenMon()
         {
             InitializeComponent();
         }

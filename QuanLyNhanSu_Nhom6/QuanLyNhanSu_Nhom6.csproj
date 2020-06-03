@@ -67,11 +67,11 @@
     <Compile Include="Views\frmDashboard.Designer.cs">
       <DependentUpon>frmDashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\frmEmployee_Position.cs">
+    <Compile Include="Views\frmQuanLyNhanVienChucVu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\frmEmployee_Position.Designer.cs">
-      <DependentUpon>frmEmployee_Position.cs</DependentUpon>
+    <Compile Include="Views\frmQuanLyNhanVienChucVu.Designer.cs">
+      <DependentUpon>frmQuanLyNhanVienChucVu.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\frmLoading.cs">
       <SubType>Form</SubType>
@@ -105,11 +105,17 @@
     <Compile Include="Views\frmShowDialogYN.Designer.cs">
       <DependentUpon>frmShowDialogYN.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\frmThongKeTrinhDoChuyenMon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmThongKeTrinhDoChuyenMon.Designer.cs">
+      <DependentUpon>frmThongKeTrinhDoChuyenMon.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Views\frmDashboard.resx">
       <DependentUpon>frmDashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\frmEmployee_Position.resx">
-      <DependentUpon>frmEmployee_Position.cs</DependentUpon>
+    <EmbeddedResource Include="Views\frmQuanLyNhanVienChucVu.resx">
+      <DependentUpon>frmQuanLyNhanVienChucVu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\frmLoading.resx">
       <DependentUpon>frmLoading.cs</DependentUpon>
@@ -134,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\frmShowDialogYN.resx">
       <DependentUpon>frmShowDialogYN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmThongKeTrinhDoChuyenMon.resx">
+      <DependentUpon>frmThongKeTrinhDoChuyenMon.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="DataClasses1.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
