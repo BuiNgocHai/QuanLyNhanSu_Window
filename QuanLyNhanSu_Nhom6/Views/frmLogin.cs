@@ -44,8 +44,7 @@ namespace QuanLyNhanSu_Nhom6
         private void btnExit_Click(object sender, EventArgs e)
         {
 
-            frmXacNhan d = new frmXacNhan();
-            
+            frmShowDialogYN d = new frmShowDialogYN();
             d.ShowDialog();
             if(d.DialogResult.Equals(DialogResult.Yes))
             {
@@ -65,7 +64,7 @@ namespace QuanLyNhanSu_Nhom6
         private void gunaGradientButton2_Click(object sender, EventArgs e)
         {
             
-            frmGiaDienChinh frm = new frmGiaDienChinh();
+            frmDashboard frm = new frmDashboard();
             frm.Show();
             this.Close();
         }

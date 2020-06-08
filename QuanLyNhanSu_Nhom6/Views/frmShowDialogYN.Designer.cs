@@ -1,6 +1,6 @@
 ﻿namespace QuanLyNhanSu_Nhom6.Views
 {
-    partial class frmXacNhan
+    partial class frmShowDialogYN
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmXacNhan));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmShowDialogYN));
             this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
             this.btnNo = new System.Windows.Forms.Button();
             this.btnYes = new System.Windows.Forms.Button();

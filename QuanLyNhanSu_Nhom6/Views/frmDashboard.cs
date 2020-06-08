@@ -5,7 +5,7 @@ using System.Windows.Forms;
 
 namespace QuanLyNhanSu_Nhom6.Views
 {
-    public partial class frmGiaDienChinh : Form
+    public partial class frmDashboard : Form
     {
 
 
@@ -27,7 +27,7 @@ namespace QuanLyNhanSu_Nhom6.Views
           int nHeightEllipse // width of ellipse
       );
 
-        public frmGiaDienChinh()
+        public frmDashboard()
         {
             InitializeComponent();
             FormBorderStyle = FormBorderStyle.None;
@@ -135,19 +135,16 @@ namespace QuanLyNhanSu_Nhom6.Views
 
         private void btnTKPBCV_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("hêl");
             frmInThongKePhongBanChucVu frm2 = new frmInThongKePhongBanChucVu();
-            frm2.TopLevel = false;
-            panelMenu.Controls.Add(frm2);
-            frm2.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            frm2.Dock = DockStyle.Fill;
+            //frm2.TopLevel = false;            
+            //panelMenu.Controls.Add(frm2);            
+            //frm2.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;            
+            //frm2.Dock = DockStyle.Fill;
             frm2.Show();
-
-
-
-
-
-
+            
+            
+           
         }
     }
 }
