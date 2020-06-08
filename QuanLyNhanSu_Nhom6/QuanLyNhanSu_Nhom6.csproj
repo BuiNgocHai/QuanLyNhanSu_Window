@@ -72,6 +72,7 @@
     </Compile>
     <Compile Include="Views\frmQuanLyNhanVienChucVu.Designer.cs">
       <DependentUpon>frmQuanLyNhanVienChucVu.cs</DependentUpon>
+	</Compile>
     <Compile Include="Views\frmInHoSoNV.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,16 +120,14 @@
     <EmbeddedResource Include="Views\frmDashboard.resx">
       <DependentUpon>frmDashboard.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
     <EmbeddedResource Include="Views\frmInThongKePhongBanChucVu.resx">
       <DependentUpon>frmInThongKePhongBanChucVu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\frmQuanLyNhanVienChucVu.resx">
       <DependentUpon>frmQuanLyNhanVienChucVu.cs</DependentUpon>
-=======
+	</EmbeddedResource>
     <EmbeddedResource Include="Views\frmInHoSoNV.resx">
       <DependentUpon>frmInHoSoNV.cs</DependentUpon>
->>>>>>> trungpt
     </EmbeddedResource>
     <EmbeddedResource Include="Views\frmLoading.resx">
       <DependentUpon>frmLoading.cs</DependentUpon>
