@@ -41,7 +41,6 @@
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.gunaPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
@@ -50,7 +49,6 @@
             // gunaPanel1
             // 
             this.gunaPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(74)))));
-            this.gunaPanel1.Controls.Add(this.label1);
             this.gunaPanel1.Controls.Add(this.gunaTextBox1);
             this.gunaPanel1.Controls.Add(this.gunaGradientButton2);
             this.gunaPanel1.Controls.Add(this.gunaPictureBox2);
@@ -252,15 +250,6 @@
             this.gunaPictureBox1.TabIndex = 0;
             this.gunaPictureBox1.TabStop = false;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(55, 123);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(117, 17);
-            this.label1.TabIndex = 15;
-            this.label1.Text = "Cái này là test nè";
-            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -296,7 +285,6 @@
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox2;
         public Guna.UI.WinForms.GunaGradientButton gunaGradientButton2;
         private Guna.UI.WinForms.GunaTextBox gunaTextBox1;
-        private System.Windows.Forms.Label label1;
     }
 }
 
