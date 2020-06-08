@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QuanLyNhanSu_Nhom6.Views
 {
-    public partial class frmShowDialogYN : Form
+    public partial class frmXacNhan : Form
     {
-        public frmShowDialogYN()
+        public frmXacNhan()
         {
             InitializeComponent();
         }

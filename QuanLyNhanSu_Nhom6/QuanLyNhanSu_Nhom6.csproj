@@ -61,11 +61,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataClasses1.dbml</DependentUpon>
     </Compile>
-    <Compile Include="Views\frmDashboard.cs">
+    <Compile Include="Views\frmGiaDienChinh.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\frmDashboard.Designer.cs">
-      <DependentUpon>frmDashboard.cs</DependentUpon>
+    <Compile Include="Views\frmGiaDienChinh.Designer.cs">
+      <DependentUpon>frmGiaDienChinh.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\frmInThongKePhongBanChucVu.cs">
       <SubType>Form</SubType>
@@ -85,11 +85,11 @@
     <Compile Include="Views\frmLoading.Designer.cs">
       <DependentUpon>frmLoading.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\frmLogin.cs">
+    <Compile Include="Views\frmDangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\frmLogin.Designer.cs">
-      <DependentUpon>frmLogin.cs</DependentUpon>
+    <Compile Include="Views\frmDangNhap.Designer.cs">
+      <DependentUpon>frmDangNhap.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -105,11 +105,11 @@
     <Compile Include="Views\frmQuanLyTrinhDoChuyenMon.Designer.cs">
       <DependentUpon>frmQuanLyTrinhDoChuyenMon.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\frmShowDialogYN.cs">
+    <Compile Include="Views\frmXacNhan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\frmShowDialogYN.Designer.cs">
-      <DependentUpon>frmShowDialogYN.cs</DependentUpon>
+    <Compile Include="Views\frmXacNhan.Designer.cs">
+      <DependentUpon>frmXacNhan.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\frmThongKeTrinhDoChuyenMon.cs">
       <SubType>Form</SubType>
@@ -117,8 +117,8 @@
     <Compile Include="Views\frmThongKeTrinhDoChuyenMon.Designer.cs">
       <DependentUpon>frmThongKeTrinhDoChuyenMon.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Views\frmDashboard.resx">
-      <DependentUpon>frmDashboard.cs</DependentUpon>
+    <EmbeddedResource Include="Views\frmGiaDienChinh.resx">
+      <DependentUpon>frmGiaDienChinh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\frmInThongKePhongBanChucVu.resx">
       <DependentUpon>frmInThongKePhongBanChucVu.cs</DependentUpon>
@@ -129,8 +129,8 @@
     <EmbeddedResource Include="Views\frmLoading.resx">
       <DependentUpon>frmLoading.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\frmLogin.resx">
-      <DependentUpon>frmLogin.cs</DependentUpon>
+    <EmbeddedResource Include="Views\frmDangNhap.resx">
+      <DependentUpon>frmDangNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -147,8 +147,8 @@
     <EmbeddedResource Include="Views\frmQuanLyTrinhDoChuyenMon.resx">
       <DependentUpon>frmQuanLyTrinhDoChuyenMon.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\frmShowDialogYN.resx">
-      <DependentUpon>frmShowDialogYN.cs</DependentUpon>
+    <EmbeddedResource Include="Views\frmXacNhan.resx">
+      <DependentUpon>frmXacNhan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\frmThongKeTrinhDoChuyenMon.resx">
       <DependentUpon>frmThongKeTrinhDoChuyenMon.cs</DependentUpon>

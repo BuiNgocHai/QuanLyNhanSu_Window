@@ -1,6 +1,6 @@
 ﻿namespace QuanLyNhanSu_Nhom6.Views
 {
-    partial class frmDashboard
+    partial class frmGiaDienChinh
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDashboard));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGiaDienChinh));
             this.panelRight = new Guna.UI.WinForms.GunaPanel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panelDanhMuc = new Guna.UI.WinForms.GunaPanel();
