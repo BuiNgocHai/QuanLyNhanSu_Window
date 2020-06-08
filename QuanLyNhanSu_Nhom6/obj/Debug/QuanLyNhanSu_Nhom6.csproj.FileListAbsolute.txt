@@ -36,3 +36,6 @@ D:\Code\C#\QLNS_Window\QuanLyNhanSu_Window\QuanLyNhanSu_Nhom6\obj\Debug\QuanLyNh
 D:\Code\C#\QLNS_Window\QuanLyNhanSu_Window\QuanLyNhanSu_Nhom6\obj\Debug\QuanLyNhanSu_Nhom6.exe
 D:\Code\C#\QLNS_Window\QuanLyNhanSu_Window\QuanLyNhanSu_Nhom6\obj\Debug\QuanLyNhanSu_Nhom6.pdb
 D:\Code\C#\QLNS_Window\QuanLyNhanSu_Window\QuanLyNhanSu_Nhom6\obj\Debug\QuanLyNhanSu_Nhom6.Views.frmInThongKePhongBanChucVu.resources
+D:\Code\C#\QLNS_Window\QuanLyNhanSu_Window\QuanLyNhanSu_Nhom6\obj\Debug\QuanLyNhanSu_Nhom6.Views.frmInHoSoNV.resources
+D:\Code\C#\QLNS_Window\QuanLyNhanSu_Window\QuanLyNhanSu_Nhom6\obj\Debug\QuanLyNhanSu_Nhom6.Views.frmQLDanhMucChucVu.resources
+
