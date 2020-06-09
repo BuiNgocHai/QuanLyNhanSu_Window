@@ -45,6 +45,7 @@
             this.gunaPictureBox1.Size = new System.Drawing.Size(540, 193);
             this.gunaPictureBox1.TabIndex = 8;
             this.gunaPictureBox1.TabStop = false;
+            this.gunaPictureBox1.Click += new System.EventHandler(this.gunaPictureBox1_Click);
             // 
             // btnNo
             // 

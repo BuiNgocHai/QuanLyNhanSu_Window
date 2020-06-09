@@ -27,5 +27,10 @@ namespace QuanLyNhanSu_Nhom6.Views
         {
             
         }
+
+        private void gunaPictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

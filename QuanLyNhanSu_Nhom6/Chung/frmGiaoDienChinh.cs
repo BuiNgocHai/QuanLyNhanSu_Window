@@ -42,7 +42,7 @@ namespace QuanLyNhanSu_Nhom6.Views
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            Close();
+            Application.Exit();
         }
 
         private void btnMinimize_Click(object sender, EventArgs e)
@@ -143,7 +143,7 @@ namespace QuanLyNhanSu_Nhom6.Views
 
         private void btnTKPBCV_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("hêl");
+            
             frmInThongKePhongBanChucVu frm2 = new frmInThongKePhongBanChucVu();
             //frm2.TopLevel = false;            
             //panelMenu.Controls.Add(frm2);            
@@ -153,6 +153,16 @@ namespace QuanLyNhanSu_Nhom6.Views
             
             
            
+        }
+
+        private void btnNhanVienChucVu_Click(object sender, EventArgs e)
+        {
+            frmQuanLyNhanVienChucVu frm2 = new frmQuanLyNhanVienChucVu();
+            frm2.TopLevel = false;
+            panelMenu.Controls.Add(frm2);
+            frm2.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            frm2.Dock = DockStyle.Fill;
+            frm2.Show();
         }
     }
 }

@@ -48,7 +48,7 @@ namespace QuanLyNhanSu_Nhom6
             d.ShowDialog();
             if(d.DialogResult.Equals(DialogResult.Yes))
             {
-                this.Close();
+                Application.Exit();
             }
 
 

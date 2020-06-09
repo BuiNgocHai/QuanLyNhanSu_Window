@@ -33,6 +33,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DevExpress.Data.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="Guna.UI">
       <HintPath>C:\Users\Truong Tran\Desktop\Guna.UI-Framework-Lib-master\Guna.UI-Framework-Lib-master\Guna.UI_WinForms\.net 4.0\Guna.UI.dll</HintPath>
     </Reference>
@@ -56,99 +58,98 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataClasses1.designer.cs">
+    <Compile Include="DBQLNhanSu_6.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DataClasses1.dbml</DependentUpon>
+      <DependentUpon>DBQLNhanSu_6.dbml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Chung\frmGiaoDienChinh.cs">
+    <Compile Include="Chung\frmGiaoDienChinh.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Chung\frmGiaoDienChinh.Designer.cs">
+    <Compile Include="Chung\frmGiaoDienChinh.Designer.cs">
       <DependentUpon>frmGiaoDienChinh.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Nguyen Van Hung\frmQuanLyChucVu.cs">
+    <Compile Include="Nguyen Van Hung\frmQuanLyChucVu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Nguyen Van Hung\frmQuanLyChucVu.Designer.cs">
+    <Compile Include="Nguyen Van Hung\frmQuanLyChucVu.Designer.cs">
       <DependentUpon>frmQuanLyChucVu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Tran Quang Truong\frmInThongKePhongBanChucVu.cs">
+    <Compile Include="Tran Quang Truong\frmInThongKePhongBanChucVu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Tran Quang Truong\frmInThongKePhongBanChucVu.Designer.cs">
+    <Compile Include="Tran Quang Truong\frmInThongKePhongBanChucVu.Designer.cs">
       <DependentUpon>frmInThongKePhongBanChucVu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Tran Quang Truong\frmQuanLyNhanVienChucVu.cs">
+    <Compile Include="Tran Quang Truong\frmQuanLyNhanVienChucVu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Tran Quang Truong\frmQuanLyNhanVienChucVu.Designer.cs">
+    <Compile Include="Tran Quang Truong\frmQuanLyNhanVienChucVu.Designer.cs">
       <DependentUpon>frmQuanLyNhanVienChucVu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Phan Thanh Trung\frmInHoSoNV.cs">
+    <Compile Include="Phan Thanh Trung\frmInHoSoNV.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Phan Thanh Trung\frmInHoSoNV.Designer.cs">
+    <Compile Include="Phan Thanh Trung\frmInHoSoNV.Designer.cs">
       <DependentUpon>frmInHoSoNV.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Chung\frmLoading.cs">
+    <Compile Include="Chung\frmLoading.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Chung\frmLoading.Designer.cs">
+    <Compile Include="Chung\frmLoading.Designer.cs">
       <DependentUpon>frmLoading.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Tran Quang Truong\frmDangNhap.cs">
+    <Compile Include="Tran Quang Truong\frmDangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Tran Quang Truong\frmDangNhap.Designer.cs">
+    <Compile Include="Tran Quang Truong\frmDangNhap.Designer.cs">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Views\Phan Thanh Trung\frmQLDanhMucPhongBan.cs">
+    <Compile Include="Phan Thanh Trung\frmQLDanhMucPhongBan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Phan Thanh Trung\frmQLDanhMucPhongBan.Designer.cs">
+    <Compile Include="Phan Thanh Trung\frmQLDanhMucPhongBan.Designer.cs">
       <DependentUpon>frmQLDanhMucPhongBan.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Nguyen Van Hung\frmQuanLyTrinhDoChuyenMon.cs">
+    <Compile Include="Nguyen Van Hung\frmQuanLyTrinhDoChuyenMon.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Nguyen Van Hung\frmQuanLyTrinhDoChuyenMon.Designer.cs">
+    <Compile Include="Nguyen Van Hung\frmQuanLyTrinhDoChuyenMon.Designer.cs">
       <DependentUpon>frmQuanLyTrinhDoChuyenMon.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Chung\frmCanhBao.cs">
+    <Compile Include="Chung\frmCanhBao.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Chung\frmCanhBao.Designer.cs">
+    <Compile Include="Chung\frmCanhBao.Designer.cs">
       <DependentUpon>frmCanhBao.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Nguyen Van Hung\frmThongKeTrinhDoChuyenMon.cs">
+    <Compile Include="Nguyen Van Hung\frmThongKeTrinhDoChuyenMon.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Nguyen Van Hung\frmThongKeTrinhDoChuyenMon.Designer.cs">
+    <Compile Include="Nguyen Van Hung\frmThongKeTrinhDoChuyenMon.Designer.cs">
       <DependentUpon>frmThongKeTrinhDoChuyenMon.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Views\Chung\frmGiaoDienChinh.resx">
+    <EmbeddedResource Include="Chung\frmGiaoDienChinh.resx">
       <DependentUpon>frmGiaoDienChinh.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\frmDialog.resx" />
-    <EmbeddedResource Include="Views\Nguyen Van Hung\frmQuanLyChucVu.resx">
+    <EmbeddedResource Include="Nguyen Van Hung\frmQuanLyChucVu.resx">
       <DependentUpon>frmQuanLyChucVu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Tran Quang Truong\frmInThongKePhongBanChucVu.resx">
+    <EmbeddedResource Include="Tran Quang Truong\frmInThongKePhongBanChucVu.resx">
       <DependentUpon>frmInThongKePhongBanChucVu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Tran Quang Truong\frmQuanLyNhanVienChucVu.resx">
+    <EmbeddedResource Include="Tran Quang Truong\frmQuanLyNhanVienChucVu.resx">
       <DependentUpon>frmQuanLyNhanVienChucVu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Phan Thanh Trung\frmInHoSoNV.resx">
+    <EmbeddedResource Include="Phan Thanh Trung\frmInHoSoNV.resx">
       <DependentUpon>frmInHoSoNV.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Chung\frmLoading.resx">
+    <EmbeddedResource Include="Chung\frmLoading.resx">
       <DependentUpon>frmLoading.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Tran Quang Truong\frmDangNhap.resx">
+    <EmbeddedResource Include="Tran Quang Truong\frmDangNhap.resx">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -160,25 +161,25 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Views\Phan Thanh Trung\frmQLDanhMucPhongBan.resx">
+    <EmbeddedResource Include="Phan Thanh Trung\frmQLDanhMucPhongBan.resx">
       <DependentUpon>frmQLDanhMucPhongBan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Nguyen Van Hung\frmQuanLyTrinhDoChuyenMon.resx">
+    <EmbeddedResource Include="Nguyen Van Hung\frmQuanLyTrinhDoChuyenMon.resx">
       <DependentUpon>frmQuanLyTrinhDoChuyenMon.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Chung\frmCanhBao.resx">
+    <EmbeddedResource Include="Chung\frmCanhBao.resx">
       <DependentUpon>frmCanhBao.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Nguyen Van Hung\frmThongKeTrinhDoChuyenMon.resx">
+    <EmbeddedResource Include="Nguyen Van Hung\frmThongKeTrinhDoChuyenMon.resx">
       <DependentUpon>frmThongKeTrinhDoChuyenMon.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="DataClasses1.dbml">
+    <None Include="DBQLNhanSu_6.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>DataClasses1.designer.cs</LastGenOutput>
+      <LastGenOutput>DBQLNhanSu_6.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="DataClasses1.dbml.layout">
-      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    <None Include="DBQLNhanSu_6.dbml.layout">
+      <DependentUpon>DBQLNhanSu_6.dbml</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -194,10 +195,16 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BLL\" />
-    <Folder Include="DAL\" />
-    <Folder Include="DTO\" />
-    <Folder Include="Views\Bui Ngoc Hai\" />
+    <Folder Include="Bui Ngoc Hai\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BUS\BUS.csproj">
+      <Project>{28ea23d7-c1a5-42bc-957c-0da23578be9a}</Project>
+      <Name>BUS</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
