@@ -32,7 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDashboard));
             this.panelRight = new Guna.UI.WinForms.GunaPanel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panelDanhMuc = new Guna.UI.WinForms.GunaPanel();
+            this.panelQLDM = new Guna.UI.WinForms.GunaPanel();
             this.btnQLDM = new Guna.UI.WinForms.GunaButton();
             this.btnDMPB = new Guna.UI.WinForms.GunaButton();
             this.btnDMCV = new Guna.UI.WinForms.GunaButton();
@@ -50,7 +50,7 @@
             this.btnInHoSo = new Guna.UI.WinForms.GunaButton();
             this.btnTDCM = new Guna.UI.WinForms.GunaButton();
             this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
-            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
+            this.labelTenFrom = new Guna.UI.WinForms.GunaLabel();
             this.panelMenu = new Guna.UI.WinForms.GunaPanel();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.btnMinimize = new Guna.UI.WinForms.GunaButton();
@@ -63,7 +63,7 @@
             this.timer3 = new System.Windows.Forms.Timer(this.components);
             this.panelRight.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
-            this.panelDanhMuc.SuspendLayout();
+            this.panelQLDM.SuspendLayout();
             this.panelTTNV.SuspendLayout();
             this.panelTKBC.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
@@ -75,7 +75,7 @@
             this.panelRight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(58)))), ((int)(((byte)(209)))));
             this.panelRight.Controls.Add(this.flowLayoutPanel1);
             this.panelRight.Controls.Add(this.gunaPictureBox1);
-            this.panelRight.Controls.Add(this.gunaLabel1);
+            this.panelRight.Controls.Add(this.labelTenFrom);
             this.panelRight.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelRight.Location = new System.Drawing.Point(0, 0);
             this.panelRight.Name = "panelRight";
@@ -87,25 +87,25 @@
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
             this.flowLayoutPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("flowLayoutPanel1.BackgroundImage")));
             this.flowLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.flowLayoutPanel1.Controls.Add(this.panelDanhMuc);
+            this.flowLayoutPanel1.Controls.Add(this.panelQLDM);
             this.flowLayoutPanel1.Controls.Add(this.panelTTNV);
             this.flowLayoutPanel1.Controls.Add(this.panelTKBC);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 87);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(317, 725);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(321, 725);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
-            // panelDanhMuc
+            // panelQLDM
             // 
-            this.panelDanhMuc.Controls.Add(this.btnQLDM);
-            this.panelDanhMuc.Controls.Add(this.btnDMPB);
-            this.panelDanhMuc.Controls.Add(this.btnDMCV);
-            this.panelDanhMuc.Location = new System.Drawing.Point(3, 3);
-            this.panelDanhMuc.MaximumSize = new System.Drawing.Size(318, 151);
-            this.panelDanhMuc.MinimumSize = new System.Drawing.Size(317, 50);
-            this.panelDanhMuc.Name = "panelDanhMuc";
-            this.panelDanhMuc.Size = new System.Drawing.Size(317, 50);
-            this.panelDanhMuc.TabIndex = 1;
+            this.panelQLDM.Controls.Add(this.btnQLDM);
+            this.panelQLDM.Controls.Add(this.btnDMPB);
+            this.panelQLDM.Controls.Add(this.btnDMCV);
+            this.panelQLDM.Location = new System.Drawing.Point(3, 3);
+            this.panelQLDM.MaximumSize = new System.Drawing.Size(318, 151);
+            this.panelQLDM.MinimumSize = new System.Drawing.Size(317, 50);
+            this.panelQLDM.Name = "panelQLDM";
+            this.panelQLDM.Size = new System.Drawing.Size(317, 50);
+            this.panelQLDM.TabIndex = 1;
             // 
             // btnQLDM
             // 
@@ -190,7 +190,7 @@
             this.panelTTNV.MaximumSize = new System.Drawing.Size(317, 297);
             this.panelTTNV.MinimumSize = new System.Drawing.Size(317, 50);
             this.panelTTNV.Name = "panelTTNV";
-            this.panelTTNV.Size = new System.Drawing.Size(317, 297);
+            this.panelTTNV.Size = new System.Drawing.Size(317, 50);
             this.panelTTNV.TabIndex = 6;
             // 
             // btnNhanVienChucVu
@@ -342,13 +342,13 @@
             this.panelTKBC.Controls.Add(this.btnThongKeBaoCao);
             this.panelTKBC.Controls.Add(this.btnInHoSo);
             this.panelTKBC.Controls.Add(this.btnTDCM);
-            this.panelTKBC.Location = new System.Drawing.Point(0, 359);
+            this.panelTKBC.Location = new System.Drawing.Point(0, 112);
             this.panelTKBC.Margin = new System.Windows.Forms.Padding(0);
-            this.panelTKBC.MaximumSize = new System.Drawing.Size(317, 254);
-            this.panelTKBC.MinimumSize = new System.Drawing.Size(317, 50);
+            this.panelTKBC.MaximumSize = new System.Drawing.Size(317, 261);
+            this.panelTKBC.MinimumSize = new System.Drawing.Size(317, 51);
             this.panelTKBC.Name = "panelTKBC";
             this.panelTKBC.Padding = new System.Windows.Forms.Padding(3);
-            this.panelTKBC.Size = new System.Drawing.Size(317, 50);
+            this.panelTKBC.Size = new System.Drawing.Size(317, 51);
             this.panelTKBC.TabIndex = 9;
             // 
             // btnPBCV
@@ -363,7 +363,7 @@
             this.btnPBCV.ForeColor = System.Drawing.Color.White;
             this.btnPBCV.Image = ((System.Drawing.Image)(resources.GetObject("btnPBCV.Image")));
             this.btnPBCV.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnPBCV.Location = new System.Drawing.Point(0, 200);
+            this.btnPBCV.Location = new System.Drawing.Point(3, 203);
             this.btnPBCV.Margin = new System.Windows.Forms.Padding(0);
             this.btnPBCV.Name = "btnPBCV";
             this.btnPBCV.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
@@ -371,7 +371,7 @@
             this.btnPBCV.OnHoverForeColor = System.Drawing.Color.White;
             this.btnPBCV.OnHoverImage = null;
             this.btnPBCV.OnPressedColor = System.Drawing.Color.Black;
-            this.btnPBCV.Size = new System.Drawing.Size(317, 50);
+            this.btnPBCV.Size = new System.Drawing.Size(311, 54);
             this.btnPBCV.TabIndex = 7;
             this.btnPBCV.Text = "Thông kê phòng ban chức vụ";
             // 
@@ -387,14 +387,14 @@
             this.btnTDNN.ForeColor = System.Drawing.Color.White;
             this.btnTDNN.Image = ((System.Drawing.Image)(resources.GetObject("btnTDNN.Image")));
             this.btnTDNN.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnTDNN.Location = new System.Drawing.Point(0, 150);
+            this.btnTDNN.Location = new System.Drawing.Point(3, 153);
             this.btnTDNN.Name = "btnTDNN";
             this.btnTDNN.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnTDNN.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btnTDNN.OnHoverForeColor = System.Drawing.Color.White;
             this.btnTDNN.OnHoverImage = null;
             this.btnTDNN.OnPressedColor = System.Drawing.Color.Black;
-            this.btnTDNN.Size = new System.Drawing.Size(317, 50);
+            this.btnTDNN.Size = new System.Drawing.Size(311, 51);
             this.btnTDNN.TabIndex = 6;
             this.btnTDNN.Text = "Thống kê trình độ ngoại ngữ";
             // 
@@ -435,14 +435,14 @@
             this.btnInHoSo.ForeColor = System.Drawing.Color.White;
             this.btnInHoSo.Image = ((System.Drawing.Image)(resources.GetObject("btnInHoSo.Image")));
             this.btnInHoSo.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnInHoSo.Location = new System.Drawing.Point(0, 50);
+            this.btnInHoSo.Location = new System.Drawing.Point(3, 53);
             this.btnInHoSo.Name = "btnInHoSo";
             this.btnInHoSo.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnInHoSo.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btnInHoSo.OnHoverForeColor = System.Drawing.Color.White;
             this.btnInHoSo.OnHoverImage = null;
             this.btnInHoSo.OnPressedColor = System.Drawing.Color.Black;
-            this.btnInHoSo.Size = new System.Drawing.Size(317, 50);
+            this.btnInHoSo.Size = new System.Drawing.Size(311, 51);
             this.btnInHoSo.TabIndex = 4;
             this.btnInHoSo.Text = "In hồ sơ nhân viên";
             // 
@@ -458,14 +458,14 @@
             this.btnTDCM.ForeColor = System.Drawing.Color.White;
             this.btnTDCM.Image = ((System.Drawing.Image)(resources.GetObject("btnTDCM.Image")));
             this.btnTDCM.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnTDCM.Location = new System.Drawing.Point(0, 100);
+            this.btnTDCM.Location = new System.Drawing.Point(3, 103);
             this.btnTDCM.Name = "btnTDCM";
             this.btnTDCM.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnTDCM.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btnTDCM.OnHoverForeColor = System.Drawing.Color.White;
             this.btnTDCM.OnHoverImage = null;
             this.btnTDCM.OnPressedColor = System.Drawing.Color.Black;
-            this.btnTDCM.Size = new System.Drawing.Size(317, 50);
+            this.btnTDCM.Size = new System.Drawing.Size(311, 51);
             this.btnTDCM.TabIndex = 5;
             this.btnTDCM.Text = "Thống kê trình độ chuyên môn";
             this.btnTDCM.Click += new System.EventHandler(this.btnTDCM_Click);
@@ -483,16 +483,16 @@
             this.gunaPictureBox1.TabStop = false;
             this.gunaPictureBox1.UseTransfarantBackground = true;
             // 
-            // gunaLabel1
+            // labelTenFrom
             // 
-            this.gunaLabel1.AutoSize = true;
-            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel1.ForeColor = System.Drawing.Color.White;
-            this.gunaLabel1.Location = new System.Drawing.Point(12, 24);
-            this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(226, 35);
-            this.gunaLabel1.TabIndex = 1;
-            this.gunaLabel1.Text = "Admin Dashboard";
+            this.labelTenFrom.AutoSize = true;
+            this.labelTenFrom.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.labelTenFrom.ForeColor = System.Drawing.Color.White;
+            this.labelTenFrom.Location = new System.Drawing.Point(12, 24);
+            this.labelTenFrom.Name = "labelTenFrom";
+            this.labelTenFrom.Size = new System.Drawing.Size(226, 35);
+            this.labelTenFrom.TabIndex = 1;
+            this.labelTenFrom.Text = "Admin Dashboard";
             // 
             // panelMenu
             // 
@@ -659,11 +659,10 @@
             this.Name = "frmDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmDashboard";
-            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.frmDashboard_MouseDown);
             this.panelRight.ResumeLayout(false);
             this.panelRight.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
-            this.panelDanhMuc.ResumeLayout(false);
+            this.panelQLDM.ResumeLayout(false);
             this.panelTTNV.ResumeLayout(false);
             this.panelTKBC.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();
@@ -675,7 +674,7 @@
 
         #endregion
         private Guna.UI.WinForms.GunaPanel panelRight;
-        private Guna.UI.WinForms.GunaLabel gunaLabel1;
+        private Guna.UI.WinForms.GunaLabel labelTenFrom;
         private Guna.UI.WinForms.GunaButton btnQLDM;
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox1;
         private Guna.UI.WinForms.GunaPanel panelMenu;
@@ -687,7 +686,7 @@
         private Guna.UI.WinForms.GunaPanel panelTop;
         private Guna.UI.WinForms.GunaButton btnDMCV;
         private Guna.UI.WinForms.GunaButton btnDMPB;
-        private Guna.UI.WinForms.GunaPanel panelDanhMuc;
+        private Guna.UI.WinForms.GunaPanel panelQLDM;
         private System.Windows.Forms.Timer timer1;
         private Guna.UI.WinForms.GunaPanel panelTTNV;
         private Guna.UI.WinForms.GunaButton btnNhanVienChucVu;

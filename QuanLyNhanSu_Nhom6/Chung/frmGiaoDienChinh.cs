@@ -34,11 +34,51 @@ namespace QuanLyNhanSu_Nhom6.Views
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
         }
 
-        private void frmDashboard_MouseDown(object sender, MouseEventArgs e)
+        private void gunaPanel3_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                ReleaseCapture();
+                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+            }
+        }
+
+
+
+        //Tạo Instance(trường)
+        private static frmDashboard instance;
+
+        public static frmDashboard Instance
         {
 
+            get
+            {
+                if (instance == null)
+                {
+                    instance = new frmDashboard();
+                }
+
+                return instance;
+            }
+        }
+        //end
+        // Tạo update khi đăng nhập(trường)
+        public void capNhatDangNhap()
+        {
+            labelTenFrom.Text = "Employee Dashboard";
+            panelTTNV.Dispose();
+            panelQLDM.Dispose();
+            panelTKBC.Location = new System.Drawing.Point(0,0);
+         
+            
 
         }
+
+
+
+
+
+
 
         private void btnExit_Click(object sender, EventArgs e)
         {
@@ -57,21 +97,12 @@ namespace QuanLyNhanSu_Nhom6.Views
             Close();
         }
 
-        private void gunaPanel3_MouseMove(object sender, MouseEventArgs e)
-        {
-            if (e.Button == MouseButtons.Left)
-            {
-                ReleaseCapture();
-                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
-            }
-        }
 
 
-        //Time set
 
-        
+        //Cài đặt thời gian sổ Menu        
         private bool isCollapsed;
-        
+
         private void time(Panel panel, Timer time)
         {
             if (isCollapsed)
@@ -98,8 +129,8 @@ namespace QuanLyNhanSu_Nhom6.Views
         //Xử lý sự kiện click menu
         private void timer1_Tick(object sender, EventArgs e)
         {
-            
-        time(panelDanhMuc, timer1);
+
+            time(panelQLDM, timer1);
         }
         private void timer2_Tick(object sender, EventArgs e)
         {
@@ -112,20 +143,19 @@ namespace QuanLyNhanSu_Nhom6.Views
         }
 
 
-        // xử lý các button
+        // xử lý các button 
         private void btnQLNV_Click(object sender, EventArgs e)
         {
-            
+
             timer2.Start();
         }
 
         private void btnQLDM_Click(object sender, EventArgs e)
         {
-            
             timer1.Start();
         }
 
-       
+
         private void btnThongKeBaoCao_Click(object sender, EventArgs e)
         {
             timer3.Start();
@@ -133,8 +163,10 @@ namespace QuanLyNhanSu_Nhom6.Views
 
         private void btnTDCM_Click(object sender, EventArgs e)
         {
-            frmQuanLyTrinhDoChuyenMon frm2 = new frmQuanLyTrinhDoChuyenMon();
-            frm2.TopLevel = false;
+            frmQuanLyTrinhDoChuyenMon frm2 = new frmQuanLyTrinhDoChuyenMon
+            {
+                TopLevel = false
+            };
             panelMenu.Controls.Add(frm2);
             frm2.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             frm2.Dock = DockStyle.Fill;
@@ -143,22 +175,24 @@ namespace QuanLyNhanSu_Nhom6.Views
 
         private void btnTKPBCV_Click(object sender, EventArgs e)
         {
-            
+
             frmInThongKePhongBanChucVu frm2 = new frmInThongKePhongBanChucVu();
             //frm2.TopLevel = false;            
             //panelMenu.Controls.Add(frm2);            
             //frm2.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;            
             //frm2.Dock = DockStyle.Fill;
             frm2.Show();
-            
-            
-           
+
+
+
         }
 
         private void btnNhanVienChucVu_Click(object sender, EventArgs e)
         {
-            frmQuanLyNhanVienChucVu frm2 = new frmQuanLyNhanVienChucVu();
-            frm2.TopLevel = false;
+            frmQuanLyNhanVienChucVu frm2 = new frmQuanLyNhanVienChucVu
+            {
+                TopLevel = false
+            };
             panelMenu.Controls.Add(frm2);
             frm2.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             frm2.Dock = DockStyle.Fill;
