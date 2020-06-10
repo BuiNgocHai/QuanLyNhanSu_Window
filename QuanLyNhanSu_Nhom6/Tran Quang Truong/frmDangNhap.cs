@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.Runtime.InteropServices;
+﻿using BUS;
+using QuanLyNhanSu_Nhom6.Chung;
 using QuanLyNhanSu_Nhom6.Views;
+using System;
+using System.Runtime.InteropServices;
+using System.Windows.Forms;
 
 namespace QuanLyNhanSu_Nhom6
 {
@@ -37,7 +32,7 @@ namespace QuanLyNhanSu_Nhom6
         public frmLogin()
         {
             InitializeComponent();
-            this.FormBorderStyle = FormBorderStyle.None;
+            FormBorderStyle = FormBorderStyle.None;
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
         }
 
@@ -46,28 +41,18 @@ namespace QuanLyNhanSu_Nhom6
 
             frmShowDialogYN d = new frmShowDialogYN();
             d.ShowDialog();
-            if(d.DialogResult.Equals(DialogResult.Yes))
+            if (d.DialogResult.Equals(DialogResult.Yes))
             {
                 Application.Exit();
             }
-
-
-
-
         }
 
         private void btnMinimize_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Minimized;
+            WindowState = FormWindowState.Minimized;
         }
 
-        private void gunaGradientButton2_Click(object sender, EventArgs e)
-        {
-            
-            frmDashboard frm = new frmDashboard();
-            frm.Show();
-            this.Close();
-        }
+
 
         private void gunaPanel1_MouseMove(object sender, MouseEventArgs e)
         {
@@ -75,6 +60,29 @@ namespace QuanLyNhanSu_Nhom6
             {
                 ReleaseCapture();
                 SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+            }
+        }
+
+        private void btnDangNhap_Click(object sender, EventArgs e)
+        {
+            int kt = DangNhap_BUS.Instance.dangNhap_BUS(txtTK, txtMK);
+            if (kt == 1)
+            {
+                frmDashboard Instance = new frmDashboard();
+                Instance.Show();
+                Close();
+            }
+            else if (kt == 2)
+            {
+                frmDashboard Instance = new frmDashboard();
+                Instance.capNhatDangNhap();
+                Instance.Show();
+                Close();
+            }
+            else
+            {
+                frmCanhBaoOK.Instance.capNhatLoiNhan("Thông tin tài khoản và mật khẩu \n không chính xác!");
+                frmCanhBaoOK.Instance.ShowDialog();
             }
         }
     }

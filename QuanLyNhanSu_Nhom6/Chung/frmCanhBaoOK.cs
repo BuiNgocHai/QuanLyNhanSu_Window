@@ -1,12 +1,18 @@
 ﻿using System;
-using System.Windows.Forms;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
 using System.Runtime.InteropServices;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 
-namespace QuanLyNhanSu_Nhom6.Views
+namespace QuanLyNhanSu_Nhom6.Chung
 {
-    public partial class frmShowDialogYN : Form
+    public partial class frmCanhBaoOK : Form
     {
-
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
        (
@@ -18,37 +24,28 @@ namespace QuanLyNhanSu_Nhom6.Views
            int nHeightEllipse // width of ellipse
        );
 
-        private static frmShowDialogYN instance;
+        public frmCanhBaoOK()
+        {
+            InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.None;
+            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 15, 15));
 
-        public static frmShowDialogYN Instance
+        }
+
+        private static frmCanhBaoOK instance;
+
+        public static frmCanhBaoOK Instance
         {
 
             get
             {
                 if (instance == null)
                 {
-                    instance = new frmShowDialogYN();
+                    instance = new frmCanhBaoOK();
                 }
 
                 return instance;
             }
-        }
-
-
-
-
-
-        public frmShowDialogYN()
-        {
-            InitializeComponent();
-            this.FormBorderStyle = FormBorderStyle.None;
-            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 15, 15));
-        }
-
-
-        private void frmShowDialogYN_Load(object sender, EventArgs e)
-        {
-
         }
 
         public void capNhatLoiNhan(string txtLoiNhan)
@@ -56,10 +53,6 @@ namespace QuanLyNhanSu_Nhom6.Views
             labelXacNhan.Text = txtLoiNhan;
         }
 
-
-
-
-
-
+        
     }
 }
