@@ -188,7 +188,7 @@ namespace QuanLyNhanSu_Nhom6.Views
         }
 
         private void btnNhanVienChucVu_Click(object sender, EventArgs e)
-        {
+        {          
             frmQuanLyNhanVienChucVu frm2 = new frmQuanLyNhanVienChucVu
             {
                 TopLevel = false

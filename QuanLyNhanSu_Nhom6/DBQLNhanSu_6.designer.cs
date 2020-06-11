@@ -9,7 +9,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace QuanLyNhanSu_Nhom6
+namespace GUI
 {
 	using System.Data.Linq;
 	using System.Data.Linq.Mapping;
@@ -54,7 +54,7 @@ namespace QuanLyNhanSu_Nhom6
     #endregion
 		
 		public DBQLNhanSu_6DataContext() : 
-				base(global::QuanLyNhanSu_Nhom6.Properties.Settings.Default.QUANLYNHANSU_6ConnectionString, mappingSource)
+				base(global::GUI.Properties.Settings.Default.QUANLYNHANSU_6ConnectionString, mappingSource)
 		{
 			OnCreated();
 		}
