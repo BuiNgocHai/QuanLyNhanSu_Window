@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
+            this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
             this.txtMK = new Guna.UI.WinForms.GunaTextBox();
             this.btnDangNhap = new Guna.UI.WinForms.GunaGradientButton();
             this.gunaPictureBox2 = new Guna.UI.WinForms.GunaPictureBox();
@@ -40,7 +41,6 @@
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
-            this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
             this.gunaPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
@@ -66,6 +66,17 @@
             this.gunaPanel1.TabIndex = 0;
             this.gunaPanel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gunaPanel1_MouseMove);
             // 
+            // gunaLabel4
+            // 
+            this.gunaLabel4.AutoSize = true;
+            this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaLabel4.ForeColor = System.Drawing.Color.White;
+            this.gunaLabel4.Location = new System.Drawing.Point(260, 255);
+            this.gunaLabel4.Name = "gunaLabel4";
+            this.gunaLabel4.Size = new System.Drawing.Size(70, 20);
+            this.gunaLabel4.TabIndex = 15;
+            this.gunaLabel4.Text = "Mật khẩu";
+            // 
             // txtMK
             // 
             this.txtMK.BackColor = System.Drawing.Color.Transparent;
@@ -84,7 +95,7 @@
             this.txtMK.Radius = 10;
             this.txtMK.SelectedText = "";
             this.txtMK.Size = new System.Drawing.Size(285, 32);
-            this.txtMK.TabIndex = 14;
+            this.txtMK.TabIndex = 1;
             // 
             // btnDangNhap
             // 
@@ -110,7 +121,7 @@
             this.btnDangNhap.OnPressedColor = System.Drawing.Color.Black;
             this.btnDangNhap.Radius = 10;
             this.btnDangNhap.Size = new System.Drawing.Size(285, 42);
-            this.btnDangNhap.TabIndex = 13;
+            this.btnDangNhap.TabIndex = 3;
             this.btnDangNhap.Text = "Đăng nhập";
             this.btnDangNhap.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
@@ -170,7 +181,7 @@
             this.txtTK.Radius = 10;
             this.txtTK.SelectedText = "";
             this.txtTK.Size = new System.Drawing.Size(285, 32);
-            this.txtTK.TabIndex = 6;
+            this.txtTK.TabIndex = 0;
             // 
             // gunaLabel3
             // 
@@ -238,17 +249,6 @@
             this.gunaPictureBox1.Size = new System.Drawing.Size(862, 142);
             this.gunaPictureBox1.TabIndex = 0;
             this.gunaPictureBox1.TabStop = false;
-            // 
-            // gunaLabel4
-            // 
-            this.gunaLabel4.AutoSize = true;
-            this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel4.ForeColor = System.Drawing.Color.White;
-            this.gunaLabel4.Location = new System.Drawing.Point(260, 255);
-            this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(70, 20);
-            this.gunaLabel4.TabIndex = 15;
-            this.gunaLabel4.Text = "Mật khẩu";
             // 
             // frmLogin
             // 

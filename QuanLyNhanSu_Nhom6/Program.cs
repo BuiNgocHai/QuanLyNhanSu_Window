@@ -17,7 +17,7 @@ namespace QuanLyNhanSu_Nhom6
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            var main = new frmLoading();
+            var main = new frmDashboard();
             main.FormClosed += new FormClosedEventHandler(FormClosed);
             main.Show();
             Application.Run();
