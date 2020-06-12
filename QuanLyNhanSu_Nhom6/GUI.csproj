@@ -36,13 +36,11 @@
     <ApplicationIcon>icons8_collaborator_female.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Data.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Xpo.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="Guna.UI">
-      <HintPath>C:\Users\Truong Tran\Desktop\Guna.UI-Framework-Lib-master\Guna.UI-Framework-Lib-master\Guna.UI_WinForms\.net 4.0\Guna.UI.dll</HintPath>
+      <HintPath>..\GunaUIFramework\Guna.UI.dll</HintPath>
     </Reference>
     <Reference Include="Guna.UI2">
-      <HintPath>C:\Users\Truong Tran\Desktop\Guna.UI-Framework-Lib-master\Guna.UI-Framework-Lib-master\Guna.UI2_WinFroms\.net 4.0\Guna.UI2.dll</HintPath>
+      <HintPath>..\GunaUIFramework\Guna.UI2.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
@@ -221,6 +219,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="icons8_collaborator_female.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

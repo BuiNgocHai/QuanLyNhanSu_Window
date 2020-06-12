@@ -28,12 +28,15 @@ namespace QuanLyNhanSu_Nhom6.Views
 
         private void frmInThongKePhongBanChucVu_Load(object sender, EventArgs e)
         {
-            
+
+
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+
+       
     }
 }

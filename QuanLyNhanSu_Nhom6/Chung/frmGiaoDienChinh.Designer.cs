@@ -374,6 +374,7 @@
             this.btnPBCV.Size = new System.Drawing.Size(311, 54);
             this.btnPBCV.TabIndex = 7;
             this.btnPBCV.Text = "Thông kê phòng ban chức vụ";
+            this.btnPBCV.Click += new System.EventHandler(this.btnPBCV_Click);
             // 
             // btnTDNN
             // 
@@ -475,7 +476,7 @@
             this.gunaPictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
             this.gunaPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("gunaPictureBox1.Image")));
-            this.gunaPictureBox1.Location = new System.Drawing.Point(272, 32);
+            this.gunaPictureBox1.Location = new System.Drawing.Point(276, 32);
             this.gunaPictureBox1.Name = "gunaPictureBox1";
             this.gunaPictureBox1.Size = new System.Drawing.Size(24, 24);
             this.gunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -493,6 +494,7 @@
             this.labelTenFrom.Size = new System.Drawing.Size(226, 35);
             this.labelTenFrom.TabIndex = 1;
             this.labelTenFrom.Text = "Admin Dashboard";
+            this.labelTenFrom.Click += new System.EventHandler(this.labelTenFrom_Click);
             // 
             // panelMenu
             // 
