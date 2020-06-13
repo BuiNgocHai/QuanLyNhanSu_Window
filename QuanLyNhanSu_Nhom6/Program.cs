@@ -17,7 +17,11 @@ namespace QuanLyNhanSu_Nhom6
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+<<<<<<< HEAD
             var main = new frmLoading();
+=======
+            var main = new frmInThongKePhongBanChucVu();
+>>>>>>> tranquangtruong
             main.FormClosed += new FormClosedEventHandler(FormClosed);
             main.Show();
             Application.Run();

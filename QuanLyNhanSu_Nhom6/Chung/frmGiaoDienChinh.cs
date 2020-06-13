@@ -7,6 +7,34 @@ namespace QuanLyNhanSu_Nhom6.Views
 {
     public partial class frmDashboard : Form
     {
+        private Form frmCon;
+
+        private void moFrmCon(Form frmMoi)
+        {
+            if (frmCon != null)
+            {
+                frmCon.Close();
+            }
+            frmCon = frmMoi;
+            //End
+            frmMoi.TopLevel = false;
+            frmMoi.FormBorderStyle = FormBorderStyle.None;
+            frmMoi.Dock = DockStyle.Fill;
+            panelMenu.Controls.Add(frmMoi);
+            panelMenu.Tag = frmMoi;
+            frmMoi.BringToFront();
+            frmMoi.Show();
+        }
+
+
+
+
+
+
+
+
+
+
 
 
         public const int WM_NCLBUTTONDOWN = 0xA1;
@@ -163,40 +191,26 @@ namespace QuanLyNhanSu_Nhom6.Views
 
         private void btnTDCM_Click(object sender, EventArgs e)
         {
-            frmQuanLyTrinhDoChuyenMon frm2 = new frmQuanLyTrinhDoChuyenMon
-            {
-                TopLevel = false
-            };
-            panelMenu.Controls.Add(frm2);
-            frm2.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            frm2.Dock = DockStyle.Fill;
-            frm2.Show();
+            
         }
 
-        private void btnTKPBCV_Click(object sender, EventArgs e)
-        {
-
-            frmInThongKePhongBanChucVu frm2 = new frmInThongKePhongBanChucVu();
-            //frm2.TopLevel = false;            
-            //panelMenu.Controls.Add(frm2);            
-            //frm2.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;            
-            //frm2.Dock = DockStyle.Fill;
-            frm2.Show();
-
-
-
-        }
 
         private void btnNhanVienChucVu_Click(object sender, EventArgs e)
-        {          
-            frmQuanLyNhanVienChucVu frm2 = new frmQuanLyNhanVienChucVu
-            {
-                TopLevel = false
-            };
-            panelMenu.Controls.Add(frm2);
-            frm2.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            frm2.Dock = DockStyle.Fill;
-            frm2.Show();
+        {
+
+            moFrmCon( new frmQuanLyNhanVienChucVu());
+        }
+
+        private void btnPBCV_Click(object sender, EventArgs e)
+        {
+            moFrmCon(new frmInThongKePhongBanChucVu());
+        }
+
+        private void labelTenFrom_Click(object sender, EventArgs e)
+        {
+            if(frmCon!=null)
+            frmCon.Close();
+            
         }
     }
 }
