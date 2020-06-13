@@ -67,11 +67,6 @@
     <Compile Include="Chung\frmCanhBaoOK.Designer.cs">
       <DependentUpon>frmCanhBaoOK.cs</DependentUpon>
     </Compile>
-    <Compile Include="DBQLNhanSu_6.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DBQLNhanSu_6.dbml</DependentUpon>
-    </Compile>
     <Compile Include="Chung\frmGiaoDienChinh.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -186,14 +181,6 @@
     <EmbeddedResource Include="Nguyen Van Hung\frmThongKeTrinhDoChuyenMon.resx">
       <DependentUpon>frmThongKeTrinhDoChuyenMon.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="DBQLNhanSu_6.dbml">
-      <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>DBQLNhanSu_6.designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DBQLNhanSu_6.dbml.layout">
-      <DependentUpon>DBQLNhanSu_6.dbml</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

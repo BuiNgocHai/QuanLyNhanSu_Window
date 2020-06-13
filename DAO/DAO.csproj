@@ -47,7 +47,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DangNhap_DAO.cs" />
+    <Compile Include="DAO\ChucVu_DAO.cs" />
+    <Compile Include="DAO\DangNhap_DAO.cs" />
     <Compile Include="DBQLNhanSu_6.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -61,7 +62,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QuanLyNhanVienChucVu_DAO.cs" />
+    <Compile Include="DAO\QuanLyNhanVienChucVu_DAO.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
