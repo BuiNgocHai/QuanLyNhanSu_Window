@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="DAO\ChucVu_DAO.cs" />
     <Compile Include="DAO\DangNhap_DAO.cs" />
+    <Compile Include="DAO\TrinhDoChuyenMon_DAO.cs" />
     <Compile Include="DBQLNhanSu_6.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

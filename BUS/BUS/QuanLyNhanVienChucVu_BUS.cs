@@ -39,6 +39,7 @@ namespace BUS
             {
                 lb1.Text = nhanvien.MaNV;
                 lb2.Text = nhanvien.HoTen;
+
                 return true;
             }else
             {                
