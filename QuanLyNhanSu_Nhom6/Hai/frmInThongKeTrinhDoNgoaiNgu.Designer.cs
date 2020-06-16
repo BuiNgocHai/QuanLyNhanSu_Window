@@ -33,7 +33,6 @@ namespace GUI.Hai
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInThongKeTrinhDoNgoaiNgu));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -65,7 +64,6 @@ namespace GUI.Hai
             // gunaPictureBox1
             // 
             this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
-            this.gunaPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("gunaPictureBox1.Image")));
             this.gunaPictureBox1.Location = new System.Drawing.Point(0, 0);
             this.gunaPictureBox1.Name = "gunaPictureBox1";
             this.gunaPictureBox1.Size = new System.Drawing.Size(1042, 205);
@@ -83,7 +81,7 @@ namespace GUI.Hai
             this.btnMinimize.FocusedColor = System.Drawing.Color.Empty;
             this.btnMinimize.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnMinimize.ForeColor = System.Drawing.Color.White;
-            this.btnMinimize.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimize.Image")));
+            this.btnMinimize.Image = null;
             this.btnMinimize.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnMinimize.ImageSize = new System.Drawing.Size(20, 20);
             this.btnMinimize.Location = new System.Drawing.Point(1082, 30);
@@ -106,7 +104,7 @@ namespace GUI.Hai
             this.btnExit.FocusedColor = System.Drawing.Color.Empty;
             this.btnExit.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnExit.ForeColor = System.Drawing.Color.White;
-            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
+            this.btnExit.Image = null;
             this.btnExit.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnExit.ImageSize = new System.Drawing.Size(20, 20);
             this.btnExit.Location = new System.Drawing.Point(1141, 30);
@@ -128,10 +126,11 @@ namespace GUI.Hai
             this.gunaLabel1.ForeColor = System.Drawing.Color.White;
             this.gunaLabel1.Location = new System.Drawing.Point(373, 30);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(298, 30);
+            this.gunaLabel1.Size = new System.Drawing.Size(305, 30);
             this.gunaLabel1.TabIndex = 12;
-            this.gunaLabel1.Text = "Thống kê phòng ban/chức vụ";
+            this.gunaLabel1.Text = "Thống Kê Trình Độ Ngoại Ngữ";
             this.gunaLabel1.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.ClearTypeGridFit;
+            this.gunaLabel1.Click += new System.EventHandler(this.gunaLabel1_Click);
             // 
             // panel1
             // 
@@ -210,9 +209,9 @@ namespace GUI.Hai
             this.gunaLabel5.ForeColor = System.Drawing.Color.White;
             this.gunaLabel5.Location = new System.Drawing.Point(21, 108);
             this.gunaLabel5.Name = "gunaLabel5";
-            this.gunaLabel5.Size = new System.Drawing.Size(89, 20);
+            this.gunaLabel5.Size = new System.Drawing.Size(83, 20);
             this.gunaLabel5.TabIndex = 23;
-            this.gunaLabel5.Text = "Tên chức vụ:";
+            this.gunaLabel5.Text = "Ngoại Ngữ";
             // 
             // gunaLabel4
             // 
@@ -222,9 +221,9 @@ namespace GUI.Hai
             this.gunaLabel4.ForeColor = System.Drawing.Color.White;
             this.gunaLabel4.Location = new System.Drawing.Point(21, 55);
             this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(111, 20);
+            this.gunaLabel4.Size = new System.Drawing.Size(65, 20);
             this.gunaLabel4.TabIndex = 22;
-            this.gunaLabel4.Text = "Tên phòng ban:";
+            this.gunaLabel4.Text = "Trình Độ";
             // 
             // gunaLabel3
             // 
@@ -256,10 +255,10 @@ namespace GUI.Hai
             this.radioButton2.ForeColor = System.Drawing.Color.White;
             this.radioButton2.Location = new System.Drawing.Point(237, 66);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(115, 21);
+            this.radioButton2.Size = new System.Drawing.Size(133, 21);
             this.radioButton2.TabIndex = 20;
             this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Theo chức vụ";
+            this.radioButton2.Text = "Theo Ngoại Ngữ";
             this.radioButton2.UseVisualStyleBackColor = false;
             // 
             // gunaLabel2
@@ -281,10 +280,10 @@ namespace GUI.Hai
             this.radioButton1.ForeColor = System.Drawing.Color.White;
             this.radioButton1.Location = new System.Drawing.Point(25, 66);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(134, 21);
+            this.radioButton1.Size = new System.Drawing.Size(114, 21);
             this.radioButton1.TabIndex = 18;
             this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Theo phòng ban";
+            this.radioButton1.Text = "Theo trình độ";
             this.radioButton1.UseVisualStyleBackColor = false;
             // 
             // gunaDataGridView1
@@ -318,6 +317,7 @@ namespace GUI.Hai
             this.gunaDataGridView1.Location = new System.Drawing.Point(12, 442);
             this.gunaDataGridView1.Name = "gunaDataGridView1";
             this.gunaDataGridView1.RowHeadersVisible = false;
+            this.gunaDataGridView1.RowHeadersWidth = 51;
             this.gunaDataGridView1.RowTemplate.Height = 24;
             this.gunaDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gunaDataGridView1.Size = new System.Drawing.Size(1021, 150);
@@ -356,7 +356,7 @@ namespace GUI.Hai
             this.btnXem.FocusedColor = System.Drawing.Color.Empty;
             this.btnXem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnXem.ForeColor = System.Drawing.Color.White;
-            this.btnXem.Image = ((System.Drawing.Image)(resources.GetObject("btnXem.Image")));
+            this.btnXem.Image = null;
             this.btnXem.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnXem.ImageSize = new System.Drawing.Size(20, 20);
             this.btnXem.Location = new System.Drawing.Point(527, 624);
@@ -383,7 +383,7 @@ namespace GUI.Hai
             this.btnIn.FocusedColor = System.Drawing.Color.Empty;
             this.btnIn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnIn.ForeColor = System.Drawing.Color.White;
-            this.btnIn.Image = ((System.Drawing.Image)(resources.GetObject("btnIn.Image")));
+            this.btnIn.Image = null;
             this.btnIn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnIn.ImageSize = new System.Drawing.Size(20, 20);
             this.btnIn.Location = new System.Drawing.Point(790, 624);

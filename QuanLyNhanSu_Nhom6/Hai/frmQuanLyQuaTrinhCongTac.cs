@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace GUI.Hai
 {
-    public partial class frmInThongKeTrinhDoNgoaiNgu : Form
+    public partial class frmQuanLyQuaTrinhCongTac : Form
     {
-        public frmInThongKeTrinhDoNgoaiNgu()
+        public frmQuanLyQuaTrinhCongTac()
         {
             InitializeComponent();
         }
 
-        private void gunaLabel1_Click(object sender, EventArgs e)
+        private void gunaDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
