@@ -745,7 +745,7 @@ namespace DAO
 		
 		private System.DateTime _TUNGAY;
 		
-		private System.Nullable<System.DateTime> _DENNGAY;
+		private string _DENNGAY;
 		
 		private EntityRef<CHUCVU6> _CHUCVU6;
 		
@@ -761,7 +761,7 @@ namespace DAO
     partial void OnMACVChanged();
     partial void OnTUNGAYChanging(System.DateTime value);
     partial void OnTUNGAYChanged();
-    partial void OnDENNGAYChanging(System.Nullable<System.DateTime> value);
+    partial void OnDENNGAYChanging(string value);
     partial void OnDENNGAYChanged();
     #endregion
 		
@@ -840,8 +840,8 @@ namespace DAO
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DENNGAY", DbType="Date")]
-		public System.Nullable<System.DateTime> DENNGAY
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DENNGAY", DbType="NVarChar(50)")]
+		public string DENNGAY
 		{
 			get
 			{

@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmQuanLyNhanVienChucVu));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnTimKiem = new Guna.UI.WinForms.GunaAdvenceButton();
             this.lbMaNV = new Guna.UI.WinForms.GunaLabel();
             this.txtMaNV = new Guna.UI.WinForms.GunaTextBox();
@@ -62,6 +62,7 @@
             this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
             this.btnMinimize = new Guna.UI.WinForms.GunaButton();
             this.btnExit = new Guna.UI.WinForms.GunaButton();
+            this.chbdenNay = new Guna.UI.WinForms.GunaCheckBox();
             this.gunaPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
@@ -145,6 +146,7 @@
             // gunaPanel1
             // 
             this.gunaPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaPanel1.Controls.Add(this.chbdenNay);
             this.gunaPanel1.Controls.Add(this.gunaLabel8);
             this.gunaPanel1.Controls.Add(this.btnXoa);
             this.gunaPanel1.Controls.Add(this.btnCapNhat);
@@ -277,6 +279,7 @@
             this.dtDenNgay.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.dtDenNgay.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dtDenNgay.ForeColor = System.Drawing.Color.Black;
+            this.dtDenNgay.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtDenNgay.Location = new System.Drawing.Point(240, 233);
             this.dtDenNgay.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtDenNgay.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
@@ -288,7 +291,7 @@
             this.dtDenNgay.Radius = 10;
             this.dtDenNgay.Size = new System.Drawing.Size(294, 35);
             this.dtDenNgay.TabIndex = 35;
-            this.dtDenNgay.Text = "Wednesday, June 3, 2020";
+            this.dtDenNgay.Text = "06/03/2020";
             this.dtDenNgay.Value = new System.DateTime(2020, 6, 3, 9, 33, 43, 931);
             // 
             // dtTuNgay
@@ -301,6 +304,7 @@
             this.dtTuNgay.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.dtTuNgay.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dtTuNgay.ForeColor = System.Drawing.Color.Black;
+            this.dtTuNgay.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtTuNgay.Location = new System.Drawing.Point(240, 173);
             this.dtTuNgay.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtTuNgay.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
@@ -312,7 +316,7 @@
             this.dtTuNgay.Radius = 10;
             this.dtTuNgay.Size = new System.Drawing.Size(294, 35);
             this.dtTuNgay.TabIndex = 35;
-            this.dtTuNgay.Text = "Wednesday, June 3, 2020";
+            this.dtTuNgay.Text = "06/03/2020";
             this.dtTuNgay.Value = new System.DateTime(2020, 6, 3, 9, 33, 43, 931);
             // 
             // gunaLabel1
@@ -423,21 +427,21 @@
             // 
             // gunaDataGridView1
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(224)))), ((int)(((byte)(244)))));
-            this.gunaDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(224)))), ((int)(((byte)(244)))));
+            this.gunaDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.gunaDataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gunaDataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(234)))), ((int)(((byte)(247)))));
             this.gunaDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gunaDataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gunaDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gunaDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gunaDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.gunaDataGridView1.ColumnHeadersHeight = 27;
             this.gunaDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.maChucVu,
@@ -445,14 +449,14 @@
             this.tuNgay,
             this.denNgay,
             this.heSoPC});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(234)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(186)))), ((int)(((byte)(231)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gunaDataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(234)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(186)))), ((int)(((byte)(231)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gunaDataGridView1.DefaultCellStyle = dataGridViewCellStyle9;
             this.gunaDataGridView1.EnableHeadersVisualStyles = false;
             this.gunaDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(220)))), ((int)(((byte)(242)))));
             this.gunaDataGridView1.Location = new System.Drawing.Point(0, 329);
@@ -575,6 +579,20 @@
             this.btnExit.Size = new System.Drawing.Size(27, 24);
             this.btnExit.TabIndex = 9;
             // 
+            // chbdenNay
+            // 
+            this.chbdenNay.BaseColor = System.Drawing.Color.White;
+            this.chbdenNay.CheckedOffColor = System.Drawing.Color.Gray;
+            this.chbdenNay.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.chbdenNay.FillColor = System.Drawing.Color.White;
+            this.chbdenNay.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chbdenNay.ForeColor = System.Drawing.Color.White;
+            this.chbdenNay.Location = new System.Drawing.Point(564, 247);
+            this.chbdenNay.Name = "chbdenNay";
+            this.chbdenNay.Size = new System.Drawing.Size(84, 24);
+            this.chbdenNay.TabIndex = 41;
+            this.chbdenNay.Text = "Hiện tại";
+            // 
             // frmQuanLyNhanVienChucVu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -632,5 +650,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn tuNgay;
         private System.Windows.Forms.DataGridViewTextBoxColumn denNgay;
         private System.Windows.Forms.DataGridViewTextBoxColumn heSoPC;
+        private Guna.UI.WinForms.GunaCheckBox chbdenNay;
     }
 }

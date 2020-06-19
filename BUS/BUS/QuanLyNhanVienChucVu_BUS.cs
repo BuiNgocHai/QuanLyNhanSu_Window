@@ -57,14 +57,14 @@ namespace BUS
             QuanLyNhanVienChucVu_DAO.Instance.layDLTable_DAO(gr,lb.Text);
         }
 
-        public bool themNVCV_BUS(GunaLabel txtMNV, GunaComboBox cbCV,GunaDateTimePicker tuNgay, GunaDateTimePicker denNgay)
+        public bool themNVCV_BUS(GunaLabel txtMNV, GunaComboBox cbCV,GunaDateTimePicker tuNgay, string denNgay)
         {
-           return QuanLyNhanVienChucVu_DAO.Instance.themNVCV_DAO(txtMNV.Text, cbCV.SelectedValue.ToString(),tuNgay.Value, denNgay.Value);
+           return QuanLyNhanVienChucVu_DAO.Instance.themNVCV_DAO(txtMNV.Text, cbCV.SelectedValue.ToString(),tuNgay.Value, denNgay);
         }
 
-        public bool capnhatNVCV_BUS(GunaLabel strMaNV, GunaLabel strMaCV, GunaDateTimePicker tuNgay, GunaDateTimePicker denNgay)
+        public bool capnhatNVCV_BUS(GunaLabel strMaNV, GunaLabel strMaCV, GunaDateTimePicker tuNgay, string denNgay)
         {
-            return QuanLyNhanVienChucVu_DAO.Instance.capnhatNVCV_DAO(strMaNV.Text, strMaCV.Text, tuNgay.Value, denNgay.Value);
+            return QuanLyNhanVienChucVu_DAO.Instance.capnhatNVCV_DAO(strMaNV.Text, strMaCV.Text, tuNgay.Value, denNgay);
         }
 
         public bool xoaNVCV_BUS(GunaLabel strMaNV, GunaLabel strMaCV, GunaDateTimePicker tuNgay)
