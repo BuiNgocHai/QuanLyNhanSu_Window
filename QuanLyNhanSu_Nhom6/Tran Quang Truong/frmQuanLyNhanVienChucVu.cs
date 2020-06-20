@@ -126,6 +126,14 @@ namespace QuanLyNhanSu_Nhom6.Views
             
         }
 
-       
-    }
+        private void gunaPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+		private void gunaDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+		{
+
+		}
+	}
 }

@@ -59,6 +59,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bui Ngoc Hai\frmInThongKeTrinhDoNgoaiNgu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bui Ngoc Hai\frmInThongKeTrinhDoNgoaiNgu.Designer.cs">
+      <DependentUpon>frmInThongKeTrinhDoNgoaiNgu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bui Ngoc Hai\frmQuanLyQuaTrinhCongTac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bui Ngoc Hai\frmQuanLyQuaTrinhCongTac.Designer.cs">
+      <DependentUpon>frmQuanLyQuaTrinhCongTac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bui Ngoc Hai\frmQuanLyTrinhDoNgoaiNgu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bui Ngoc Hai\frmQuanLyTrinhDoNgoaiNgu.Designer.cs">
+      <DependentUpon>frmQuanLyTrinhDoNgoaiNgu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Chung\frmCanhBaoOK.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +156,15 @@
     <Compile Include="Nguyen Van Hung\frmThongKeTrinhDoChuyenMon.Designer.cs">
       <DependentUpon>frmThongKeTrinhDoChuyenMon.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Bui Ngoc Hai\frmInThongKeTrinhDoNgoaiNgu.resx">
+      <DependentUpon>frmInThongKeTrinhDoNgoaiNgu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bui Ngoc Hai\frmQuanLyQuaTrinhCongTac.resx">
+      <DependentUpon>frmQuanLyQuaTrinhCongTac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bui Ngoc Hai\frmQuanLyTrinhDoNgoaiNgu.resx">
+      <DependentUpon>frmQuanLyTrinhDoNgoaiNgu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Chung\frmCanhBaoOK.resx">
       <DependentUpon>frmCanhBaoOK.cs</DependentUpon>
     </EmbeddedResource>
@@ -205,9 +232,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Bui Ngoc Hai\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>

@@ -37,6 +37,9 @@ namespace QuanLyNhanSu_Nhom6.Views
             this.Close();
         }
 
-       
-    }
+		private void panel1_Paint(object sender, PaintEventArgs e)
+		{
+
+		}
+	}
 }
