@@ -33,5 +33,9 @@ namespace BUS
         }
 
 
+        public int thongKe_BUS(GunaComboBox cb, GunaDataGridView dgv, int kieu)
+        {
+            return ThongKeTrinhDoNgoaiNgu_DAO.Instance.thongKe_DAO(cb, dgv, kieu);
+        }
     }
 }

@@ -176,8 +176,6 @@ namespace QuanLyNhanSu_Nhom6.Views
 			this.cbNgoaiNgu.Font = new System.Drawing.Font("Segoe UI", 10F);
 			this.cbNgoaiNgu.ForeColor = System.Drawing.Color.Black;
 			this.cbNgoaiNgu.FormattingEnabled = true;
-			this.cbNgoaiNgu.Items.AddRange(new object[] {
-            "Tất cả các chức vụ"});
 			this.cbNgoaiNgu.Location = new System.Drawing.Point(134, 84);
 			this.cbNgoaiNgu.Margin = new System.Windows.Forms.Padding(2);
 			this.cbNgoaiNgu.Name = "cbNgoaiNgu";
@@ -198,8 +196,6 @@ namespace QuanLyNhanSu_Nhom6.Views
 			this.cbTrinhDo.Font = new System.Drawing.Font("Segoe UI", 10F);
 			this.cbTrinhDo.ForeColor = System.Drawing.Color.Black;
 			this.cbTrinhDo.FormattingEnabled = true;
-			this.cbTrinhDo.Items.AddRange(new object[] {
-            "Tất cả phòng ban"});
 			this.cbTrinhDo.Location = new System.Drawing.Point(134, 41);
 			this.cbTrinhDo.Margin = new System.Windows.Forms.Padding(2);
 			this.cbTrinhDo.Name = "cbTrinhDo";

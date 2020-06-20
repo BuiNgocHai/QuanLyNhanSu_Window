@@ -31,6 +31,7 @@ namespace QuanLyNhanSu_Nhom6.Views
         {
             cbNgoaiNgu.Enabled = false;
             cbTrinhDo.Enabled = false;
+            QuanLyTrinhDoNgoaiNgu_BUS.Instance.layDLCombox_BUS(cbNgoaiNgu);
             ThongKeTrinhDoNgoaiNgu_BUS.Instance.layDLNgoaiNgu_BUS(cbNgoaiNgu);
 
         }
@@ -46,6 +47,50 @@ namespace QuanLyNhanSu_Nhom6.Views
 		}
 
 		private void radioButton2_CheckedChanged(object sender, EventArgs e)
+		{
+            cbNgoaiNgu.Enabled = true;
+            cbTrinhDo.Enabled = false;
+        }
+
+		private void radioButton1_CheckedChanged(object sender, EventArgs e)
+		{
+            cbTrinhDo.Enabled = true;
+            cbNgoaiNgu.Enabled = false;
+        }
+
+		private void btnXem_Click(object sender, EventArgs e)
+		{
+            if (rdTrinhDo.Checked)
+            {
+                int k = ThongKeTrinhDoNgoaiNgu_BUS.Instance.thongKe_BUS(cbNgoaiNgu, gunaDataGridView1, 1);
+                if (k == 0)
+                {
+                    frmCanhBaoOK.Instance.capNhatLoiNhan("Không tìm thấy!");
+                    frmCanhBaoOK.Instance.ShowDialog();
+                }
+                else
+                {
+                    btnIn.Enabled = true;
+                }
+
+
+            }
+            else
+            {
+                int k = ThongKeTrinhDoNgoaiNgu_BUS.Instance.thongKe_BUS(cbNgoaiNgu, gunaDataGridView1, 2);
+                if (k == 0)
+                {
+                    frmCanhBaoOK.Instance.capNhatLoiNhan("Không tìm thấy!");
+                    frmCanhBaoOK.Instance.ShowDialog();
+                }
+                else
+                {
+                    btnIn.Enabled = true;
+                }
+            }
+        }
+
+		private void cbTrinhDo_SelectedIndexChanged(object sender, EventArgs e)
 		{
 
 		}
