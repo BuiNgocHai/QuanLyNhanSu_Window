@@ -81,10 +81,11 @@ namespace DAO
             dem = (from q in db.NHANVIEN_CHUCVU6s
                    where q.TUNGAY == tuNgay && q.MANV == strMaNV && q.MACV == strMaCV
                    select q).Count();
+
             return dem;
         }
 
-        public bool themNVCV_DAO(string strMaNV, string strMaCV, DateTime tuNgay, DateTime denNgay)
+        public bool themNVCV_DAO(string strMaNV, string strMaCV, DateTime tuNgay, string denNgay)
         {
             int dem = kiemTraTonTai(strMaNV, strMaCV, tuNgay);
             if (dem > 0)
@@ -106,7 +107,7 @@ namespace DAO
             }
         }
 
-        public bool capnhatNVCV_DAO(string strMaNV, string strMaCV, DateTime tuNgay, DateTime denNgay)
+        public bool capnhatNVCV_DAO(string strMaNV, string strMaCV, DateTime tuNgay, string denNgay)
         {
             int dem = kiemTraTonTai(strMaNV, strMaCV, tuNgay);
             if (dem <= 0)
@@ -119,6 +120,7 @@ namespace DAO
                  from q in db.NHANVIEN_CHUCVU6s
                  where q.MANV == strMaNV && q.MACV == strMaCV && q.TUNGAY == tuNgay
                  select q;
+
                 foreach (NHANVIEN_CHUCVU6 item in query)
                 {
                     item.DENNGAY = denNgay;
@@ -152,7 +154,6 @@ namespace DAO
                 return true;
             }
 
-            
         }
     }
 }

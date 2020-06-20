@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
- public   class HoSoNV_DTO
+ public  class HoSoNV_DTO
     {
         private string maNV;
         private string hoTen;

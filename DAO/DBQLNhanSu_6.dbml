@@ -33,7 +33,7 @@
       <Column Name="MANV" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="MACV" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="TUNGAY" Type="System.DateTime" DbType="Date NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="DENNGAY" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DENNGAY" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Association Name="CHUCVU6_NHANVIEN_CHUCVU6" Member="CHUCVU6" ThisKey="MACV" OtherKey="MACV" Type="CHUCVU6" IsForeignKey="true" />
       <Association Name="HOSO6_NHANVIEN_CHUCVU6" Member="HOSO6" ThisKey="MANV" OtherKey="MANV" Type="HOSO6" IsForeignKey="true" />
     </Type>

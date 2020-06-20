@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BUS;
+using BUS.BUS;
 
 namespace QuanLyNhanSu_Nhom6.Views
 {
@@ -29,7 +31,11 @@ namespace QuanLyNhanSu_Nhom6.Views
         private void frmInThongKePhongBanChucVu_Load(object sender, EventArgs e)
         {
 
-
+            cbTenChucVu.Enabled = false;
+            cbTenPhongBan.Enabled = false;
+            QuanLyNhanVienChucVu_BUS.Instance.layDLCombox_BUS(cbTenChucVu);
+            ThongKePhongBanChucVu_BUS.Instance.layDLTenPhongBan_BUS(cbTenPhongBan);
+            
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -37,9 +43,17 @@ namespace QuanLyNhanSu_Nhom6.Views
             this.Close();
         }
 
-		private void panel1_Paint(object sender, PaintEventArgs e)
-		{
+        private void rdPhongBan_CheckedChanged(object sender, EventArgs e)
+        {
+            cbTenPhongBan.Enabled = true;
+            cbTenChucVu.Enabled = false;
+        }
 
-		}
-	}
+        private void rdChucVu_CheckedChanged(object sender, EventArgs e)
+        {
+            cbTenChucVu.Enabled = true;
+            cbTenPhongBan.Enabled = false;
+        }
+    }
+
 }

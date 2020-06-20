@@ -53,7 +53,12 @@ namespace QuanLyNhanSu_Nhom6.Views
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            bool thucthi = QuanLyNhanVienChucVu_BUS.Instance.themNVCV_BUS(codeMaNV, cbTenCV, dtTuNgay, dtDenNgay);
+            string strDenNgay = dtDenNgay.Text;
+            if(chbdenNay.Checked)
+            {
+                strDenNgay = "Nay";
+            }
+                bool thucthi = QuanLyNhanVienChucVu_BUS.Instance.themNVCV_BUS(codeMaNV, cbTenCV, dtTuNgay, strDenNgay);
             if (thucthi == false)
             {
                 frmCanhBaoOK.Instance.capNhatLoiNhan("Trùng ngày bắt đầu");
@@ -91,7 +96,12 @@ namespace QuanLyNhanSu_Nhom6.Views
 
         private void btnCapNhat_Click(object sender, EventArgs e)
         {
-            bool kt = QuanLyNhanVienChucVu_BUS.Instance.capnhatNVCV_BUS(codeMaNV, codeMaCV, dtTuNgay, dtDenNgay);
+            string strDenNgay = dtDenNgay.Text;
+            if (chbdenNay.Checked)
+            {
+                strDenNgay = "Nay";
+            }
+            bool kt = QuanLyNhanVienChucVu_BUS.Instance.capnhatNVCV_BUS(codeMaNV, codeMaCV, dtTuNgay, strDenNgay);
             if (kt == false)
             {
                 frmCanhBaoOK.Instance.capNhatLoiNhan("Ngày bắt đầu không được sửa");
@@ -126,14 +136,10 @@ namespace QuanLyNhanSu_Nhom6.Views
             
         }
 
-        private void gunaPanel1_Paint(object sender, PaintEventArgs e)
-        {
+                 
 
-        }
+      
+       
+    }
 
-		private void gunaDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-		{
-
-		}
-	}
 }
