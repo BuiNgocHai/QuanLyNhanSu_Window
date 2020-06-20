@@ -30,5 +30,10 @@ namespace BUS.BUS
         {
             ThongKePhongBanChucVu_DAO.Instance.layDLTenPhongBan_DAO(cb);
         }
+
+        public int thongKe_BUS(GunaComboBox cb, GunaDataGridView dgv, int kieu)
+        {
+            return ThongKePhongBanChucVu_DAO.Instance.thongKe_DAO(cb, dgv, kieu);
+        }
     }
 }

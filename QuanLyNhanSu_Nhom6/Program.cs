@@ -1,4 +1,5 @@
-﻿using QuanLyNhanSu_Nhom6.Views;
+﻿
+using QuanLyNhanSu_Nhom6.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace QuanLyNhanSu_Nhom6
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            var main = new frmQuanLyNhanVienChucVu();
+            var main = new frmInThongKePhongBanChucVu();
             main.FormClosed += new FormClosedEventHandler(FormClosed);
             main.Show();
             Application.Run();
