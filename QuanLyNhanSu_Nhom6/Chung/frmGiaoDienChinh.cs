@@ -200,17 +200,33 @@ namespace QuanLyNhanSu_Nhom6.Views
 
             moFrmCon( new frmQuanLyNhanVienChucVu());
         }
+        private void btnQuaTrinhCongTac_Click(object sender, EventArgs e)
+        {
 
+            moFrmCon(new frmQuanLyQuaTrinhCongTac());
+        }
+        private void btnTrinhDoNgoaiNgu_Click(object sender, EventArgs e)
+		{
+            moFrmCon(new frmQuanLyTrinhDoNgoaiNgu());
+        }
         private void btnPBCV_Click(object sender, EventArgs e)
         {
             moFrmCon(new frmInThongKePhongBanChucVu());
         }
-
+        private void btnTDNN_Click(object sender, EventArgs e)
+		{
+            moFrmCon(new frmInThongKeTrinhDoNgoaiNgu());
+		}
         private void labelTenFrom_Click(object sender, EventArgs e)
         {
             if(frmCon!=null)
             frmCon.Close();
             
+        }
+
+        private void panelMenu_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

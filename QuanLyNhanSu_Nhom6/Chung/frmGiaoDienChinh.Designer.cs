@@ -240,6 +240,7 @@
             this.btnQuaTrinhCongTac.Size = new System.Drawing.Size(317, 50);
             this.btnQuaTrinhCongTac.TabIndex = 7;
             this.btnQuaTrinhCongTac.Text = "Quá trình công tác";
+            this.btnQuaTrinhCongTac.Click += new System.EventHandler(this.btnQuaTrinhCongTac_Click);
             // 
             // btnTrinhDoNgoaiNgu
             // 
@@ -263,6 +264,7 @@
             this.btnTrinhDoNgoaiNgu.Size = new System.Drawing.Size(317, 50);
             this.btnTrinhDoNgoaiNgu.TabIndex = 6;
             this.btnTrinhDoNgoaiNgu.Text = "Trình độ ngoại ngữ";
+            this.btnTrinhDoNgoaiNgu.Click += new System.EventHandler(this.btnTrinhDoNgoaiNgu_Click);
             // 
             // btnQLNV
             // 
@@ -398,6 +400,7 @@
             this.btnTDNN.Size = new System.Drawing.Size(311, 51);
             this.btnTDNN.TabIndex = 6;
             this.btnTDNN.Text = "Thống kê trình độ ngoại ngữ";
+            this.btnTDNN.Click += new System.EventHandler(this.btnTDNN_Click);
             // 
             // btnThongKeBaoCao
             // 
@@ -506,6 +509,7 @@
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(1045, 725);
             this.panelMenu.TabIndex = 14;
+            this.panelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMenu_Paint);
             // 
             // gunaLabel2
             // 

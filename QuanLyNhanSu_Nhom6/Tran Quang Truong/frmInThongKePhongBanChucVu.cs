@@ -55,4 +55,5 @@ namespace QuanLyNhanSu_Nhom6.Views
             cbTenPhongBan.Enabled = false;
         }
     }
+
 }
