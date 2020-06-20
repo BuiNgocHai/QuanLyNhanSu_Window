@@ -16,5 +16,10 @@ namespace QuanLyNhanSu_Nhom6.Views
         {
             InitializeComponent();
         }
+
+        private void frmInHoSoNV_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
