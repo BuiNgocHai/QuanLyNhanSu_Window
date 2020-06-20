@@ -100,9 +100,16 @@ namespace DAO
                     TUNGAY = tuNgay,
                     DENNGAY = denNgay,
                 };
-                db.NHANVIEN_CHUCVU6s.InsertOnSubmit(iNHANVIEN_CHUCVU6s);
-                db.SubmitChanges();
-                return true;
+                try
+                {
+                    db.NHANVIEN_CHUCVU6s.InsertOnSubmit(iNHANVIEN_CHUCVU6s);
+                    db.SubmitChanges();
+                    return true;
+                }
+                catch(Exception e)
+                {
+                    return false;
+                }
             }
         }
 

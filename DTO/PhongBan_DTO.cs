@@ -6,21 +6,20 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    class PhongBan_DTO
+    public class PhongBan_DTO
     {
-        private string maPhongBan { get; set; }
-        private string tenPhongBan { get; set; }
-        private DateTime ngayThanhLap { get; set; }
-
+        public string maPB { get; set; }
+        public string tenPB { get; set; }
+        public DateTime ngayTL { get; set; }
+        public PhongBan_DTO(string maPB, string tenPB, DateTime ngayTL)
+        {
+            this.maPB = maPB;
+            this.tenPB = tenPB;
+            this.ngayTL = ngayTL;
+        }
         public PhongBan_DTO()
         {
 
-        }
-        public PhongBan_DTO(string mapb,string tenpb, DateTime ntl)
-        {
-            this.maPhongBan = mapb;
-            this.tenPhongBan = tenpb;
-            this.ngayThanhLap = ntl;
         }
     }
 }

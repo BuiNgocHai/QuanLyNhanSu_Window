@@ -54,7 +54,7 @@ namespace DAO
     #endregion
 		
 		public DBQLNhanSu_6DataContext() : 
-				base(global::DAO.Properties.Settings.Default.QUANLYNHANSU_6ConnectionString, mappingSource)
+				base(global::DAO.Properties.Settings.Default.QUANLYNHANSU_6ConnectionString1, mappingSource)
 		{
 			OnCreated();
 		}

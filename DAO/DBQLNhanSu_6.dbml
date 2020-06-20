@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QUANLYNHANSU_6" Class="DBQLNhanSu_6DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=.;Initial Catalog=QUANLYNHANSU_6;Integrated Security=True" SettingsObjectName="DAO.Properties.Settings" SettingsPropertyName="QUANLYNHANSU_6ConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-LCSFN5D\MSSQLSERVER01;Initial Catalog=QUANLYNHANSU_6;Integrated Security=True" SettingsObjectName="DAO.Properties.Settings" SettingsPropertyName="QUANLYNHANSU_6ConnectionString1" Provider="System.Data.SqlClient" />
   <Table Name="dbo.CHUCVU6" Member="CHUCVU6s">
     <Type Name="CHUCVU6">
       <Column Name="MACV" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
