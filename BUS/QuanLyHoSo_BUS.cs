@@ -113,95 +113,138 @@ namespace BUS
 
         public void xuatFile(GunaTextBox mnv, GunaTextBox ten, GunaTextBox ns, GunaTextBox gt, GunaTextBox sdt, GunaTextBox eml, GunaTextBox ntd, GunaTextBox mpb, GunaTextBox tk, GunaTextBox mk, GunaTextBox q, DataGridView tdcm, DataGridView tdnn, DataGridView qtct)
         {
-            BaseFont bfTimes = BaseFont.CreateFont(BaseFont.TIMES_ROMAN, BaseFont.CP1252, false);
+            BaseFont bf = BaseFont.CreateFont(@"C:\Users\HIT.ishiki\Desktop\QuanLyNhanSu_Window\assets\TIMES.ttf", BaseFont.IDENTITY_H, true);
+            iTextSharp.text.Font fonttitle = new iTextSharp.text.Font(bf, 15);
+            iTextSharp.text.Font font = new iTextSharp.text.Font(bf, 12);
+            iTextSharp.text.Font fonttext = new iTextSharp.text.Font(bf, 12);
 
-            Font times = new Font(bfTimes, 12, iTextSharp.text.Font.NORMAL);
-            string file_name = "C:\\Users\\HIT.ishiki\\Desktop\\QuanLyNhanSu_Window\\assets\\output_file\\" + "output.pdf";
-            fs= new FileStream(file_name, FileMode.Create, FileAccess.Write, FileShare.None);
-            Document doc = new Document();
-            PdfWriter writer = PdfWriter.GetInstance(doc, fs);
-            doc.Open();
-            doc.Add(new Paragraph("Hồ Sơ Nhân Viên\n",times));
-            doc.Add(new Paragraph("Mã Nhân Viên: "+ mnv.Text+ "\n",times));
-            doc.Add(new Paragraph("Tên Nhân Viên: " + ten.Text+"\n", times));
-            doc.Add(new Paragraph("Ngày Sinh: " + ns.Text+"\n", times));
-            doc.Add(new Paragraph("Giới Tính: " + gt.Text + "\n", times));
-            doc.Add(new Paragraph("Số Điện Thoại: " + sdt.Text + "\n", times));
-            doc.Add(new Paragraph("Email: " + eml.Text + "\n", times));
-            doc.Add(new Paragraph("Ngày Tuyển Dụng: " + ntd.Text + "\n", times));
-            doc.Add(new Paragraph("Phòng Ban: " + mpb.Text + "\n", times));
-            doc.Add(new Paragraph("Tài Khoản: " + tk.Text + "\n", times));
-            doc.Add(new Paragraph("Mật Khẩu: " + mk.Text + "\n", times));
-            doc.Add(new Paragraph("Quyền: " + q.Text + "\n", times));
-            doc.Add(new Paragraph("Trình Độ Chuyên Môn:\n", times));
-            doc.Add(new Paragraph("\t"));
+            Paragraph header = new Paragraph
+            {
+                Alignment = Element.ALIGN_CENTER
+            };
+            Chunk c1 = new Chunk("HỒ SƠ NHÂN VIÊN \n", fonttitle);
+            Chunk c2 = new Chunk(DateTime.Now.ToShortDateString() + "\n\n", font);
+            header.Add(c1);
+            header.Add(c2);
+            string manv= "Mã Nhân Viên: "+mnv.Text+"\n";
+            string tenvn = "Tên Nhân Viên: " + ten.Text + "\n";
+            string ngaysinh = "Ngày Sinh: " + ns.Text + "\n";
+            string gioitinh = "Giới Tính: " + gt.Text + "\n";
+            string sodt = "Số Điện Thoại: " + sdt.Text + "\n";
+            string email = "Email: " + eml.Text + "\n";
+            string ngaytuyendung = "Ngày Tuyển Dụng: " + ntd.Text + "\n";
+            string mapb = "Mã Phòng Ban: " + mpb.Text + "\n";
+            string taikhoan = "Tài Khoản: " + tk.Text + "\n";
+            string matkhau = "Mật Khẩu: " + mk.Text + "\n";
+            string quyen = "Quyền: " + q.Text + "\n";
 
+            Paragraph text1 = new Paragraph();
+            Chunk c3 = new Chunk(manv, font);
+            Chunk c4 = new Chunk(tenvn, font);
+            Chunk c5 = new Chunk(ngaysinh, font);
+            Chunk c6 = new Chunk(gioitinh, font);
+            Chunk c7 = new Chunk(sodt, font);
+            Chunk c8 = new Chunk(email, font);
+            Chunk c9 = new Chunk(ngaytuyendung, font);
+            Chunk c10 = new Chunk(mapb, font);
+            Chunk c11 = new Chunk(taikhoan, font);
+            Chunk c12 = new Chunk(matkhau, font);
+            Chunk c13 = new Chunk(quyen, font);
+            text1.Add(c3);
+            text1.Add(c4);
+            text1.Add(c5);
+            text1.Add(c6);
+            text1.Add(c7);
+            text1.Add(c8);
+            text1.Add(c9);
+            text1.Add(c10);
+            text1.Add(c11);
+            text1.Add(c12);
+            text1.Add(c13);
+
+            Paragraph text2 = new Paragraph();
+            Chunk c14 = new Chunk("\nTrình Độ Chuyên Môn:", font);
+            
             PdfPTable pdfTable = new PdfPTable(tdcm.Columns.Count);
-            pdfTable.DefaultCell.Padding = 3;
+            pdfTable.DefaultCell.Padding = 4;
             pdfTable.WidthPercentage = 100;
             pdfTable.HorizontalAlignment = Element.ALIGN_LEFT;
-
             foreach (DataGridViewColumn column in tdcm.Columns)
             {
-                PdfPCell cell = new PdfPCell(new Phrase(column.HeaderText, times));
+                PdfPCell cell = new PdfPCell(new Phrase(column.HeaderText, fonttext));
                 pdfTable.AddCell(cell);
             }
-
             foreach (DataGridViewRow row in tdcm.Rows)
             {
                 foreach (DataGridViewCell cell in row.Cells)
                 {
-                    pdfTable.AddCell(cell.Value.ToString());
+                    PdfPCell cell1 = new PdfPCell(new Phrase(cell.Value.ToString(), fonttext));
+                    pdfTable.AddCell(cell1);
                 }
             }
-            doc.Add(pdfTable);
+            text2.Add(c14);
+            text2.Add(pdfTable);
 
-            doc.Add(new Paragraph("Trình Độ Ngoại Ngữ:\n", times));
-            doc.Add(new Paragraph("\t"));
+            Paragraph text3 = new Paragraph();
+            Chunk c15 = new Chunk("\nTrình Độ Ngoại Ngữ:", font);
 
-            PdfPTable pdfTable1 = new PdfPTable(tdcm.Columns.Count);
-            pdfTable.DefaultCell.Padding = 3;
-            pdfTable.WidthPercentage = 100;
-            pdfTable.HorizontalAlignment = Element.ALIGN_LEFT;
-
-            foreach (DataGridViewColumn column in tdcm.Columns)
+            PdfPTable pdfTable1 = new PdfPTable(tdnn.Columns.Count);
+            pdfTable1.DefaultCell.Padding = 2;
+            pdfTable1.WidthPercentage = 100;
+            pdfTable1.HorizontalAlignment = Element.ALIGN_LEFT;
+            foreach (DataGridViewColumn column in tdnn.Columns)
             {
-                PdfPCell cell = new PdfPCell(new Phrase(column.HeaderText, times));
+                PdfPCell cell = new PdfPCell(new Phrase(column.HeaderText, fonttext));
                 pdfTable1.AddCell(cell);
             }
-
-            foreach (DataGridViewRow row in tdcm.Rows)
+            foreach (DataGridViewRow row in tdnn.Rows)
             {
                 foreach (DataGridViewCell cell in row.Cells)
                 {
-                    pdfTable1.AddCell(cell.Value.ToString());
+                    PdfPCell cell1 = new PdfPCell(new Phrase(cell.Value.ToString(), fonttext));
+                    pdfTable1.AddCell(cell1);
                 }
             }
-            doc.Add(pdfTable1);
+            text3.Add(c15);
+            text3.Add(pdfTable1);
 
-            doc.Add(new Paragraph("Quá Trình Công Tác:\n", times));
-            doc.Add(new Paragraph("\t"));
+            Paragraph text4 = new Paragraph();
+            Chunk c16 = new Chunk("\nQuá Trình Công Tác:", font);
 
-            PdfPTable pdfTable2 = new PdfPTable(tdcm.Columns.Count);
-            pdfTable.DefaultCell.Padding = 3;
-            pdfTable.WidthPercentage = 100;
-            pdfTable.HorizontalAlignment = Element.ALIGN_LEFT;
-
-            foreach (DataGridViewColumn column in tdcm.Columns)
+            PdfPTable pdfTable2 = new PdfPTable(qtct.Columns.Count);
+            pdfTable2.DefaultCell.Padding = 4;
+            pdfTable2.WidthPercentage = 100;
+            pdfTable2.HorizontalAlignment = Element.ALIGN_LEFT;
+            foreach (DataGridViewColumn column in qtct.Columns)
             {
-                PdfPCell cell = new PdfPCell(new Phrase(column.HeaderText, times));
+                PdfPCell cell = new PdfPCell(new Phrase(column.HeaderText, fonttext));
                 pdfTable2.AddCell(cell);
             }
-
-            foreach (DataGridViewRow row in tdcm.Rows)
+            foreach (DataGridViewRow row in qtct.Rows)
             {
                 foreach (DataGridViewCell cell in row.Cells)
                 {
-                    pdfTable2.AddCell(cell.Value.ToString());
+                    PdfPCell cell1 = new PdfPCell(new Phrase(cell.Value.ToString(), fonttext));
+                    pdfTable2.AddCell(cell1);
                 }
             }
-            doc.Add(pdfTable2);
-            doc.Close();
+            text4.Add(c16);
+            text4.Add(pdfTable2);
+
+            string file_name = "C:\\Users\\HIT.ishiki\\Desktop\\QuanLyNhanSu_Window\\assets\\output_file\\" + "output.pdf";
+            using (FileStream stream = new FileStream(file_name, FileMode.Create))
+            {
+                Document pdfDoc = new Document(PageSize.A4, 10f, 20f, 20f, 10f);
+                PdfWriter.GetInstance(pdfDoc, stream);
+                pdfDoc.Open();
+                pdfDoc.Add(header);
+                pdfDoc.Add(text1);
+                pdfDoc.Add(text2);
+                pdfDoc.Add(text3);
+                pdfDoc.Add(text4);
+                pdfDoc.Close();
+                stream.Close();
+            }
         }
     }
 }
