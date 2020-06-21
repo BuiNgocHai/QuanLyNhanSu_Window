@@ -33,9 +33,9 @@ namespace QuanLyNhanSu_Nhom6.Views
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInThongKeTrinhDoNgoaiNgu));
             this.gunaDataGridView1 = new Guna.UI.WinForms.GunaDataGridView();
             this.btnXem = new Guna.UI.WinForms.GunaButton();
@@ -44,15 +44,15 @@ namespace QuanLyNhanSu_Nhom6.Views
             this.btnExit = new Guna.UI.WinForms.GunaButton();
             this.btnMinimize = new Guna.UI.WinForms.GunaButton();
             this.panelChonChucNang = new Guna.UI.WinForms.GunaPanel();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.rdNgoaiNgu = new System.Windows.Forms.RadioButton();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.rdTrinhDo = new System.Windows.Forms.RadioButton();
             this.panelChonMucThongKe = new Guna.UI.WinForms.GunaPanel();
-            this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
-            this.cbTrinhDo = new Guna.UI.WinForms.GunaComboBox();
             this.cbNgoaiNgu = new Guna.UI.WinForms.GunaComboBox();
+            this.cbTrinhDo = new Guna.UI.WinForms.GunaComboBox();
+            this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView1)).BeginInit();
@@ -64,30 +64,30 @@ namespace QuanLyNhanSu_Nhom6.Views
             // 
             // gunaDataGridView1
             // 
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
-            this.gunaDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.gunaDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.gunaDataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gunaDataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.gunaDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gunaDataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gunaDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gunaDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gunaDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.gunaDataGridView1.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gunaDataGridView1.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gunaDataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
             this.gunaDataGridView1.EnableHeadersVisualStyles = false;
             this.gunaDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gunaDataGridView1.Location = new System.Drawing.Point(12, 443);
@@ -117,7 +117,7 @@ namespace QuanLyNhanSu_Nhom6.Views
             this.gunaDataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.gunaDataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gunaDataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.gunaDataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.gunaDataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.gunaDataGridView1.ThemeStyle.RowsStyle.Height = 24;
             this.gunaDataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gunaDataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
@@ -149,7 +149,6 @@ namespace QuanLyNhanSu_Nhom6.Views
             this.btnXem.TabIndex = 17;
             this.btnXem.Text = "Xem trước";
             this.btnXem.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnXem.Click += new System.EventHandler(this.btnXem_Click);
             // 
             // btnIn
             // 
@@ -243,28 +242,29 @@ namespace QuanLyNhanSu_Nhom6.Views
             // panelChonChucNang
             // 
             this.panelChonChucNang.BackColor = System.Drawing.Color.Transparent;
-            this.panelChonChucNang.Controls.Add(this.radioButton2);
+            this.panelChonChucNang.Controls.Add(this.rdNgoaiNgu);
             this.panelChonChucNang.Controls.Add(this.gunaLabel2);
-            this.panelChonChucNang.Controls.Add(this.radioButton1);
+            this.panelChonChucNang.Controls.Add(this.rdTrinhDo);
             this.panelChonChucNang.Location = new System.Drawing.Point(43, 79);
             this.panelChonChucNang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelChonChucNang.Name = "panelChonChucNang";
             this.panelChonChucNang.Size = new System.Drawing.Size(416, 110);
             this.panelChonChucNang.TabIndex = 18;
             // 
-            // radioButton1
+            // rdNgoaiNgu
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton1.ForeColor = System.Drawing.Color.White;
-            this.radioButton1.Location = new System.Drawing.Point(25, 66);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(114, 21);
-            this.radioButton1.TabIndex = 18;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Theo trình độ";
-            this.radioButton1.UseVisualStyleBackColor = false;
+            this.rdNgoaiNgu.AutoSize = true;
+            this.rdNgoaiNgu.BackColor = System.Drawing.Color.Transparent;
+            this.rdNgoaiNgu.ForeColor = System.Drawing.Color.White;
+            this.rdNgoaiNgu.Location = new System.Drawing.Point(237, 66);
+            this.rdNgoaiNgu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rdNgoaiNgu.Name = "rdNgoaiNgu";
+            this.rdNgoaiNgu.Size = new System.Drawing.Size(133, 21);
+            this.rdNgoaiNgu.TabIndex = 20;
+            this.rdNgoaiNgu.TabStop = true;
+            this.rdNgoaiNgu.Text = "Theo Ngoại Ngữ";
+            this.rdNgoaiNgu.UseVisualStyleBackColor = false;
+            this.rdNgoaiNgu.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // gunaLabel2
             // 
@@ -278,20 +278,19 @@ namespace QuanLyNhanSu_Nhom6.Views
             this.gunaLabel2.TabIndex = 19;
             this.gunaLabel2.Text = "Chọn chức năng muốn thống kê";
             // 
-            // radioButton2
+            // rdTrinhDo
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton2.ForeColor = System.Drawing.Color.White;
-            this.radioButton2.Location = new System.Drawing.Point(237, 66);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(133, 21);
-            this.radioButton2.TabIndex = 20;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Theo Ngoại Ngữ";
-            this.radioButton2.UseVisualStyleBackColor = false;
-            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            this.rdTrinhDo.AutoSize = true;
+            this.rdTrinhDo.BackColor = System.Drawing.Color.Transparent;
+            this.rdTrinhDo.ForeColor = System.Drawing.Color.White;
+            this.rdTrinhDo.Location = new System.Drawing.Point(25, 66);
+            this.rdTrinhDo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rdTrinhDo.Name = "rdTrinhDo";
+            this.rdTrinhDo.Size = new System.Drawing.Size(114, 21);
+            this.rdTrinhDo.TabIndex = 18;
+            this.rdTrinhDo.TabStop = true;
+            this.rdTrinhDo.Text = "Theo trình độ";
+            this.rdTrinhDo.UseVisualStyleBackColor = false;
             // 
             // panelChonMucThongKe
             // 
@@ -306,64 +305,6 @@ namespace QuanLyNhanSu_Nhom6.Views
             this.panelChonMucThongKe.Name = "panelChonMucThongKe";
             this.panelChonMucThongKe.Size = new System.Drawing.Size(553, 167);
             this.panelChonMucThongKe.TabIndex = 19;
-            // 
-            // gunaLabel3
-            // 
-            this.gunaLabel3.AutoSize = true;
-            this.gunaLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.gunaLabel3.ForeColor = System.Drawing.Color.White;
-            this.gunaLabel3.Location = new System.Drawing.Point(21, 10);
-            this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(162, 23);
-            this.gunaLabel3.TabIndex = 21;
-            this.gunaLabel3.Text = "Chọn mục thống kê";
-            // 
-            // gunaLabel4
-            // 
-            this.gunaLabel4.AutoSize = true;
-            this.gunaLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel4.ForeColor = System.Drawing.Color.White;
-            this.gunaLabel4.Location = new System.Drawing.Point(21, 55);
-            this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(65, 20);
-            this.gunaLabel4.TabIndex = 22;
-            this.gunaLabel4.Text = "Trình Độ";
-            // 
-            // gunaLabel5
-            // 
-            this.gunaLabel5.AutoSize = true;
-            this.gunaLabel5.BackColor = System.Drawing.Color.Transparent;
-            this.gunaLabel5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel5.ForeColor = System.Drawing.Color.White;
-            this.gunaLabel5.Location = new System.Drawing.Point(21, 108);
-            this.gunaLabel5.Name = "gunaLabel5";
-            this.gunaLabel5.Size = new System.Drawing.Size(83, 20);
-            this.gunaLabel5.TabIndex = 23;
-            this.gunaLabel5.Text = "Ngoại Ngữ";
-            // 
-            // cbTrinhDo
-            // 
-            this.cbTrinhDo.BackColor = System.Drawing.Color.Transparent;
-            this.cbTrinhDo.BaseColor = System.Drawing.Color.White;
-            this.cbTrinhDo.BorderColor = System.Drawing.Color.Silver;
-            this.cbTrinhDo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbTrinhDo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbTrinhDo.FocusedColor = System.Drawing.Color.Empty;
-            this.cbTrinhDo.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cbTrinhDo.ForeColor = System.Drawing.Color.Black;
-            this.cbTrinhDo.FormattingEnabled = true;
-            this.cbTrinhDo.Items.AddRange(new object[] {
-            "Tất cả phòng ban"});
-            this.cbTrinhDo.Location = new System.Drawing.Point(179, 50);
-            this.cbTrinhDo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cbTrinhDo.Name = "cbTrinhDo";
-            this.cbTrinhDo.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.cbTrinhDo.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.cbTrinhDo.Radius = 10;
-            this.cbTrinhDo.Size = new System.Drawing.Size(237, 31);
-            this.cbTrinhDo.TabIndex = 24;
             // 
             // cbNgoaiNgu
             // 
@@ -387,6 +328,64 @@ namespace QuanLyNhanSu_Nhom6.Views
             this.cbNgoaiNgu.Size = new System.Drawing.Size(237, 31);
             this.cbNgoaiNgu.TabIndex = 25;
             // 
+            // cbTrinhDo
+            // 
+            this.cbTrinhDo.BackColor = System.Drawing.Color.Transparent;
+            this.cbTrinhDo.BaseColor = System.Drawing.Color.White;
+            this.cbTrinhDo.BorderColor = System.Drawing.Color.Silver;
+            this.cbTrinhDo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbTrinhDo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbTrinhDo.FocusedColor = System.Drawing.Color.Empty;
+            this.cbTrinhDo.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbTrinhDo.ForeColor = System.Drawing.Color.Black;
+            this.cbTrinhDo.FormattingEnabled = true;
+            this.cbTrinhDo.Items.AddRange(new object[] {
+            "Tất cả phòng ban"});
+            this.cbTrinhDo.Location = new System.Drawing.Point(179, 50);
+            this.cbTrinhDo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbTrinhDo.Name = "cbTrinhDo";
+            this.cbTrinhDo.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.cbTrinhDo.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.cbTrinhDo.Radius = 10;
+            this.cbTrinhDo.Size = new System.Drawing.Size(237, 31);
+            this.cbTrinhDo.TabIndex = 24;
+            // 
+            // gunaLabel5
+            // 
+            this.gunaLabel5.AutoSize = true;
+            this.gunaLabel5.BackColor = System.Drawing.Color.Transparent;
+            this.gunaLabel5.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaLabel5.ForeColor = System.Drawing.Color.White;
+            this.gunaLabel5.Location = new System.Drawing.Point(21, 108);
+            this.gunaLabel5.Name = "gunaLabel5";
+            this.gunaLabel5.Size = new System.Drawing.Size(83, 20);
+            this.gunaLabel5.TabIndex = 23;
+            this.gunaLabel5.Text = "Ngoại Ngữ";
+            // 
+            // gunaLabel4
+            // 
+            this.gunaLabel4.AutoSize = true;
+            this.gunaLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaLabel4.ForeColor = System.Drawing.Color.White;
+            this.gunaLabel4.Location = new System.Drawing.Point(21, 55);
+            this.gunaLabel4.Name = "gunaLabel4";
+            this.gunaLabel4.Size = new System.Drawing.Size(65, 20);
+            this.gunaLabel4.TabIndex = 22;
+            this.gunaLabel4.Text = "Trình Độ";
+            // 
+            // gunaLabel3
+            // 
+            this.gunaLabel3.AutoSize = true;
+            this.gunaLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.gunaLabel3.ForeColor = System.Drawing.Color.White;
+            this.gunaLabel3.Location = new System.Drawing.Point(21, 10);
+            this.gunaLabel3.Name = "gunaLabel3";
+            this.gunaLabel3.Size = new System.Drawing.Size(162, 23);
+            this.gunaLabel3.TabIndex = 21;
+            this.gunaLabel3.Text = "Chọn mục thống kê";
+            // 
             // gunaLabel1
             // 
             this.gunaLabel1.AutoSize = true;
@@ -402,6 +401,7 @@ namespace QuanLyNhanSu_Nhom6.Views
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.panel1.Controls.Add(this.gunaLabel1);
             this.panel1.Controls.Add(this.panelChonMucThongKe);
             this.panel1.Controls.Add(this.panelChonChucNang);
@@ -420,12 +420,13 @@ namespace QuanLyNhanSu_Nhom6.Views
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(1045, 725);
             this.Controls.Add(this.btnIn);
             this.Controls.Add(this.btnXem);
             this.Controls.Add(this.gunaDataGridView1);
             this.Controls.Add(this.panel1);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmInThongKeTrinhDoNgoaiNgu";
@@ -452,9 +453,9 @@ namespace QuanLyNhanSu_Nhom6.Views
         private GunaButton btnExit;
         private GunaButton btnMinimize;
         private GunaPanel panelChonChucNang;
-        private RadioButton radioButton2;
+        private RadioButton rdNgoaiNgu;
         private GunaLabel gunaLabel2;
-        private RadioButton radioButton1;
+        private RadioButton rdTrinhDo;
         private GunaPanel panelChonMucThongKe;
         private GunaComboBox cbNgoaiNgu;
         private GunaComboBox cbTrinhDo;

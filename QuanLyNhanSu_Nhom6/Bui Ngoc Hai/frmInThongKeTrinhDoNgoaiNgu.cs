@@ -91,14 +91,8 @@ namespace QuanLyNhanSu_Nhom6.Views
             }
         }
 
-		private void cbTrinhDo_SelectedIndexChanged(object sender, EventArgs e)
-		{
+		
 
-		}
-
-        private void btnXem_Click(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }
