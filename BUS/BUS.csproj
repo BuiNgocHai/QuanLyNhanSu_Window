@@ -63,6 +63,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuanLyHoSo_BUS.cs" />
     <Compile Include="QuanLyNhanVienChucVu_BUS.cs" />
     <Compile Include="QuanLyPhongBan_BUS.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">

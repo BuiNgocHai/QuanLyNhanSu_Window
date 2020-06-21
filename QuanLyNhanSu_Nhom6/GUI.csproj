@@ -82,6 +82,12 @@
     <Compile Include="Nguyen Van Hung\frmQuanLyChucVu.Designer.cs">
       <DependentUpon>frmQuanLyChucVu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Phan Thanh Trung\frmQuanLyHoSo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Phan Thanh Trung\frmQuanLyHoSo.Designer.cs">
+      <DependentUpon>frmQuanLyHoSo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tran Quang Truong\frmInThongKePhongBanChucVu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,6 +152,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Nguyen Van Hung\frmQuanLyChucVu.resx">
       <DependentUpon>frmQuanLyChucVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Phan Thanh Trung\frmQuanLyHoSo.resx">
+      <DependentUpon>frmQuanLyHoSo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tran Quang Truong\frmInThongKePhongBanChucVu.resx">
       <DependentUpon>frmInThongKePhongBanChucVu.cs</DependentUpon>

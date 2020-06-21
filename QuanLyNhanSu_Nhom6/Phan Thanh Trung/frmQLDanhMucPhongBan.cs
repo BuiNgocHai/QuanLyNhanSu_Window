@@ -113,7 +113,7 @@ namespace QuanLyNhanSu_Nhom6.Views
 
         private void btnXoaPhongBan_Click(object sender, EventArgs e)
         {
-            DialogResult k = MessageBox.Show("Bạn có chắc chắn muốn xóa không?", "Thông báo");
+            DialogResult k = MessageBox.Show("Việc xóa có thể gây mất mát dữ liệu ở các bảng liên quan.Bạn có chắc chắn muốn xóa không?", "Thông báo");
             if (k == DialogResult.OK)
             {
                 bool ans = qlpb_bus.xoaPhongBan(txbMaPhongBan, txbTenPhongBan, txbNgayThanhLap);

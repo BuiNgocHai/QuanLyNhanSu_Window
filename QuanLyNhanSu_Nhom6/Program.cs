@@ -1,4 +1,5 @@
-﻿using QuanLyNhanSu_Nhom6.Views;
+﻿using GUI.Phan_Thanh_Trung;
+using QuanLyNhanSu_Nhom6.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
