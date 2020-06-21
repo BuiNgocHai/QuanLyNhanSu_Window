@@ -42,10 +42,10 @@
     <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="Guna.UI">
-      <HintPath>..\GunaUIFramework\Guna.UI.dll</HintPath>
+      <HintPath>..\..\..\QuanLyNhanSu_Window\GunaUIFramework\Guna.UI.dll</HintPath>
     </Reference>
     <Reference Include="Guna.UI2">
-      <HintPath>..\GunaUIFramework\Guna.UI2.dll</HintPath>
+      <HintPath>..\..\..\QuanLyNhanSu_Window\GunaUIFramework\Guna.UI2.dll</HintPath>
     </Reference>
     <Reference Include="itextsharp, Version=5.5.13.1, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
       <HintPath>..\packages\iTextSharp.5.5.13.1\lib\itextsharp.dll</HintPath>
@@ -92,11 +92,6 @@
     </Compile>
     <Compile Include="Chung\frmCanhBaoOK.Designer.cs">
       <DependentUpon>frmCanhBaoOK.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DBQLNhanSu_6.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DBQLNhanSu_6.dbml</DependentUpon>
     </Compile>
     <Compile Include="Chung\frmGiaoDienChinh.cs">
       <SubType>Form</SubType>
@@ -222,14 +217,6 @@
       <DependentUpon>frmThongKeTrinhDoChuyenMon.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
-    <None Include="DBQLNhanSu_6.dbml">
-      <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>DBQLNhanSu_6.designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DBQLNhanSu_6.dbml.layout">
-      <DependentUpon>DBQLNhanSu_6.dbml</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

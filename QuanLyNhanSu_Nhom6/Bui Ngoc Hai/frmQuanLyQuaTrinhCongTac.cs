@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Windows.Forms;
 using BUS;
+using BUS.BUS;
+
+
 using QuanLyNhanSu_Nhom6.Chung;
 namespace QuanLyNhanSu_Nhom6.Views
 {
