@@ -83,7 +83,7 @@ namespace DAO
                     db.SubmitChanges();
                     return true;
                 }
-                catch(Exception e)
+                catch(Exception )
                 {
                     return false;
                 }
@@ -122,7 +122,7 @@ namespace DAO
                     db.SubmitChanges();
                     return output;
                 }
-                catch (Exception e)
+                catch (Exception )
                 {
                     return false;
                 }
@@ -175,6 +175,64 @@ namespace DAO
             }
             db.SubmitChanges();
             return true;
+        }
+        public HoSoNV_DTO timKiem(string maNV)
+        {
+            HoSoNV_DTO nv = new HoSoNV_DTO();
+            IQueryable<HOSO6> query= from q in db.HOSO6s where q.MANV == maNV select q;
+            foreach (HOSO6 item in query) {
+                nv.MaNV = maNV;
+                nv.HoTen = item.HOTEN;
+                nv.NgaySinh = Convert.ToDateTime(item.NGAYSINH);
+                nv.GioiTinh = item.GIOITINH;
+                nv.SDT = item.SODT;
+                nv.Email = item.EMAIL;
+                nv.NgayTD = Convert.ToDateTime(item.NGAYTD);
+                nv.MaPB = item.MAPB;
+                nv.TaiKhoan = item.TAIKHOAN;
+                nv.MatKhau = item.MATKHAU;
+                nv.Quyen = item.QUYEN;
+            }
+            
+            return nv;
+        }
+
+        public void hienThiQTCT(DataGridView dt,string maNV)
+        {
+            var query = from q in db.QUATRINHCONGTAC6s
+            where q.MANV == maNV 
+            select new
+            {
+                q.CHUCVU,
+                q.TUNGAY,
+                q.DENNGAY,
+                q.NOICONGTAC
+            };
+            dt.DataSource = query;
+        }
+        public void hienThiTDNN(DataGridView dt, string maNV)
+        {
+            var query = from q in db.TRINHDONGOAINGU6s
+                        where q.MANV == maNV
+                        select new
+                        {
+                            q.NGOAINGU,
+                            q.TRINHDO
+                        };
+            dt.DataSource = query;
+        }
+        public void hienThiTDCM(DataGridView dt, string maNV)
+        {
+            var query = from q in db.TRINHDOCHUYENMON6s
+                        where q.MANV == maNV
+                        select new
+                        {
+                            q.NGANH,
+                            q.TRINHDO,
+                            q.LOAIHINHDT,
+                            q.TRUONGDT
+                        };
+            dt.DataSource = query;
         }
     }
 }

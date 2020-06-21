@@ -42,6 +42,9 @@
     <Reference Include="Guna.UI2">
       <HintPath>..\GunaUIFramework\Guna.UI2.dll</HintPath>
     </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\..\Downloads\QuanLyNhanSu_Window\assets\itextsharp.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
