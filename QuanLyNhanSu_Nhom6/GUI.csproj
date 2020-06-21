@@ -50,6 +50,9 @@
     <Reference Include="itextsharp, Version=5.5.13.1, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
       <HintPath>..\packages\iTextSharp.5.5.13.1\lib\itextsharp.dll</HintPath>
     </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\..\Downloads\QuanLyNhanSu_Window\assets\itextsharp.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -104,6 +107,12 @@
     </Compile>
     <Compile Include="Nguyen Van Hung\frmQuanLyChucVu.Designer.cs">
       <DependentUpon>frmQuanLyChucVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Phan Thanh Trung\frmQuanLyHoSo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Phan Thanh Trung\frmQuanLyHoSo.Designer.cs">
+      <DependentUpon>frmQuanLyHoSo.cs</DependentUpon>
     </Compile>
     <Compile Include="Tran Quang Truong\frmInThongKePhongBanChucVu.cs">
       <SubType>Form</SubType>
@@ -179,6 +188,9 @@
     <EmbeddedResource Include="Nguyen Van Hung\frmQuanLyChucVu.resx">
       <DependentUpon>frmQuanLyChucVu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Phan Thanh Trung\frmQuanLyHoSo.resx">
+      <DependentUpon>frmQuanLyHoSo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Tran Quang Truong\frmInThongKePhongBanChucVu.resx">
       <DependentUpon>frmInThongKePhongBanChucVu.cs</DependentUpon>
     </EmbeddedResource>
@@ -230,16 +242,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
-  <ItemGroup>
-    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
-    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
-  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BUS\BUS.csproj">
       <Project>{28ea23d7-c1a5-42bc-957c-0da23578be9a}</Project>
       <Name>BUS</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="icons8_collaborator_female.ico" />

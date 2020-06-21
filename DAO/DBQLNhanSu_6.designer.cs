@@ -840,7 +840,7 @@ namespace DAO
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DENNGAY", DbType="NVarChar(50)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DENNGAY", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
 		public string DENNGAY
 		{
 			get

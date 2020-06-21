@@ -41,6 +41,9 @@
     <Reference Include="Guna.UI2">
       <HintPath>..\GunaUIFramework\Guna.UI2.dll</HintPath>
     </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\assets\itextsharp.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -71,6 +74,8 @@
     <Compile Include="BUS\QuanLyQuaTrinhCongTac_BUS.cs" />
     <Compile Include="BUS\QuanLyTrinhDoNgoaiNgu_BUS.cs" />
     <Compile Include="BUS\ThongKeTrinhDoNgoaiNgu_BUS.cs" />
+    <Compile Include="QuanLyHoSo_BUS.cs" />
+    <Compile Include="QuanLyPhongBan_BUS.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

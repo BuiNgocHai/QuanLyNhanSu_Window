@@ -70,11 +70,13 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="HoSo_DAO.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DAO\QuanLyQuaTrinhCongTac_DAO.cs" />
     <Compile Include="DAO\QuanLyTrinhDoNgoaiNgu_DAO.cs" />
     <Compile Include="DAO\ThongKeTrinhDoNgoaiNgu_DAO.cs" />
+    <Compile Include="QuanLyPhongBan_DAO.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -106,13 +108,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\DTO\DTO.csproj">
       <Project>{14fe3306-210e-4cf5-a1b0-a26a95701cb5}</Project>
       <Name>DTO</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
