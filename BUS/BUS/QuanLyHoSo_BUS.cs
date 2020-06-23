@@ -93,7 +93,7 @@ namespace BUS
             return output;
         }
 
-        public void timKiemHS(GunaTextBox mnv, GunaTextBox ten, GunaTextBox ns, GunaTextBox gt, GunaTextBox sdt, GunaTextBox eml, GunaTextBox ntd, GunaTextBox mpb, GunaTextBox tk, GunaTextBox mk, GunaTextBox q,DataGridView tdcm, DataGridView tdnn, DataGridView qtct)
+        public void timKiemHS(GunaTextBox mnv, GunaTextBox ten, GunaTextBox ns, GunaTextBox gt, GunaTextBox sdt, GunaTextBox eml, GunaTextBox ntd, GunaTextBox mpb, /*GunaTextBox tk, GunaTextBox mk, GunaTextBox q,*/DataGridView tdcm, DataGridView tdnn, DataGridView qtct)
         {
             HoSoNV_DTO nv = qlhs.timKiem(mnv.Text);
             ten.Text = nv.HoTen;
@@ -103,15 +103,15 @@ namespace BUS
             eml.Text = nv.Email;
             ntd.Text = nv.NgayTD.ToString();
             mpb.Text = nv.MaPB;
-            tk.Text = nv.TaiKhoan;
-            mk.Text = nv.MatKhau;
-            q.Text = nv.Quyen;
+            //tk.Text = nv.TaiKhoan;
+            //mk.Text = nv.MatKhau;
+            //q.Text = nv.Quyen;
             qlhs.hienThiTDCM(tdcm, mnv.Text);
             qlhs.hienThiTDNN(tdnn, mnv.Text);
             qlhs.hienThiQTCT(qtct, mnv.Text);
         }
 
-        public void xuatFile(GunaTextBox mnv, GunaTextBox ten, GunaTextBox ns, GunaTextBox gt, GunaTextBox sdt, GunaTextBox eml, GunaTextBox ntd, GunaTextBox mpb, GunaTextBox tk, GunaTextBox mk, GunaTextBox q, DataGridView tdcm, DataGridView tdnn, DataGridView qtct)
+        public void xuatFile(GunaTextBox mnv, GunaTextBox ten, GunaTextBox ns, GunaTextBox gt, GunaTextBox sdt, GunaTextBox eml, GunaTextBox ntd, GunaTextBox mpb, DataGridView tdcm, DataGridView tdnn, DataGridView qtct)
         {
             BaseFont bf = BaseFont.CreateFont(@"C:\Users\HIT.ishiki\Desktop\QuanLyNhanSu_Window\assets\TIMES.ttf", BaseFont.IDENTITY_H, true);
             iTextSharp.text.Font fonttitle = new iTextSharp.text.Font(bf, 15);
@@ -134,9 +134,9 @@ namespace BUS
             string email = "Email: " + eml.Text + "\n";
             string ngaytuyendung = "Ngày Tuyển Dụng: " + ntd.Text + "\n";
             string mapb = "Mã Phòng Ban: " + mpb.Text + "\n";
-            string taikhoan = "Tài Khoản: " + tk.Text + "\n";
-            string matkhau = "Mật Khẩu: " + mk.Text + "\n";
-            string quyen = "Quyền: " + q.Text + "\n";
+            //string taikhoan = "Tài Khoản: " + tk.Text + "\n";
+            //string matkhau = "Mật Khẩu: " + mk.Text + "\n";
+            //string quyen = "Quyền: " + q.Text + "\n";
 
             Paragraph text1 = new Paragraph();
             Chunk c3 = new Chunk(manv, font);
@@ -147,9 +147,9 @@ namespace BUS
             Chunk c8 = new Chunk(email, font);
             Chunk c9 = new Chunk(ngaytuyendung, font);
             Chunk c10 = new Chunk(mapb, font);
-            Chunk c11 = new Chunk(taikhoan, font);
-            Chunk c12 = new Chunk(matkhau, font);
-            Chunk c13 = new Chunk(quyen, font);
+            //Chunk c11 = new Chunk(taikhoan, font);
+            //Chunk c12 = new Chunk(matkhau, font);
+            //Chunk c13 = new Chunk(quyen, font);
             text1.Add(c3);
             text1.Add(c4);
             text1.Add(c5);
@@ -158,9 +158,9 @@ namespace BUS
             text1.Add(c8);
             text1.Add(c9);
             text1.Add(c10);
-            text1.Add(c11);
-            text1.Add(c12);
-            text1.Add(c13);
+            //text1.Add(c11);
+            //text1.Add(c12);
+            //text1.Add(c13);
 
             Paragraph text2 = new Paragraph();
             Chunk c14 = new Chunk("\nTrình Độ Chuyên Môn:", font);

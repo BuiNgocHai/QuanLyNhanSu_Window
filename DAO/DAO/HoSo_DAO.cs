@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using DTO;
+using System;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using DTO;
 using System.Windows.Forms;
 
 namespace DAO
@@ -35,7 +32,21 @@ namespace DAO
 
         public void hienThi(DataGridView dt)
         {
-            var query = from q in db.HOSO6s select q;
+            var query = from q in db.HOSO6s
+                        select new
+                        {
+                            q.MANV,
+                            q.HOTEN,
+                            q.NGAYSINH,
+                            q.GIOITINH,
+                            q.SODT,
+                            q.EMAIL,
+                            q.NGAYTD,
+                            q.MAPB,
+                            q.TAIKHOAN,
+                            q.MATKHAU,
+                            q.QUYEN
+                        };
             dt.DataSource = query;
         }
 
@@ -55,7 +66,7 @@ namespace DAO
                    select q).Count();
             return dem;
         }
-        public bool themHoSo(string maNV, string tenNV, DateTime ngayS, string gt, string sdt, string email, DateTime ntd, string mpb, string tk,string mk, string q)
+        public bool themHoSo(string maNV, string tenNV, DateTime ngayS, string gt, string sdt, string email, DateTime ntd, string mpb, string tk, string mk, string q)
         {
             int count = kiemTraTonTai(maNV);
             if (count > 0)
@@ -83,7 +94,7 @@ namespace DAO
                     db.SubmitChanges();
                     return true;
                 }
-                catch(Exception )
+                catch (Exception)
                 {
                     return false;
                 }
@@ -122,13 +133,13 @@ namespace DAO
                     db.SubmitChanges();
                     return output;
                 }
-                catch (Exception )
+                catch (Exception)
                 {
                     return false;
                 }
             }
         }
-        public void timKiemHoSo(DataGridView dt,string maNV)
+        public void timKiemHoSo(DataGridView dt, string maNV)
         {
             IQueryable<HOSO6> query =
                     from q in db.HOSO6s
@@ -145,13 +156,13 @@ namespace DAO
             }
             IQueryable<QUATRINHCONGTAC6> query =
                   from q in db.QUATRINHCONGTAC6s where q.MANV == maNV select q;
-            foreach(QUATRINHCONGTAC6 item in query)
+            foreach (QUATRINHCONGTAC6 item in query)
             {
                 db.QUATRINHCONGTAC6s.DeleteOnSubmit(item);
             }
             IQueryable<NHANVIEN_CHUCVU6> query1 =
                   from q in db.NHANVIEN_CHUCVU6s where q.MANV == maNV select q;
-            foreach(NHANVIEN_CHUCVU6 item in query1)
+            foreach (NHANVIEN_CHUCVU6 item in query1)
             {
                 db.NHANVIEN_CHUCVU6s.DeleteOnSubmit(item);
             }
@@ -179,8 +190,9 @@ namespace DAO
         public HoSoNV_DTO timKiem(string maNV)
         {
             HoSoNV_DTO nv = new HoSoNV_DTO();
-            IQueryable<HOSO6> query= from q in db.HOSO6s where q.MANV == maNV select q;
-            foreach (HOSO6 item in query) {
+            IQueryable<HOSO6> query = from q in db.HOSO6s where q.MANV == maNV select q;
+            foreach (HOSO6 item in query)
+            {
                 nv.MaNV = maNV;
                 nv.HoTen = item.HOTEN;
                 nv.NgaySinh = Convert.ToDateTime(item.NGAYSINH);
@@ -193,21 +205,21 @@ namespace DAO
                 nv.MatKhau = item.MATKHAU;
                 nv.Quyen = item.QUYEN;
             }
-            
+
             return nv;
         }
 
-        public void hienThiQTCT(DataGridView dt,string maNV)
+        public void hienThiQTCT(DataGridView dt, string maNV)
         {
             var query = from q in db.QUATRINHCONGTAC6s
-            where q.MANV == maNV 
-            select new
-            {
-                q.CHUCVU,
-                q.TUNGAY,
-                q.DENNGAY,
-                q.NOICONGTAC
-            };
+                        where q.MANV == maNV
+                        select new
+                        {
+                            q.CHUCVU,
+                            q.TUNGAY,
+                            q.DENNGAY,
+                            q.NOICONGTAC
+                        };
             dt.DataSource = query;
         }
         public void hienThiTDNN(DataGridView dt, string maNV)
