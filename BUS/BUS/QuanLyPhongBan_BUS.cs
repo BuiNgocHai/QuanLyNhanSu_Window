@@ -37,29 +37,29 @@ namespace BUS
         {
             qlpb.hienThiDT_DAO(dt);
         }
-        public bool themPhongBan(GunaTextBox maPB,GunaTextBox tenPB,GunaTextBox ngayTL)
+        public bool themPhongBan(GunaTextBox maPB,GunaTextBox tenPB,GunaDateTimePicker ngayTL)
         {
             string mapb = maPB.Text;
             string tenpb = tenPB.Text;
-            DateTime ngaytl = Convert.ToDateTime(ngayTL.Text);
+            DateTime ngaytl = ngayTL.Value;
             bool output = qlpb.themPhongBan(mapb, tenpb, ngaytl);
             return output;
         }
 
-        public bool suaPhongBan(GunaTextBox maPB,GunaTextBox tenPB, GunaTextBox ngayTL)
+        public bool suaPhongBan(GunaTextBox maPB,GunaTextBox tenPB, GunaDateTimePicker ngayTL)
         {
             string mapb = maPB.Text;
             string tenpb = tenPB.Text;
-            DateTime ngaytl = Convert.ToDateTime(ngayTL.Text);
+            DateTime ngaytl = ngayTL.Value;
             bool output = qlpb.suaPhongBan(mapb, tenpb, ngaytl);
             return output;
         }
 
-        public bool xoaPhongBan(GunaTextBox maPB, GunaTextBox tenPB, GunaTextBox ngayTL)
+        public bool xoaPhongBan(GunaTextBox maPB, GunaTextBox tenPB, GunaDateTimePicker ngayTL)
         {
             string mapb = maPB.Text;
             string tenpb = tenPB.Text;
-            DateTime ngaytl = Convert.ToDateTime(ngayTL.Text);
+            DateTime ngaytl = ngayTL.Value;
             bool output = qlpb.xoaPhongBan(mapb, tenpb, ngaytl);
             return output;
         }

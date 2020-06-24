@@ -48,15 +48,15 @@ namespace BUS
             qlhs.loadCBBox(cb);
         }
 
-        public bool themHoSoNhanVien(GunaTextBox mnv, GunaTextBox ten, GunaTextBox nsinh, ComboBox gt, GunaTextBox sdt, GunaTextBox eml, GunaTextBox ntd, ComboBox mpb, GunaTextBox tk, GunaTextBox mk, GunaTextBox q)
+        public bool themHoSoNhanVien(GunaTextBox mnv, GunaTextBox ten, GunaDateTimePicker nsinh, ComboBox gt, GunaTextBox sdt, GunaTextBox eml, GunaDateTimePicker ntd, ComboBox mpb, GunaTextBox tk, GunaTextBox mk, GunaTextBox q)
         {
             string manv = mnv.Text;
             string hoten = ten.Text;
-            string ngaysinh = nsinh.Text;
+            string ngaysinh = nsinh.Value.ToString();
             string gioitinh = gt.SelectedItem.ToString();
             string sodienthoai = sdt.Text;
             string email = eml.Text;
-            string ngaytuyendung = ntd.Text;
+            string ngaytuyendung = ntd.Value.ToString();
             string mapb = mpb.SelectedValue.ToString();
             string taikhoan = tk.Text;
             string matkhau = mk.Text;
@@ -65,15 +65,15 @@ namespace BUS
             return output;
         }
 
-        public bool suaHoSoNhanVien(GunaTextBox mnv, GunaTextBox ten, GunaTextBox nsinh, ComboBox gt, GunaTextBox sdt, GunaTextBox eml, GunaTextBox ntd, ComboBox mpb, GunaTextBox tk, GunaTextBox mk, GunaTextBox q)
+        public bool suaHoSoNhanVien(GunaTextBox mnv, GunaTextBox ten, GunaDateTimePicker nsinh, ComboBox gt, GunaTextBox sdt, GunaTextBox eml, GunaDateTimePicker ntd, ComboBox mpb, GunaTextBox tk, GunaTextBox mk, GunaTextBox q)
         {
             string manv = mnv.Text;
             string hoten = ten.Text;
-            string ngaysinh = nsinh.Text;
+            string ngaysinh = nsinh.Value.ToString();
             string gioitinh = gt.SelectedItem.ToString();
             string sodienthoai = sdt.Text;
             string email = eml.Text;
-            string ngaytuyendung = ntd.Text;
+            string ngaytuyendung = ntd.Value.ToString();
             string mapb = mpb.SelectedValue.ToString();
             string taikhoan = tk.Text;
             string matkhau = mk.Text;
@@ -93,15 +93,15 @@ namespace BUS
             return output;
         }
 
-        public void timKiemHS(GunaTextBox mnv, GunaTextBox ten, GunaTextBox ns, GunaTextBox gt, GunaTextBox sdt, GunaTextBox eml, GunaTextBox ntd, GunaTextBox mpb, /*GunaTextBox tk, GunaTextBox mk, GunaTextBox q,*/DataGridView tdcm, DataGridView tdnn, DataGridView qtct)
+        public void timKiemHS(GunaTextBox mnv, GunaTextBox ten, GunaDateTimePicker ns, GunaTextBox gt, GunaTextBox sdt, GunaTextBox eml, GunaDateTimePicker ntd, GunaTextBox mpb, /*GunaTextBox tk, GunaTextBox mk, GunaTextBox q,*/DataGridView tdcm, DataGridView tdnn, DataGridView qtct)
         {
             HoSoNV_DTO nv = qlhs.timKiem(mnv.Text);
             ten.Text = nv.HoTen;
-            ns.Text = nv.NgaySinh.ToString();
+            ns.Value = nv.NgaySinh;
             gt.Text = nv.GioiTinh;
             sdt.Text = nv.SDT;
             eml.Text = nv.Email;
-            ntd.Text = nv.NgayTD.ToString();
+            ntd.Value = nv.NgayTD;
             mpb.Text = nv.MaPB;
             //tk.Text = nv.TaiKhoan;
             //mk.Text = nv.MatKhau;
@@ -111,7 +111,7 @@ namespace BUS
             qlhs.hienThiQTCT(qtct, mnv.Text);
         }
 
-        public void xuatFile(GunaTextBox mnv, GunaTextBox ten, GunaTextBox ns, GunaTextBox gt, GunaTextBox sdt, GunaTextBox eml, GunaTextBox ntd, GunaTextBox mpb, DataGridView tdcm, DataGridView tdnn, DataGridView qtct)
+        public void xuatFile(GunaTextBox mnv, GunaTextBox ten, GunaDateTimePicker ns, GunaTextBox gt, GunaTextBox sdt, GunaTextBox eml, GunaDateTimePicker ntd, GunaTextBox mpb, DataGridView tdcm, DataGridView tdnn, DataGridView qtct)
         {
             BaseFont bf = BaseFont.CreateFont(@"C:\Users\HIT.ishiki\Desktop\QuanLyNhanSu_Window\assets\TIMES.ttf", BaseFont.IDENTITY_H, true);
             iTextSharp.text.Font fonttitle = new iTextSharp.text.Font(bf, 15);
@@ -128,11 +128,11 @@ namespace BUS
             header.Add(c2);
             string manv= "Mã Nhân Viên: "+mnv.Text+"\n";
             string tenvn = "Tên Nhân Viên: " + ten.Text + "\n";
-            string ngaysinh = "Ngày Sinh: " + ns.Text + "\n";
+            string ngaysinh = "Ngày Sinh: " + ns.Value.ToString() + "\n";
             string gioitinh = "Giới Tính: " + gt.Text + "\n";
             string sodt = "Số Điện Thoại: " + sdt.Text + "\n";
             string email = "Email: " + eml.Text + "\n";
-            string ngaytuyendung = "Ngày Tuyển Dụng: " + ntd.Text + "\n";
+            string ngaytuyendung = "Ngày Tuyển Dụng: " + ntd.Value.ToString() + "\n";
             string mapb = "Mã Phòng Ban: " + mpb.Text + "\n";
             //string taikhoan = "Tài Khoản: " + tk.Text + "\n";
             //string matkhau = "Mật Khẩu: " + mk.Text + "\n";

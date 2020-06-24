@@ -55,7 +55,7 @@ namespace QuanLyNhanSu_Nhom6.Views
             try {
                 txbMaPhongBan.Text = dtGridViewPhongBan.Rows[index].Cells[0].Value.ToString();
                 txbTenPhongBan.Text = dtGridViewPhongBan.Rows[index].Cells[1].Value.ToString();
-                txbNgayThanhLap.Text = dtGridViewPhongBan.Rows[index].Cells[2].Value.ToString();
+                dtPickerNTL.Value = Convert.ToDateTime(dtGridViewPhongBan.Rows[index].Cells[2].Value);
             }
             catch(Exception)
             {
@@ -67,7 +67,7 @@ namespace QuanLyNhanSu_Nhom6.Views
         {
             txbMaPhongBan.Text = "";
             txbTenPhongBan.Text = "";
-            txbNgayThanhLap.Text = "";
+            dtPickerNTL.Value = DateTime.Now;
             txbMaPhongBan.Focus();
         }
 
@@ -78,7 +78,7 @@ namespace QuanLyNhanSu_Nhom6.Views
             {
                 txbMaPhongBan.Text = dtGridViewPhongBan.Rows[index].Cells[0].Value.ToString();
                 txbTenPhongBan.Text = dtGridViewPhongBan.Rows[index].Cells[1].Value.ToString();
-                txbNgayThanhLap.Text = dtGridViewPhongBan.Rows[index].Cells[2].Value.ToString();
+                dtPickerNTL.Value = Convert.ToDateTime(dtGridViewPhongBan.Rows[index].Cells[2].Value);
             }
             catch (Exception)
             {
@@ -88,7 +88,7 @@ namespace QuanLyNhanSu_Nhom6.Views
 
         private void btnThemPhongBan_Click(object sender, EventArgs e)
         {
-            bool ans = qlpb_bus.themPhongBan(txbMaPhongBan, txbTenPhongBan, txbNgayThanhLap);
+            bool ans = qlpb_bus.themPhongBan(txbMaPhongBan, txbTenPhongBan, dtPickerNTL);
             if(ans)
             {
                 DialogResult k = MessageBox.Show("Thêm thành công", "Thông báo");
@@ -101,7 +101,7 @@ namespace QuanLyNhanSu_Nhom6.Views
 
         private void btnSuaPhongBan_Click(object sender, EventArgs e)
         {
-            bool ans = qlpb_bus.suaPhongBan(txbMaPhongBan, txbTenPhongBan, txbNgayThanhLap);
+            bool ans = qlpb_bus.suaPhongBan(txbMaPhongBan, txbTenPhongBan, dtPickerNTL);
             if (ans)
             {
                 DialogResult k = MessageBox.Show("Sửa thành công", "Thông báo");
@@ -117,7 +117,7 @@ namespace QuanLyNhanSu_Nhom6.Views
             DialogResult k = MessageBox.Show("Việc xóa có thể gây mất mát dữ liệu ở các bảng liên quan.Bạn có chắc chắn muốn xóa không?", "Thông báo");
             if (k == DialogResult.OK)
             {
-                bool ans = qlpb_bus.xoaPhongBan(txbMaPhongBan, txbTenPhongBan, txbNgayThanhLap);
+                bool ans = qlpb_bus.xoaPhongBan(txbMaPhongBan, txbTenPhongBan, dtPickerNTL);
                 if (ans)
                 {
                     DialogResult k1 = MessageBox.Show("Xóa thành công", "Thông báo");
