@@ -254,6 +254,11 @@ namespace QuanLyNhanSu_Nhom6.Views
         {
             moFrmCon(new frmInHoSoNV());
         }
+
+        private void btnThongTin_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
 

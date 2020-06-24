@@ -93,7 +93,7 @@ namespace DAO.DAO
 
         public int xoaTrinhDoChuyenMon(string nganh, string ma)
         {
-            MessageBox.Show(ma + "  " + nganh);
+            
             IQueryable<TRINHDOCHUYENMON6> tdcm = from t in db.TRINHDOCHUYENMON6s
                                                  where t.MANV == ma && t.NGANH == nganh
                                                  select t;

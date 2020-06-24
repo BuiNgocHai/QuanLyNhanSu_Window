@@ -119,7 +119,7 @@
             this.btnQLDM.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.btnQLDM.ForeColor = System.Drawing.Color.White;
             this.btnQLDM.Image = ((System.Drawing.Image)(resources.GetObject("btnQLDM.Image")));
-            this.btnQLDM.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnQLDM.ImageSize = new System.Drawing.Size(40, 40);
             this.btnQLDM.Location = new System.Drawing.Point(0, 0);
             this.btnQLDM.Name = "btnQLDM";
             this.btnQLDM.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
@@ -143,7 +143,7 @@
             this.btnDMPB.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnDMPB.ForeColor = System.Drawing.Color.White;
             this.btnDMPB.Image = ((System.Drawing.Image)(resources.GetObject("btnDMPB.Image")));
-            this.btnDMPB.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnDMPB.ImageSize = new System.Drawing.Size(30, 30);
             this.btnDMPB.Location = new System.Drawing.Point(0, 50);
             this.btnDMPB.Name = "btnDMPB";
             this.btnDMPB.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
@@ -167,7 +167,7 @@
             this.btnDMCV.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnDMCV.ForeColor = System.Drawing.Color.White;
             this.btnDMCV.Image = ((System.Drawing.Image)(resources.GetObject("btnDMCV.Image")));
-            this.btnDMCV.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnDMCV.ImageSize = new System.Drawing.Size(30, 30);
             this.btnDMCV.Location = new System.Drawing.Point(-1, 100);
             this.btnDMCV.Name = "btnDMCV";
             this.btnDMCV.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
@@ -231,7 +231,7 @@
             this.btnQuaTrinhCongTac.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnQuaTrinhCongTac.ForeColor = System.Drawing.Color.White;
             this.btnQuaTrinhCongTac.Image = ((System.Drawing.Image)(resources.GetObject("btnQuaTrinhCongTac.Image")));
-            this.btnQuaTrinhCongTac.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnQuaTrinhCongTac.ImageSize = new System.Drawing.Size(30, 30);
             this.btnQuaTrinhCongTac.Location = new System.Drawing.Point(0, 200);
             this.btnQuaTrinhCongTac.Name = "btnQuaTrinhCongTac";
             this.btnQuaTrinhCongTac.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
@@ -255,7 +255,7 @@
             this.btnTrinhDoNgoaiNgu.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnTrinhDoNgoaiNgu.ForeColor = System.Drawing.Color.White;
             this.btnTrinhDoNgoaiNgu.Image = ((System.Drawing.Image)(resources.GetObject("btnTrinhDoNgoaiNgu.Image")));
-            this.btnTrinhDoNgoaiNgu.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnTrinhDoNgoaiNgu.ImageSize = new System.Drawing.Size(30, 30);
             this.btnTrinhDoNgoaiNgu.Location = new System.Drawing.Point(0, 150);
             this.btnTrinhDoNgoaiNgu.Name = "btnTrinhDoNgoaiNgu";
             this.btnTrinhDoNgoaiNgu.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
@@ -280,7 +280,7 @@
             this.btnQLNV.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.btnQLNV.ForeColor = System.Drawing.Color.White;
             this.btnQLNV.Image = ((System.Drawing.Image)(resources.GetObject("btnQLNV.Image")));
-            this.btnQLNV.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnQLNV.ImageSize = new System.Drawing.Size(40, 40);
             this.btnQLNV.Location = new System.Drawing.Point(0, 0);
             this.btnQLNV.Name = "btnQLNV";
             this.btnQLNV.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
@@ -304,7 +304,7 @@
             this.btnHoSoNV.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnHoSoNV.ForeColor = System.Drawing.Color.White;
             this.btnHoSoNV.Image = ((System.Drawing.Image)(resources.GetObject("btnHoSoNV.Image")));
-            this.btnHoSoNV.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnHoSoNV.ImageSize = new System.Drawing.Size(30, 30);
             this.btnHoSoNV.Location = new System.Drawing.Point(0, 50);
             this.btnHoSoNV.Name = "btnHoSoNV";
             this.btnHoSoNV.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
@@ -328,7 +328,7 @@
             this.btnTrinhDoChuyenMon.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnTrinhDoChuyenMon.ForeColor = System.Drawing.Color.White;
             this.btnTrinhDoChuyenMon.Image = ((System.Drawing.Image)(resources.GetObject("btnTrinhDoChuyenMon.Image")));
-            this.btnTrinhDoChuyenMon.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnTrinhDoChuyenMon.ImageSize = new System.Drawing.Size(30, 30);
             this.btnTrinhDoChuyenMon.Location = new System.Drawing.Point(0, 100);
             this.btnTrinhDoChuyenMon.Name = "btnTrinhDoChuyenMon";
             this.btnTrinhDoChuyenMon.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
@@ -368,7 +368,7 @@
             this.btnPBCV.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnPBCV.ForeColor = System.Drawing.Color.White;
             this.btnPBCV.Image = ((System.Drawing.Image)(resources.GetObject("btnPBCV.Image")));
-            this.btnPBCV.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnPBCV.ImageSize = new System.Drawing.Size(30, 30);
             this.btnPBCV.Location = new System.Drawing.Point(3, 203);
             this.btnPBCV.Margin = new System.Windows.Forms.Padding(0);
             this.btnPBCV.Name = "btnPBCV";
@@ -393,7 +393,7 @@
             this.btnTDNN.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnTDNN.ForeColor = System.Drawing.Color.White;
             this.btnTDNN.Image = ((System.Drawing.Image)(resources.GetObject("btnTDNN.Image")));
-            this.btnTDNN.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnTDNN.ImageSize = new System.Drawing.Size(30, 30);
             this.btnTDNN.Location = new System.Drawing.Point(3, 153);
             this.btnTDNN.Name = "btnTDNN";
             this.btnTDNN.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
@@ -418,7 +418,7 @@
             this.btnThongKeBaoCao.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.btnThongKeBaoCao.ForeColor = System.Drawing.Color.White;
             this.btnThongKeBaoCao.Image = ((System.Drawing.Image)(resources.GetObject("btnThongKeBaoCao.Image")));
-            this.btnThongKeBaoCao.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnThongKeBaoCao.ImageSize = new System.Drawing.Size(40, 40);
             this.btnThongKeBaoCao.Location = new System.Drawing.Point(3, 3);
             this.btnThongKeBaoCao.Name = "btnThongKeBaoCao";
             this.btnThongKeBaoCao.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
@@ -442,7 +442,7 @@
             this.btnInHoSo.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnInHoSo.ForeColor = System.Drawing.Color.White;
             this.btnInHoSo.Image = ((System.Drawing.Image)(resources.GetObject("btnInHoSo.Image")));
-            this.btnInHoSo.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnInHoSo.ImageSize = new System.Drawing.Size(30, 30);
             this.btnInHoSo.Location = new System.Drawing.Point(3, 53);
             this.btnInHoSo.Name = "btnInHoSo";
             this.btnInHoSo.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
@@ -466,7 +466,7 @@
             this.btnTDCM.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnTDCM.ForeColor = System.Drawing.Color.White;
             this.btnTDCM.Image = ((System.Drawing.Image)(resources.GetObject("btnTDCM.Image")));
-            this.btnTDCM.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnTDCM.ImageSize = new System.Drawing.Size(30, 30);
             this.btnTDCM.Location = new System.Drawing.Point(3, 103);
             this.btnTDCM.Name = "btnTDCM";
             this.btnTDCM.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
@@ -625,6 +625,7 @@
             this.btnThongTin.OnPressedColor = System.Drawing.Color.Black;
             this.btnThongTin.Size = new System.Drawing.Size(42, 39);
             this.btnThongTin.TabIndex = 15;
+            this.btnThongTin.Click += new System.EventHandler(this.btnThongTin_Click);
             // 
             // panelTop
             // 

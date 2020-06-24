@@ -32,6 +32,12 @@ namespace QuanLyNhanSu_Nhom6.Views
             gunaPanel1.Enabled = false;
             
             QuanLyNhanVienChucVu_BUS.Instance.layDLCombox_BUS(cbTenCV);
+            if(txtMaNV.Text != null)
+            {
+                QuanLyNhanVienChucVu_BUS.Instance.layThongTinHoSo_BUS(txtMaNV, codeMaNV, codeTenNV);
+                gunaPanel1.Enabled = true;
+                QuanLyNhanVienChucVu_BUS.Instance.layDLTable_BUS(gunaDataGridView1, codeMaNV);
+            }
 
 
         }

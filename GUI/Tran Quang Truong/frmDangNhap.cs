@@ -28,6 +28,8 @@ namespace QuanLyNhanSu_Nhom6
            int nHeightEllipse // width of ellipse
        );
 
+        public static string tk=null;
+        
 
         public frmLogin()
         {
@@ -66,14 +68,17 @@ namespace QuanLyNhanSu_Nhom6
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
             int kt = DangNhap_BUS.Instance.dangNhap_BUS(txtTK, txtMK);
+
             if (kt == 1)
             {
+                tk = txtTK.Text;
                 frmDashboard Instance = new frmDashboard();
                 Instance.Show();
                 Close();
             }
             else if (kt == 2)
             {
+                tk = txtTK.Text;
                 frmDashboard Instance = new frmDashboard();
                 Instance.capNhatDangNhap();
                 Instance.Show();

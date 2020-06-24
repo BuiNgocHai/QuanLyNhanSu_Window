@@ -229,7 +229,7 @@
             this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnXoa.ForeColor = System.Drawing.Color.White;
             this.btnXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.Image")));
-            this.btnXoa.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnXoa.ImageSize = new System.Drawing.Size(30, 30);
             this.btnXoa.Location = new System.Drawing.Point(832, 221);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
@@ -237,7 +237,7 @@
             this.btnXoa.OnHoverForeColor = System.Drawing.Color.White;
             this.btnXoa.OnHoverImage = null;
             this.btnXoa.OnPressedColor = System.Drawing.Color.Black;
-            this.btnXoa.Radius = 20;
+            this.btnXoa.Radius = 15;
             this.btnXoa.Size = new System.Drawing.Size(137, 51);
             this.btnXoa.TabIndex = 18;
             this.btnXoa.Text = "Xoá";
@@ -255,7 +255,7 @@
             this.btnCapNhat.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnCapNhat.ForeColor = System.Drawing.Color.White;
             this.btnCapNhat.Image = ((System.Drawing.Image)(resources.GetObject("btnCapNhat.Image")));
-            this.btnCapNhat.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnCapNhat.ImageSize = new System.Drawing.Size(30, 30);
             this.btnCapNhat.Location = new System.Drawing.Point(902, 147);
             this.btnCapNhat.Name = "btnCapNhat";
             this.btnCapNhat.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
@@ -263,7 +263,7 @@
             this.btnCapNhat.OnHoverForeColor = System.Drawing.Color.White;
             this.btnCapNhat.OnHoverImage = null;
             this.btnCapNhat.OnPressedColor = System.Drawing.Color.Black;
-            this.btnCapNhat.Radius = 20;
+            this.btnCapNhat.Radius = 15;
             this.btnCapNhat.Size = new System.Drawing.Size(137, 51);
             this.btnCapNhat.TabIndex = 17;
             this.btnCapNhat.Text = "Cập nhật";
@@ -281,7 +281,7 @@
             this.btnThem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnThem.ForeColor = System.Drawing.Color.White;
             this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
-            this.btnThem.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnThem.ImageSize = new System.Drawing.Size(30, 30);
             this.btnThem.Location = new System.Drawing.Point(742, 147);
             this.btnThem.Name = "btnThem";
             this.btnThem.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
@@ -289,7 +289,7 @@
             this.btnThem.OnHoverForeColor = System.Drawing.Color.White;
             this.btnThem.OnHoverImage = null;
             this.btnThem.OnPressedColor = System.Drawing.Color.Black;
-            this.btnThem.Radius = 20;
+            this.btnThem.Radius = 15;
             this.btnThem.Size = new System.Drawing.Size(137, 51);
             this.btnThem.TabIndex = 15;
             this.btnThem.Text = "Thêm";
@@ -461,7 +461,7 @@
             this.btnTimKiem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnTimKiem.ForeColor = System.Drawing.Color.White;
             this.btnTimKiem.Image = ((System.Drawing.Image)(resources.GetObject("btnTimKiem.Image")));
-            this.btnTimKiem.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnTimKiem.ImageSize = new System.Drawing.Size(30, 30);
             this.btnTimKiem.Location = new System.Drawing.Point(766, 90);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
@@ -469,8 +469,8 @@
             this.btnTimKiem.OnHoverForeColor = System.Drawing.Color.White;
             this.btnTimKiem.OnHoverImage = null;
             this.btnTimKiem.OnPressedColor = System.Drawing.Color.Black;
-            this.btnTimKiem.Radius = 20;
-            this.btnTimKiem.Size = new System.Drawing.Size(138, 40);
+            this.btnTimKiem.Radius = 15;
+            this.btnTimKiem.Size = new System.Drawing.Size(141, 46);
             this.btnTimKiem.TabIndex = 0;
             this.btnTimKiem.Text = "Tìm kiếm";
             this.btnTimKiem.Click += new System.EventHandler(this.gunaButton1_Click);

@@ -15,6 +15,8 @@ namespace QuanLyNhanSu_Nhom6.Views
         {
             InitializeComponent();
         }
+        
+        
 
         private void  btnThongKe_Click(object sender, EventArgs e)
         {
@@ -27,7 +29,9 @@ namespace QuanLyNhanSu_Nhom6.Views
                 }
                 else
                 {
+                    MessageBox.Show(frmLogin.tk);
                     lbNgay.Text = DateTime.Now.ToString();
+                    lbNguoiLap.Text = frmLogin.tk;
                     ThongKeTrinhDoChuyenMon_BUS.createInstance.thongKeTrinhDoChuyenMon(txtTrinhDo.Text, gunaDataGridView1, 1);
                 }
             }

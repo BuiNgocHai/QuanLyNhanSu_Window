@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BUS;
@@ -26,6 +27,27 @@ namespace QuanLyNhanSu_Nhom6.Views
 
         private void btnThem_Click(object sender, EventArgs e)
         {
+            if(txtMaChucVu.Text == "")
+            {
+                frmCanhBaoOK.Instance.capNhatLoiNhan("Mã không được để trống");
+                frmCanhBaoOK.Instance.ShowDialog();
+                return;
+            }
+
+            if(txtTenChucVu.Text == "")
+            {
+                frmCanhBaoOK.Instance.capNhatLoiNhan("Tên không được để trống");
+                frmCanhBaoOK.Instance.ShowDialog();
+                return;
+            }
+
+            if(!Regex.IsMatch(txtHeSoPhuCap.Text, "[0-9]+\\.?[0-9]*"))
+            {
+                frmCanhBaoOK.Instance.capNhatLoiNhan("Hệ số phụ cấp không hợp lệ...");
+                frmCanhBaoOK.Instance.ShowDialog();
+                return;
+            }
+
             int result = ChucVu_BUS.createInstance.themChucVu_BUS(txtMaChucVu, txtTenChucVu, txtHeSoPhuCap);
             if (result == 0)
             {
@@ -49,6 +71,27 @@ namespace QuanLyNhanSu_Nhom6.Views
 
         private void btnCapNhap_Click(object sender, EventArgs e)
         {
+            if (txtMaChucVu.Text == "")
+            {
+                frmCanhBaoOK.Instance.capNhatLoiNhan("Mã không được để trống");
+                frmCanhBaoOK.Instance.ShowDialog();
+                return;
+            }
+
+            if (txtTenChucVu.Text == "")
+            {
+                frmCanhBaoOK.Instance.capNhatLoiNhan("Tên không được để trống");
+                frmCanhBaoOK.Instance.ShowDialog();
+                return;
+            }
+
+            if (!Regex.IsMatch(txtHeSoPhuCap.Text, "[0-9]+\\.?[0-9]*"))
+            {
+                frmCanhBaoOK.Instance.capNhatLoiNhan("Hệ số phụ cấp không hợp lệ...");
+                frmCanhBaoOK.Instance.ShowDialog();
+                return;
+            }
+
             int result = ChucVu_BUS.createInstance.capNhapDuLieu(txtMaChucVu, txtTenChucVu, txtHeSoPhuCap);
             if (result == 0)
             {

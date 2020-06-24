@@ -44,6 +44,21 @@ namespace QuanLyNhanSu_Nhom6.Views
 
         private void btnThem_Click(object sender, EventArgs e)
         {
+            if (txtNganh.Text == "")
+            {
+                frmCanhBaoOK.Instance.capNhatLoiNhan("Ngành không được để trống");
+                frmCanhBaoOK.Instance.ShowDialog();
+                return;
+            }
+
+            if (txtTruongDaoTao.Text == "")
+            {
+                frmCanhBaoOK.Instance.capNhatLoiNhan("Trường đào tao không được để trống");
+                frmCanhBaoOK.Instance.ShowDialog();
+                return;
+            }
+
+
             int kq = TrinhDoChuyenMon_BUS.Instance.themTrinhDoChuyenMon(codeMaNV, cbbTrinhDo, cbbLoaiHinhDaoTao, txtTruongDaoTao, txtNganh);
             if(kq == 0)
             {
@@ -58,6 +73,20 @@ namespace QuanLyNhanSu_Nhom6.Views
 
         private void btnCapNhat_Click(object sender, EventArgs e)
         {
+            if (txtNganh.Text == "")
+            {
+                frmCanhBaoOK.Instance.capNhatLoiNhan("Ngành không được để trống");
+                frmCanhBaoOK.Instance.ShowDialog();
+                return;
+            }
+
+            if (txtTruongDaoTao.Text == "")
+            {
+                frmCanhBaoOK.Instance.capNhatLoiNhan("Trường đào tao không được để trống");
+                frmCanhBaoOK.Instance.ShowDialog();
+                return;
+            }
+
             TrinhDoChuyenMon_BUS.Instance.capNhapTrinhDoChuyenMon(txtNganh, cbbTrinhDo, cbbLoaiHinhDaoTao, txtTruongDaoTao);
             TrinhDoChuyenMon_BUS.Instance.hienThi(gunaDataGridView1, codeMaNV);
         }

@@ -1,4 +1,5 @@
 ﻿using BUS;
+using QuanLyNhanSu_Nhom6.Views;
 using System;
 using System.Windows.Forms;
 namespace GUI.Phan_Thanh_Trung
@@ -213,6 +214,19 @@ namespace GUI.Phan_Thanh_Trung
                     DialogResult k1 = MessageBox.Show("Xoá không thành công", "Thông báo");
                 }
             }
+
+        }
+
+        private void btnChuyenNVCV_Click(object sender, EventArgs e)
+        {
+            frmQuanLyNhanVienChucVu frm = new frmQuanLyNhanVienChucVu();
+            frm.txtMaNV.Text = maNV;
+            frm.ShowDialog();
+            
+        }
+
+        private void btnChuyenTDCM_Click(object sender, EventArgs e)
+        {
 
         }
     }

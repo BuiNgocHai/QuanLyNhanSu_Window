@@ -86,6 +86,13 @@ namespace DAO
 
         public void xoaChucVu(string ma)
         {
+            IQueryable<NHANVIEN_CHUCVU6> query1 =
+                 from q in db.NHANVIEN_CHUCVU6s where q.MACV== ma select q;
+            foreach (NHANVIEN_CHUCVU6 item in query1)
+            {
+                db.NHANVIEN_CHUCVU6s.DeleteOnSubmit(item);
+            }
+
             IQueryable<CHUCVU6> list = from cv in db.CHUCVU6s
                                         where cv.MACV == ma
                                         select cv;
@@ -95,6 +102,7 @@ namespace DAO
                 db.CHUCVU6s.DeleteOnSubmit(cv);
             }
             db.SubmitChanges();
+
 
         }
 
