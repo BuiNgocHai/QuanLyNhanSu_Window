@@ -28,12 +28,12 @@ namespace QuanLyNhanSu_Nhom6.Views
             //this.gunaLabel1.BackColor = Color.Transparent;
             this.btnExit.Parent = gunaPictureBox1;
             this.btnExit.BackColor = Color.Transparent;
-            this.btnMinimize.Parent = gunaPictureBox1;
-            this.btnMinimize.BackColor = Color.Transparent;
             this.panelChonChucNang.Parent = gunaPictureBox1;
             this.panelChonMucThongKe.Parent = panel1;
 
         }
+
+        frmCanhBaoOK frm = new frmCanhBaoOK();
 
         private void frmInThongKePhongBanChucVu_Load(object sender, EventArgs e)
         {
@@ -70,8 +70,8 @@ namespace QuanLyNhanSu_Nhom6.Views
                 int k =ThongKePhongBanChucVu_BUS.Instance.thongKe_BUS(cbTenPhongBan, gunaDataGridView2, 1);
                 if(k==0)
                 {
-                    frmCanhBaoOK.Instance.capNhatLoiNhan("Không tìm thấy!");
-                    frmCanhBaoOK.Instance.ShowDialog();
+                    frm.capNhatLoiNhan("Không tìm thấy!");
+                    frm.ShowDialog();
                 }
                 else
                 {
@@ -85,8 +85,8 @@ namespace QuanLyNhanSu_Nhom6.Views
               int k =  ThongKePhongBanChucVu_BUS.Instance.thongKe_BUS(cbTenChucVu, gunaDataGridView2, 2);
                 if (k == 0)
                 {
-                    frmCanhBaoOK.Instance.capNhatLoiNhan("Không tìm thấy!");
-                    frmCanhBaoOK.Instance.ShowDialog();
+                    frm.capNhatLoiNhan("Không tìm thấy!");
+                    frm.ShowDialog();
                 }
                 else
                 {
@@ -116,9 +116,10 @@ namespace QuanLyNhanSu_Nhom6.Views
                         catch (IOException ex)
                         {
                             fileError = true;
-                            frmCanhBaoOK.Instance.capNhatLoiNhan("Đang có chương trình mở file này!!!");
+                            frm.capNhatLoiNhan("Đang có chương trình mở file này!!!");                           
+                            frm.ShowDialog();
                         }
-                        frmCanhBaoOK.Instance.ShowDialog();
+                        
                     }
                     if (!fileError)
                     {
@@ -172,14 +173,14 @@ namespace QuanLyNhanSu_Nhom6.Views
                                 stream.Close();
                             }
 
-                            frmCanhBaoOK.Instance.capNhatLoiNhan("Xuất dữ liệu thành công!!!");
-                            frmCanhBaoOK.Instance.ShowDialog();
+                            frm.capNhatLoiNhan("Xuất dữ liệu thành công!!!");
+                            frm.ShowDialog();
                         }
                         catch (Exception ex)
                         {
 
-                            frmCanhBaoOK.Instance.capNhatLoiNhan("Có lỗi xảy ra!!!");
-                            frmCanhBaoOK.Instance.ShowDialog();
+                            frm.capNhatLoiNhan("Có lỗi xảy ra!!!");
+                            frm.ShowDialog();
                         }
                     }
                 }
@@ -187,8 +188,8 @@ namespace QuanLyNhanSu_Nhom6.Views
             else
             {
 
-                frmCanhBaoOK.Instance.capNhatLoiNhan("Không có bản ghi nào được xuất!!!");
-                frmCanhBaoOK.Instance.ShowDialog();
+                frm.capNhatLoiNhan("Không có bản ghi nào được xuất!!!");
+                frm.ShowDialog();
             }
         }
 

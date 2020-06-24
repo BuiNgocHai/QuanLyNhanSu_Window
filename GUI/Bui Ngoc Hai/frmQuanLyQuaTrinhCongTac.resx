@@ -352,4 +352,18 @@
   <metadata name="NOICT.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="gunaButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        xAAADsQBlSsOGwAAAetJREFUSEvNVjFuwzAMDIK+IWOHDBky5Q0d+6YsfUDRoS/rVGTM0KFDvxD3TiYV
+        iqJkBWjRHnCQTR6PpmI7XgHrP+D/wq1X1NNXOTuyHnsSdm2RGIr5wHqaph34Cj6D95GmRerBl8vlwvpd
+        pAFLQHgAv0DFB8jiRVAnegV9DpKOAcEdrvAMTo6LjZmnztWRZ/qKLCOPDcHGFVjSMNwuxiWftIQeCzeu
+        pigm31JVjKoxzxmf0zXoR19bA5aAbgsRtyQD53bNW81VzhOYd1r6bJNxB+lKKERR9Nsq2eiRq4tb2oY6
+        XT2lxUDjHocmDIHi4caEHFM/tqUt0oBGamrMC0pcG4ZehmGwIPy2YHFzEaYZF91SX09UMR+oCLPuYyHQ
+        uzr0cGwiJTFF600TUZ/jm6BXka6IBmIUNShIyHHUuJouNfBkIQ3UzK+eLq6NQ2+wBuqXJuRd+iBrlCf1
+        N17GYMP0HEI78uYKG+eRIeKd+g62UD2HPGd8Toegn25p7mUNNrMuRNXQ1HUb09fVXIEkDU5g2h4p4JK3
+        tAXmwbTVpo7rCUvZyIHbuwc/WSDQN80S8r9TqppBnz1zs+QKO3YihPy4egKPMOHWEFpY6Q05Mb8+jlLf
+        +qgLg7/NJrrJn4Rt1LuqKO5rLdQLXK2+AdRA+yy7HrwzAAAAAElFTkSuQmCC
+</value>
+  </data>
 </root>

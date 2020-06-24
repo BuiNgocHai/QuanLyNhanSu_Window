@@ -41,6 +41,14 @@ namespace QuanLyNhanSu_Nhom6.Views
 
             QuanLyQuaTrinhCongTac_BUS.Instance.layDLCombox_BUS(cbTenCV);
 
+            if(txtMaNV.Text != "")
+            {
+                QuanLyQuaTrinhCongTac_BUS.Instance.layThongTinHoSo_BUS(txtMaNV, codeMaNV, codeTenNV);
+                gunaPanel1.Enabled = true;
+                QuanLyQuaTrinhCongTac_BUS.Instance.layDLTable_BUS(gunaDataGridView1, codeMaNV);
+
+            }
+
         }
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
@@ -135,5 +143,10 @@ namespace QuanLyNhanSu_Nhom6.Views
 		{
 
 		}
-	}
+
+        private void gunaButton1_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+    }
 }

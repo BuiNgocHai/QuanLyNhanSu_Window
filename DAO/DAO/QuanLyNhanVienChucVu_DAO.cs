@@ -1,4 +1,5 @@
-﻿using DTO;
+﻿using DTO.DTO;
+using DTO;
 using System;
 using System.Data;
 using System.Linq;
@@ -77,64 +78,44 @@ namespace DAO
 
         public int kiemTraTonTai(string strMaNV, string strMaCV, DateTime tuNgay)
         {
-            int dem = 0;
-            dem = (from q in db.NHANVIEN_CHUCVU6s
-                   where q.TUNGAY == tuNgay && q.MANV == strMaNV && q.MACV == strMaCV
-                   select q).Count();
-
-            return dem;
+            return (from q in db.NHANVIEN_CHUCVU6s
+                    where q.TUNGAY == tuNgay && q.MANV == strMaNV && q.MACV == strMaCV
+                    select q).Count();
         }
 
-        public bool themNVCV_DAO(string strMaNV, string strMaCV, DateTime tuNgay, string denNgay)
+        public int kiemTraThoiGian(string strMaNV, string strMaCV)
         {
-            int dem = kiemTraTonTai(strMaNV, strMaCV, tuNgay);
-            if (dem > 0)
-            {
-                return false;
-            }
-            else
-            {
-                NHANVIEN_CHUCVU6 iNHANVIEN_CHUCVU6s = new NHANVIEN_CHUCVU6
-                {
-                    MANV = strMaNV,
-                    MACV = strMaCV,
-                    TUNGAY = tuNgay,
-                    DENNGAY = denNgay,
-                };
-                try
-                {
-                    db.NHANVIEN_CHUCVU6s.InsertOnSubmit(iNHANVIEN_CHUCVU6s);
-                    db.SubmitChanges();
-                    return true;
-                }
-                catch(Exception )
-                {
-                    return false;
-                }
-            }
+            return (from q in db.NHANVIEN_CHUCVU6s
+                    where q.MANV == strMaNV && q.DENNGAY == "Nay"
+                    select q).Count(); ;
         }
 
-        public bool capnhatNVCV_DAO(string strMaNV, string strMaCV, DateTime tuNgay, string denNgay)
+        public void themNVCV_DAO(QuanLyNhanVienChucVu_DTO nvcv)
         {
-            int dem = kiemTraTonTai(strMaNV, strMaCV, tuNgay);
-            if (dem <= 0)
+            NHANVIEN_CHUCVU6 iNHANVIEN_CHUCVU6s = new NHANVIEN_CHUCVU6
             {
-                return false;
-            }
-            else
-            {
+                MANV = nvcv.MaNV,
+                MACV = nvcv.MaCV,
+                TUNGAY = nvcv.TuNgay,
+                DENNGAY = nvcv.DenNgay,
+            };
+            db.NHANVIEN_CHUCVU6s.InsertOnSubmit(iNHANVIEN_CHUCVU6s);
+            db.SubmitChanges();
+        }
+
+        public void capnhatNVCV_DAO(QuanLyNhanVienChucVu_DTO nvcv)
+        {
+
                 IQueryable<NHANVIEN_CHUCVU6> query =
                  from q in db.NHANVIEN_CHUCVU6s
-                 where q.MANV == strMaNV && q.MACV == strMaCV && q.TUNGAY == tuNgay
+                 where q.MANV == nvcv.MaNV && q.MACV == nvcv.MaCV && q.TUNGAY == nvcv.TuNgay
                  select q;
 
                 foreach (NHANVIEN_CHUCVU6 item in query)
                 {
-                    item.DENNGAY = denNgay;
+                    item.DENNGAY = nvcv.DenNgay;
                 }
                 db.SubmitChanges();
-                return true;
-            }
         }
 
         public bool xoaNVCV_DAO(string strMaNV, string strMaCV, DateTime tuNgay)

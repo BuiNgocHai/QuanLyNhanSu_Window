@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DTO\ChucVu_DTO.cs" />
+    <Compile Include="DTO\QuanLyNhanVienChucVu_DTO.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

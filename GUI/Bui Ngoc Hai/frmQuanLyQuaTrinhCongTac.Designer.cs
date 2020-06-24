@@ -62,6 +62,7 @@
             this.tenChucVu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnMinimize = new Guna.UI.WinForms.GunaButton();
             this.btnExit = new Guna.UI.WinForms.GunaButton();
+            this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
             this.gunaPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -606,12 +607,37 @@
             this.btnExit.Size = new System.Drawing.Size(27, 25);
             this.btnExit.TabIndex = 9;
             // 
+            // gunaButton1
+            // 
+            this.gunaButton1.AnimationHoverSpeed = 0.07F;
+            this.gunaButton1.AnimationSpeed = 0.03F;
+            this.gunaButton1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(74)))));
+            this.gunaButton1.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton1.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton1.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaButton1.ForeColor = System.Drawing.Color.White;
+            this.gunaButton1.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton1.Image")));
+            this.gunaButton1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaButton1.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaButton1.Location = new System.Drawing.Point(1172, 22);
+            this.gunaButton1.Name = "gunaButton1";
+            this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(35)))), ((int)(((byte)(119)))));
+            this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton1.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaButton1.OnHoverImage = null;
+            this.gunaButton1.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton1.Size = new System.Drawing.Size(27, 24);
+            this.gunaButton1.TabIndex = 11;
+            this.gunaButton1.Click += new System.EventHandler(this.gunaButton1_Click);
+            // 
             // frmQuanLyQuaTrinhCongTac
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(74)))));
             this.ClientSize = new System.Drawing.Size(1233, 741);
+            this.Controls.Add(this.gunaButton1);
             this.Controls.Add(this.btnTimKiem);
             this.Controls.Add(this.btnMinimize);
             this.Controls.Add(this.btnExit);
@@ -622,6 +648,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmQuanLyQuaTrinhCongTac";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.frmQuanLyQuaTrinhCongTac_Load);
             this.gunaPanel1.ResumeLayout(false);
             this.gunaPanel1.PerformLayout();
@@ -634,7 +661,6 @@
         #endregion
         private Guna.UI.WinForms.GunaAdvenceButton btnTimKiem;
         private Guna.UI.WinForms.GunaLabel lbMaNV;
-        private Guna.UI.WinForms.GunaTextBox txtMaNV;
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
         private Guna.UI.WinForms.GunaPanel gunaPanel1;
         private Guna.UI.WinForms.GunaButton btnXoa;
@@ -662,5 +688,7 @@
 		private System.Windows.Forms.DataGridViewTextBoxColumn tenChucVu;
 		private Guna.UI.WinForms.GunaLabel gunaLabel4;
 		private Guna.UI.WinForms.GunaTextBox gunaTextBox1;
-	}
+        public Guna.UI.WinForms.GunaTextBox txtMaNV;
+        private Guna.UI.WinForms.GunaButton gunaButton1;
+    }
 }

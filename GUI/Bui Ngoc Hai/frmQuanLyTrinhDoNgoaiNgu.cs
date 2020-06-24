@@ -22,6 +22,14 @@ namespace QuanLyNhanSu_Nhom6.Views
 
             QuanLyTrinhDoNgoaiNgu_BUS.Instance.layDLCombox_BUS(cbNgoaiNgu);
 
+            if (txtMaNV.Text != "")
+            {
+                QuanLyTrinhDoNgoaiNgu_BUS.Instance.layThongTinHoSo_BUS(txtMaNV, codeMaNV, codeTenNV);
+                gunaPanel1.Enabled = true;
+                QuanLyTrinhDoNgoaiNgu_BUS.Instance.layDLTable_BUS(gunaDataGridView1, codeMaNV);
+
+            }
+
         }
         private void gunaLabel5_Click(object sender, EventArgs e)
         {
@@ -77,7 +85,7 @@ namespace QuanLyNhanSu_Nhom6.Views
             bool thucthi = QuanLyTrinhDoNgoaiNgu_BUS.Instance.themNVCV_BUS(codeMaNV, cbNgoaiNgu, txtTrinhDo);
             if (thucthi == false)
             {
-                frmCanhBaoOK.Instance.capNhatLoiNhan("Nhân viên không tồn tại");
+                frmCanhBaoOK.Instance.capNhatLoiNhan("Đã có");
                 frmCanhBaoOK.Instance.ShowDialog();
             }
             else if (codeMaNV.Text == "")
@@ -102,7 +110,7 @@ namespace QuanLyNhanSu_Nhom6.Views
             bool thucthi = QuanLyTrinhDoNgoaiNgu_BUS.Instance.capnhatNVCV_BUS(codeMaNV, cbNgoaiNgu, txtTrinhDo);
             if (thucthi == false)
             {
-                frmCanhBaoOK.Instance.capNhatLoiNhan("Nhân viên không tồn tại");
+                frmCanhBaoOK.Instance.capNhatLoiNhan("Không tìm thấy");
                 frmCanhBaoOK.Instance.ShowDialog();
             }
             else if (codeMaNV.Text == "")
@@ -148,5 +156,10 @@ namespace QuanLyNhanSu_Nhom6.Views
                 }
             }
         }
-	}
+
+        private void gunaButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+    }
 }

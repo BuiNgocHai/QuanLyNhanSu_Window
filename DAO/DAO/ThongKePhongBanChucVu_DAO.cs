@@ -85,7 +85,6 @@ namespace DAO.DAO
                                  NHANVIEN_CHUCVU6s.HOSO6.PHONGBAN6.TENPB,
                                  NHANVIEN_CHUCVU6s.CHUCVU6.TENCV
                              };
-                MessageBox.Show(cb.SelectedValue.ToString());
                 if (query2.Count() > 0)
                 {
                     dgv.DataSource = query2;

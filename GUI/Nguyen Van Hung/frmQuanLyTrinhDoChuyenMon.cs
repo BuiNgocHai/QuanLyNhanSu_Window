@@ -39,7 +39,9 @@ namespace QuanLyNhanSu_Nhom6.Views
         {
             pl.Enabled = false;
             cbbTrinhDo.Text = "ĐẠI HỌC";
-            cbbLoaiHinhDaoTao.Text = "Chính quy";
+            cbbLoaiHinhDaoTao.Text = "Chính quy";           
+            TrinhDoChuyenMon_BUS.Instance.timKiemTrinhDoChuyenMon_BUS(txtMaNhanVien, codeTenNV, gunaDataGridView1);
+            pl.Enabled = true;
         }
 
         private void btnThem_Click(object sender, EventArgs e)
@@ -113,6 +115,9 @@ namespace QuanLyNhanSu_Nhom6.Views
             }
         }
 
-    
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

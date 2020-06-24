@@ -1,5 +1,6 @@
 ﻿using DAO;
 using DTO;
+using DTO.DTO;
 using Guna.UI.WinForms;
 using System.Windows.Forms;
 namespace BUS
@@ -57,14 +58,57 @@ namespace BUS
             QuanLyNhanVienChucVu_DAO.Instance.layDLTable_DAO(gr,lb.Text);
         }
 
-        public bool themNVCV_BUS(GunaLabel txtMNV, GunaComboBox cbCV,GunaDateTimePicker tuNgay, string denNgay)
+          public int kiemTraDuLieu(GunaLabel txtMaNV, GunaComboBox cbCV, GunaDateTimePicker tuNgay, GunaDateTimePicker denNgay, GunaCheckBox chb,ref string strDenNgay)
         {
-           return QuanLyNhanVienChucVu_DAO.Instance.themNVCV_DAO(txtMNV.Text, cbCV.SelectedValue.ToString(),tuNgay.Value, denNgay);
+            int kt = 0;
+            if (chb.Checked)
+            {
+                if (QuanLyNhanVienChucVu_DAO.Instance.kiemTraThoiGian(txtMaNV.Text, cbCV.SelectedValue.ToString()) > 0)
+                    return 1;// kiểm tra nhân viên có đang làm công việc nào đó không?
+                else
+                {
+                    strDenNgay = "Nay";                  
+                    return 3;
+                }
+                    
+            }
+            kt = tuNgay.Value.CompareTo(denNgay.Value);
+            if (kt == 0 || kt >= 1)
+            {
+                return 2;// kiểm tra ngày tháng nhập vào có đúng theo quy tắc không? từ ngày < đến ngày
+            }
+            return 3;
         }
 
-        public bool capnhatNVCV_BUS(GunaLabel strMaNV, GunaLabel strMaCV, GunaDateTimePicker tuNgay, string denNgay)
+        public int themNVCV_BUS(GunaLabel txtMaNV, GunaComboBox cbCV, GunaDateTimePicker tuNgay, GunaDateTimePicker denNgay, GunaCheckBox chb)
+        {            
+            if (QuanLyNhanVienChucVu_DAO.Instance.kiemTraTonTai(txtMaNV.Text, cbCV.SelectedValue.ToString(), tuNgay.Value) > 0)
+                return 0;//kiểm tra đã tồn tại nhân viên với cv này chưa?
+
+            string strDenNgay=denNgay.Text;
+            int kiemtra = kiemTraDuLieu(txtMaNV, cbCV, tuNgay, denNgay, chb,ref strDenNgay);
+           if (kiemtra ==3)
+            {
+                QuanLyNhanVienChucVu_DTO nvcv = new QuanLyNhanVienChucVu_DTO(txtMaNV.Text, cbCV.SelectedValue.ToString(), tuNgay.Value, strDenNgay);
+                QuanLyNhanVienChucVu_DAO.Instance.themNVCV_DAO(nvcv);
+            }
+            return kiemtra;
+            
+            
+        }
+
+        public int capnhatNVCV_BUS(GunaLabel txtMaNV, GunaComboBox cbCV, GunaDateTimePicker tuNgay, GunaDateTimePicker denNgay, GunaCheckBox chb)
         {
-            return QuanLyNhanVienChucVu_DAO.Instance.capnhatNVCV_DAO(strMaNV.Text, strMaCV.Text, tuNgay.Value, denNgay);
+            if (QuanLyNhanVienChucVu_DAO.Instance.kiemTraTonTai(txtMaNV.Text, cbCV.SelectedValue.ToString(), tuNgay.Value) <= 0)
+                return 0;//kiểm tra đã tồn tại nhân viên với cv này chưa? 
+            string strDenNgay = denNgay.Text;
+            int kiemtra = kiemTraDuLieu(txtMaNV, cbCV, tuNgay, denNgay, chb, ref strDenNgay);
+            if (kiemtra == 3)
+            {
+                QuanLyNhanVienChucVu_DTO nvcv = new QuanLyNhanVienChucVu_DTO(txtMaNV.Text, cbCV.SelectedValue.ToString(), tuNgay.Value, strDenNgay);
+                QuanLyNhanVienChucVu_DAO.Instance.capnhatNVCV_DAO(nvcv);
+            }
+            return kiemtra;
         }
 
         public bool xoaNVCV_BUS(GunaLabel strMaNV, GunaLabel strMaCV, GunaDateTimePicker tuNgay)

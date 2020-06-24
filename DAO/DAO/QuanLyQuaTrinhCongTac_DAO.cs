@@ -75,19 +75,19 @@ namespace DAO
             gr.DataSource = query;
         }
 
-        public int kiemTraTonTai(string strMaNV)
+        public int kiemTraTonTai(string strMaNV, DateTime tungay)
         {
             int dem = 0;
-            dem = (from q in db.NHANVIEN_CHUCVU6s
-                   where q.MANV == strMaNV
+            dem = (from q in db.QUATRINHCONGTAC6s
+                   where q.MANV == strMaNV && q.TUNGAY == tungay
                    select q).Count();
             return dem;
         }
 
         public bool themNVCV_DAO(string strMaNV, DateTime tuNgay, DateTime denNgay, string noiCongTac, string chucVu)
         {
-            int dem = kiemTraTonTai(strMaNV);
-            if (dem <= 0)
+            int dem = kiemTraTonTai(strMaNV,tuNgay);
+            if (dem >0)
             {
                 return false;
             }
@@ -109,7 +109,7 @@ namespace DAO
 
         public bool capnhatNVCV_DAO(string strMaNV, DateTime tuNgay, DateTime denNgay, string noiCongTac, string chucVu)
         {
-            int dem = kiemTraTonTai(strMaNV);
+            int dem = kiemTraTonTai(strMaNV,tuNgay);
             if (dem <= 0 )
             {
                 return false;
@@ -135,7 +135,7 @@ namespace DAO
 
         public bool xoaNVCV_DAO(string strMaNV, DateTime tuNgay)
         {
-            int dem = kiemTraTonTai(strMaNV);
+            int dem = kiemTraTonTai(strMaNV,tuNgay);
             if (dem < 1)
             {
                 return false;

@@ -88,6 +88,7 @@ namespace DAO
                         NGAYTD = ntd,
                         MAPB = mpb,
                         TAIKHOAN = tk,
+                        MATKHAU = mk,
                         QUYEN = q
                     };
                     db.HOSO6s.InsertOnSubmit(pb);

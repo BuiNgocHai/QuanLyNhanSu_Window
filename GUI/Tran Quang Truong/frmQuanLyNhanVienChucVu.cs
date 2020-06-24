@@ -24,15 +24,15 @@ namespace QuanLyNhanSu_Nhom6.Views
         public frmQuanLyNhanVienChucVu()
         {
             InitializeComponent();
-          
+
         }
 
         private void frmQuanLyNhanVienChucVu_Load(object sender, EventArgs e)
         {
             gunaPanel1.Enabled = false;
-            
+
             QuanLyNhanVienChucVu_BUS.Instance.layDLCombox_BUS(cbTenCV);
-            if(txtMaNV.Text != null)
+            if (txtMaNV.Text != "")
             {
                 QuanLyNhanVienChucVu_BUS.Instance.layThongTinHoSo_BUS(txtMaNV, codeMaNV, codeTenNV);
                 gunaPanel1.Enabled = true;
@@ -59,24 +59,36 @@ namespace QuanLyNhanSu_Nhom6.Views
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            string strDenNgay = dtDenNgay.Text;
-            if(chbdenNay.Checked)
-            {
-                strDenNgay = "Nay";
-            }
-                bool thucthi = QuanLyNhanVienChucVu_BUS.Instance.themNVCV_BUS(codeMaNV, cbTenCV, dtTuNgay, strDenNgay);
-            if (thucthi == false)
-            {
-                frmCanhBaoOK.Instance.capNhatLoiNhan("Trùng ngày bắt đầu");
-                frmCanhBaoOK.Instance.ShowDialog();
-            }
-            else
-            {
-                frmCanhBaoOK.Instance.capNhatLoiNhan("Thêm thành công");
-                frmCanhBaoOK.Instance.ShowDialog();
-                QuanLyNhanVienChucVu_BUS.Instance.layDLTable_BUS(gunaDataGridView1, codeMaNV);
-            }
+            int thucthi = QuanLyNhanVienChucVu_BUS.Instance.themNVCV_BUS(codeMaNV, cbTenCV, dtTuNgay, dtDenNgay, chbdenNay);
 
+            switch (thucthi)
+            {
+                case 0:
+                    {
+                        frmCanhBaoOK.Instance.capNhatLoiNhan("Nhân viên này đã làm " + cbTenCV.SelectedValue.ToString() + " \nvào ngày " + dtTuNgay.Text);
+                        frmCanhBaoOK.Instance.ShowDialog();
+                        break;
+                    }
+                case 1:
+                    {
+                        frmCanhBaoOK.Instance.capNhatLoiNhan("Nhân viên này hiện tại đang làm công \n việc khác");
+                        frmCanhBaoOK.Instance.ShowDialog();
+                        break;
+                    }
+                case 2:
+                    {
+                        frmCanhBaoOK.Instance.capNhatLoiNhan("Ngày bắt đầu phải nhỏ hơn ngày kết thúc");
+                        frmCanhBaoOK.Instance.ShowDialog();
+                        break;
+                    }
+                case 3:
+                    {
+                        frmCanhBaoOK.Instance.capNhatLoiNhan("Thêm thành công");
+                        frmCanhBaoOK.Instance.ShowDialog();
+                        QuanLyNhanVienChucVu_BUS.Instance.layDLTable_BUS(gunaDataGridView1, codeMaNV);
+                        break;
+                    }
+            }
         }
 
         private void cbTenCV_SelectedValueChanged(object sender, EventArgs e)
@@ -102,22 +114,35 @@ namespace QuanLyNhanSu_Nhom6.Views
 
         private void btnCapNhat_Click(object sender, EventArgs e)
         {
-            string strDenNgay = dtDenNgay.Text;
-            if (chbdenNay.Checked)
+            int thucthi = QuanLyNhanVienChucVu_BUS.Instance.capnhatNVCV_BUS(codeMaNV, cbTenCV, dtTuNgay, dtDenNgay, chbdenNay);
+
+            switch (thucthi)
             {
-                strDenNgay = "Nay";
-            }
-            bool kt = QuanLyNhanVienChucVu_BUS.Instance.capnhatNVCV_BUS(codeMaNV, codeMaCV, dtTuNgay, strDenNgay);
-            if (kt == false)
-            {
-                frmCanhBaoOK.Instance.capNhatLoiNhan("Ngày bắt đầu không được sửa");
-                frmCanhBaoOK.Instance.ShowDialog();
-            }
-            else
-            {
-                frmCanhBaoOK.Instance.capNhatLoiNhan("Sửa thành công");
-                frmCanhBaoOK.Instance.ShowDialog();
-                QuanLyNhanVienChucVu_BUS.Instance.layDLTable_BUS(gunaDataGridView1, codeMaNV);
+                case 0:
+                    {
+                        frmCanhBaoOK.Instance.capNhatLoiNhan("Không tìm thấy!");
+                        frmCanhBaoOK.Instance.ShowDialog();
+                        break;
+                    }
+                case 1:
+                    {
+                        frmCanhBaoOK.Instance.capNhatLoiNhan("Nhân viên này hiện tại đang làm công \n việc khác");
+                        frmCanhBaoOK.Instance.ShowDialog();
+                        break;
+                    }
+                case 2:
+                    {
+                        frmCanhBaoOK.Instance.capNhatLoiNhan("Ngày bắt đầu phải nhỏ hơn ngày kết thúc");
+                        frmCanhBaoOK.Instance.ShowDialog();
+                        break;
+                    }
+                case 3:
+                    {
+                        frmCanhBaoOK.Instance.capNhatLoiNhan("Sửa thành công");
+                        frmCanhBaoOK.Instance.ShowDialog();
+                        QuanLyNhanVienChucVu_BUS.Instance.layDLTable_BUS(gunaDataGridView1, codeMaNV);
+                        break;
+                    }
             }
 
         }
@@ -125,8 +150,8 @@ namespace QuanLyNhanSu_Nhom6.Views
         private void btnXoa_Click(object sender, EventArgs e)
         {
             frmShowDialogYN.Instance.capNhatLoiNhan("Bạn có muốn xoá không?");
-            DialogResult rs =  frmShowDialogYN.Instance.ShowDialog();
-            if(rs == DialogResult.Yes)
+            DialogResult rs = frmShowDialogYN.Instance.ShowDialog();
+            if (rs == DialogResult.Yes)
             {
                 bool kt = QuanLyNhanVienChucVu_BUS.Instance.xoaNVCV_BUS(codeMaNV, codeMaCV, dtTuNgay);
                 if (kt == false)
@@ -139,13 +164,15 @@ namespace QuanLyNhanSu_Nhom6.Views
                     QuanLyNhanVienChucVu_BUS.Instance.layDLTable_BUS(gunaDataGridView1, codeMaNV);
                 }
             }
-            
+
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Close();
         }
+
+
     }
 
 }

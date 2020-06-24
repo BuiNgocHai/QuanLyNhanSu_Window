@@ -149,7 +149,23 @@ namespace GUI.Phan_Thanh_Trung
 
         private void btnChuyenTDCM_Click(object sender, EventArgs e)
         {
+            frmQuanLyTrinhDoChuyenMon frm = new frmQuanLyTrinhDoChuyenMon();
+            frm.txtMaNhanVien.Text = maNV;
+            frm.ShowDialog();
+        }
 
+        private void btnChuyenQTCT_Click(object sender, EventArgs e)
+        {
+            frmQuanLyQuaTrinhCongTac frm = new frmQuanLyQuaTrinhCongTac();
+            frm.txtMaNV.Text = maNV;
+            frm.ShowDialog();
+        }
+
+        private void btnChuyenTDNN_Click(object sender, EventArgs e)
+        {
+            frmQuanLyTrinhDoNgoaiNgu frm = new frmQuanLyTrinhDoNgoaiNgu();
+            frm.txtMaNV.Text = maNV;
+            frm.ShowDialog();
         }
     }
 }

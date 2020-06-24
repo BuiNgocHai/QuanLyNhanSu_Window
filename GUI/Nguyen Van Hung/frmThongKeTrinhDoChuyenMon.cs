@@ -30,7 +30,7 @@ namespace QuanLyNhanSu_Nhom6.Views
                 else
                 {
                     MessageBox.Show(frmLogin.tk);
-                    lbNgay.Text = DateTime.Now.ToString();
+                    lbNgayThang.Text = DateTime.Now.ToString();
                     lbNguoiLap.Text = frmLogin.tk;
                     ThongKeTrinhDoChuyenMon_BUS.createInstance.thongKeTrinhDoChuyenMon(txtTrinhDo.Text, gunaDataGridView1, 1);
                 }

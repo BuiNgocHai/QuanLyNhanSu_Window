@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmQuanLyHoSo));
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
@@ -85,9 +85,10 @@
             // 
             this.gunaLabel1.AutoSize = true;
             this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel1.Location = new System.Drawing.Point(392, 7);
+            this.gunaLabel1.Location = new System.Drawing.Point(523, 9);
+            this.gunaLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(151, 28);
+            this.gunaLabel1.Size = new System.Drawing.Size(187, 35);
             this.gunaLabel1.TabIndex = 0;
             this.gunaLabel1.Text = "Quản Lý Hồ Sơ";
             // 
@@ -95,9 +96,10 @@
             // 
             this.gunaLabel2.AutoSize = true;
             this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel2.Location = new System.Drawing.Point(4, 72);
+            this.gunaLabel2.Location = new System.Drawing.Point(5, 89);
+            this.gunaLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(82, 15);
+            this.gunaLabel2.Size = new System.Drawing.Size(102, 20);
             this.gunaLabel2.TabIndex = 1;
             this.gunaLabel2.Text = "Mã Nhân Viên";
             // 
@@ -105,9 +107,10 @@
             // 
             this.gunaLabel3.AutoSize = true;
             this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel3.Location = new System.Drawing.Point(4, 121);
+            this.gunaLabel3.Location = new System.Drawing.Point(5, 149);
+            this.gunaLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(84, 15);
+            this.gunaLabel3.Size = new System.Drawing.Size(104, 20);
             this.gunaLabel3.TabIndex = 2;
             this.gunaLabel3.Text = "Tên Nhân Viên";
             // 
@@ -115,9 +118,10 @@
             // 
             this.gunaLabel4.AutoSize = true;
             this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel4.Location = new System.Drawing.Point(4, 171);
+            this.gunaLabel4.Location = new System.Drawing.Point(5, 210);
+            this.gunaLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(61, 15);
+            this.gunaLabel4.Size = new System.Drawing.Size(76, 20);
             this.gunaLabel4.TabIndex = 3;
             this.gunaLabel4.Text = "Ngày Sinh";
             // 
@@ -125,9 +129,10 @@
             // 
             this.gunaLabel5.AutoSize = true;
             this.gunaLabel5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel5.Location = new System.Drawing.Point(4, 210);
+            this.gunaLabel5.Location = new System.Drawing.Point(5, 258);
+            this.gunaLabel5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel5.Name = "gunaLabel5";
-            this.gunaLabel5.Size = new System.Drawing.Size(55, 15);
+            this.gunaLabel5.Size = new System.Drawing.Size(68, 20);
             this.gunaLabel5.TabIndex = 4;
             this.gunaLabel5.Text = "Giới Tính";
             // 
@@ -135,9 +140,10 @@
             // 
             this.gunaLabel6.AutoSize = true;
             this.gunaLabel6.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel6.Location = new System.Drawing.Point(4, 251);
+            this.gunaLabel6.Location = new System.Drawing.Point(5, 309);
+            this.gunaLabel6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel6.Name = "gunaLabel6";
-            this.gunaLabel6.Size = new System.Drawing.Size(80, 15);
+            this.gunaLabel6.Size = new System.Drawing.Size(102, 20);
             this.gunaLabel6.TabIndex = 5;
             this.gunaLabel6.Text = "Số Điện Thoại";
             // 
@@ -145,9 +151,10 @@
             // 
             this.gunaLabel7.AutoSize = true;
             this.gunaLabel7.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel7.Location = new System.Drawing.Point(4, 284);
+            this.gunaLabel7.Location = new System.Drawing.Point(5, 350);
+            this.gunaLabel7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel7.Name = "gunaLabel7";
-            this.gunaLabel7.Size = new System.Drawing.Size(36, 15);
+            this.gunaLabel7.Size = new System.Drawing.Size(46, 20);
             this.gunaLabel7.TabIndex = 6;
             this.gunaLabel7.Text = "Email";
             // 
@@ -156,9 +163,10 @@
             this.gunaLabel8.AutoSize = true;
             this.gunaLabel8.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gunaLabel8.ForeColor = System.Drawing.Color.White;
-            this.gunaLabel8.Location = new System.Drawing.Point(406, 72);
+            this.gunaLabel8.Location = new System.Drawing.Point(541, 89);
+            this.gunaLabel8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel8.Name = "gunaLabel8";
-            this.gunaLabel8.Size = new System.Drawing.Size(103, 15);
+            this.gunaLabel8.Size = new System.Drawing.Size(127, 20);
             this.gunaLabel8.TabIndex = 7;
             this.gunaLabel8.Text = "Ngày Tuyển Dụng";
             // 
@@ -167,9 +175,10 @@
             this.gunaLabel9.AutoSize = true;
             this.gunaLabel9.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gunaLabel9.ForeColor = System.Drawing.Color.White;
-            this.gunaLabel9.Location = new System.Drawing.Point(406, 111);
+            this.gunaLabel9.Location = new System.Drawing.Point(541, 137);
+            this.gunaLabel9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel9.Name = "gunaLabel9";
-            this.gunaLabel9.Size = new System.Drawing.Size(87, 15);
+            this.gunaLabel9.Size = new System.Drawing.Size(107, 20);
             this.gunaLabel9.TabIndex = 8;
             this.gunaLabel9.Text = "Tên Phòng Ban";
             // 
@@ -178,9 +187,10 @@
             this.gunaLabel10.AutoSize = true;
             this.gunaLabel10.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gunaLabel10.ForeColor = System.Drawing.Color.White;
-            this.gunaLabel10.Location = new System.Drawing.Point(406, 203);
+            this.gunaLabel10.Location = new System.Drawing.Point(541, 250);
+            this.gunaLabel10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel10.Name = "gunaLabel10";
-            this.gunaLabel10.Size = new System.Drawing.Size(58, 15);
+            this.gunaLabel10.Size = new System.Drawing.Size(72, 20);
             this.gunaLabel10.TabIndex = 9;
             this.gunaLabel10.Text = "Mật Khẩu";
             // 
@@ -189,9 +199,10 @@
             this.gunaLabel11.AutoSize = true;
             this.gunaLabel11.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gunaLabel11.ForeColor = System.Drawing.Color.White;
-            this.gunaLabel11.Location = new System.Drawing.Point(406, 155);
+            this.gunaLabel11.Location = new System.Drawing.Point(541, 191);
+            this.gunaLabel11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel11.Name = "gunaLabel11";
-            this.gunaLabel11.Size = new System.Drawing.Size(59, 15);
+            this.gunaLabel11.Size = new System.Drawing.Size(73, 20);
             this.gunaLabel11.TabIndex = 10;
             this.gunaLabel11.Text = "Tài Khoản";
             // 
@@ -200,9 +211,10 @@
             this.gunaLabel12.AutoSize = true;
             this.gunaLabel12.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gunaLabel12.ForeColor = System.Drawing.Color.White;
-            this.gunaLabel12.Location = new System.Drawing.Point(406, 251);
+            this.gunaLabel12.Location = new System.Drawing.Point(541, 309);
+            this.gunaLabel12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel12.Name = "gunaLabel12";
-            this.gunaLabel12.Size = new System.Drawing.Size(42, 15);
+            this.gunaLabel12.Size = new System.Drawing.Size(51, 20);
             this.gunaLabel12.TabIndex = 11;
             this.gunaLabel12.Text = "Quyền";
             // 
@@ -218,12 +230,13 @@
             this.txbMaNV.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txbMaNV.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txbMaNV.ForeColor = System.Drawing.Color.White;
-            this.txbMaNV.Location = new System.Drawing.Point(112, 63);
+            this.txbMaNV.Location = new System.Drawing.Point(149, 78);
+            this.txbMaNV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txbMaNV.Name = "txbMaNV";
             this.txbMaNV.PasswordChar = '\0';
             this.txbMaNV.Radius = 10;
             this.txbMaNV.SelectedText = "";
-            this.txbMaNV.Size = new System.Drawing.Size(239, 30);
+            this.txbMaNV.Size = new System.Drawing.Size(319, 37);
             this.txbMaNV.TabIndex = 12;
             // 
             // txbTenNV
@@ -238,12 +251,13 @@
             this.txbTenNV.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txbTenNV.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txbTenNV.ForeColor = System.Drawing.Color.White;
-            this.txbTenNV.Location = new System.Drawing.Point(112, 112);
+            this.txbTenNV.Location = new System.Drawing.Point(149, 138);
+            this.txbTenNV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txbTenNV.Name = "txbTenNV";
             this.txbTenNV.PasswordChar = '\0';
             this.txbTenNV.Radius = 10;
             this.txbTenNV.SelectedText = "";
-            this.txbTenNV.Size = new System.Drawing.Size(239, 30);
+            this.txbTenNV.Size = new System.Drawing.Size(319, 37);
             this.txbTenNV.TabIndex = 13;
             // 
             // txbSoDT
@@ -258,12 +272,13 @@
             this.txbSoDT.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txbSoDT.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txbSoDT.ForeColor = System.Drawing.Color.White;
-            this.txbSoDT.Location = new System.Drawing.Point(112, 240);
+            this.txbSoDT.Location = new System.Drawing.Point(149, 295);
+            this.txbSoDT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txbSoDT.Name = "txbSoDT";
             this.txbSoDT.PasswordChar = '\0';
             this.txbSoDT.Radius = 10;
             this.txbSoDT.SelectedText = "";
-            this.txbSoDT.Size = new System.Drawing.Size(239, 30);
+            this.txbSoDT.Size = new System.Drawing.Size(319, 37);
             this.txbSoDT.TabIndex = 15;
             // 
             // txbEmail
@@ -278,12 +293,13 @@
             this.txbEmail.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txbEmail.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txbEmail.ForeColor = System.Drawing.Color.White;
-            this.txbEmail.Location = new System.Drawing.Point(112, 289);
+            this.txbEmail.Location = new System.Drawing.Point(149, 356);
+            this.txbEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txbEmail.Name = "txbEmail";
             this.txbEmail.PasswordChar = '\0';
             this.txbEmail.Radius = 10;
             this.txbEmail.SelectedText = "";
-            this.txbEmail.Size = new System.Drawing.Size(239, 30);
+            this.txbEmail.Size = new System.Drawing.Size(319, 37);
             this.txbEmail.TabIndex = 16;
             // 
             // txbTaiKhoan
@@ -298,12 +314,13 @@
             this.txbTaiKhoan.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txbTaiKhoan.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txbTaiKhoan.ForeColor = System.Drawing.Color.White;
-            this.txbTaiKhoan.Location = new System.Drawing.Point(514, 145);
+            this.txbTaiKhoan.Location = new System.Drawing.Point(685, 178);
+            this.txbTaiKhoan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txbTaiKhoan.Name = "txbTaiKhoan";
             this.txbTaiKhoan.PasswordChar = '\0';
             this.txbTaiKhoan.Radius = 10;
             this.txbTaiKhoan.SelectedText = "";
-            this.txbTaiKhoan.Size = new System.Drawing.Size(239, 30);
+            this.txbTaiKhoan.Size = new System.Drawing.Size(319, 37);
             this.txbTaiKhoan.TabIndex = 18;
             // 
             // txbMatKhau
@@ -318,12 +335,13 @@
             this.txbMatKhau.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txbMatKhau.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txbMatKhau.ForeColor = System.Drawing.Color.White;
-            this.txbMatKhau.Location = new System.Drawing.Point(514, 194);
+            this.txbMatKhau.Location = new System.Drawing.Point(685, 239);
+            this.txbMatKhau.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txbMatKhau.Name = "txbMatKhau";
             this.txbMatKhau.PasswordChar = '\0';
             this.txbMatKhau.Radius = 10;
             this.txbMatKhau.SelectedText = "";
-            this.txbMatKhau.Size = new System.Drawing.Size(239, 30);
+            this.txbMatKhau.Size = new System.Drawing.Size(319, 37);
             this.txbMatKhau.TabIndex = 19;
             // 
             // txbQuyen
@@ -338,12 +356,13 @@
             this.txbQuyen.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txbQuyen.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txbQuyen.ForeColor = System.Drawing.Color.White;
-            this.txbQuyen.Location = new System.Drawing.Point(514, 243);
+            this.txbQuyen.Location = new System.Drawing.Point(685, 299);
+            this.txbQuyen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txbQuyen.Name = "txbQuyen";
             this.txbQuyen.PasswordChar = '\0';
             this.txbQuyen.Radius = 10;
             this.txbQuyen.SelectedText = "";
-            this.txbQuyen.Size = new System.Drawing.Size(239, 30);
+            this.txbQuyen.Size = new System.Drawing.Size(319, 37);
             this.txbQuyen.TabIndex = 20;
             // 
             // cbBoxGioiTinh
@@ -361,12 +380,13 @@
             this.cbBoxGioiTinh.Items.AddRange(new object[] {
             "Nam",
             "Nữ"});
-            this.cbBoxGioiTinh.Location = new System.Drawing.Point(114, 202);
+            this.cbBoxGioiTinh.Location = new System.Drawing.Point(152, 249);
+            this.cbBoxGioiTinh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbBoxGioiTinh.Name = "cbBoxGioiTinh";
             this.cbBoxGioiTinh.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.cbBoxGioiTinh.OnHoverItemForeColor = System.Drawing.Color.White;
             this.cbBoxGioiTinh.Radius = 10;
-            this.cbBoxGioiTinh.Size = new System.Drawing.Size(128, 26);
+            this.cbBoxGioiTinh.Size = new System.Drawing.Size(169, 31);
             this.cbBoxGioiTinh.TabIndex = 21;
             // 
             // cbBoxMaPB
@@ -381,31 +401,32 @@
             this.cbBoxMaPB.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbBoxMaPB.ForeColor = System.Drawing.Color.White;
             this.cbBoxMaPB.FormattingEnabled = true;
-            this.cbBoxMaPB.Location = new System.Drawing.Point(514, 106);
+            this.cbBoxMaPB.Location = new System.Drawing.Point(685, 130);
+            this.cbBoxMaPB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbBoxMaPB.Name = "cbBoxMaPB";
             this.cbBoxMaPB.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.cbBoxMaPB.OnHoverItemForeColor = System.Drawing.Color.White;
             this.cbBoxMaPB.Radius = 10;
-            this.cbBoxMaPB.Size = new System.Drawing.Size(165, 26);
+            this.cbBoxMaPB.Size = new System.Drawing.Size(219, 31);
             this.cbBoxMaPB.TabIndex = 22;
             // 
             // dtGridViewHoSo
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(201)))), ((int)(((byte)(197)))));
-            this.dtGridViewHoSo.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(201)))), ((int)(((byte)(197)))));
+            this.dtGridViewHoSo.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.dtGridViewHoSo.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtGridViewHoSo.BackgroundColor = System.Drawing.Color.White;
             this.dtGridViewHoSo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtGridViewHoSo.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dtGridViewHoSo.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtGridViewHoSo.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtGridViewHoSo.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dtGridViewHoSo.ColumnHeadersHeight = 27;
             this.dtGridViewHoSo.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.maNhanVien,
@@ -419,21 +440,22 @@
             this.TAIKHOAN,
             this.MATKHAU,
             this.QUYEN});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(219)))), ((int)(((byte)(216)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(135)))), ((int)(((byte)(125)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtGridViewHoSo.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(219)))), ((int)(((byte)(216)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(135)))), ((int)(((byte)(125)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtGridViewHoSo.DefaultCellStyle = dataGridViewCellStyle9;
             this.dtGridViewHoSo.EnableHeadersVisualStyles = false;
             this.dtGridViewHoSo.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(192)))), ((int)(((byte)(188)))));
-            this.dtGridViewHoSo.Location = new System.Drawing.Point(0, 347);
+            this.dtGridViewHoSo.Location = new System.Drawing.Point(0, 427);
+            this.dtGridViewHoSo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtGridViewHoSo.Name = "dtGridViewHoSo";
             this.dtGridViewHoSo.RowHeadersVisible = false;
             this.dtGridViewHoSo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtGridViewHoSo.Size = new System.Drawing.Size(923, 178);
+            this.dtGridViewHoSo.Size = new System.Drawing.Size(1231, 219);
             this.dtGridViewHoSo.TabIndex = 23;
             this.dtGridViewHoSo.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Alizarin;
             this.dtGridViewHoSo.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(201)))), ((int)(((byte)(197)))));
@@ -548,8 +570,9 @@
             this.btnNhapLai.ForeColor = System.Drawing.Color.White;
             this.btnNhapLai.Image = ((System.Drawing.Image)(resources.GetObject("btnNhapLai.Image")));
             this.btnNhapLai.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnNhapLai.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnNhapLai.Location = new System.Drawing.Point(514, 284);
+            this.btnNhapLai.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnNhapLai.Location = new System.Drawing.Point(685, 350);
+            this.btnNhapLai.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnNhapLai.Name = "btnNhapLai";
             this.btnNhapLai.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnNhapLai.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -557,7 +580,7 @@
             this.btnNhapLai.OnHoverImage = null;
             this.btnNhapLai.OnPressedColor = System.Drawing.Color.Black;
             this.btnNhapLai.Radius = 15;
-            this.btnNhapLai.Size = new System.Drawing.Size(148, 42);
+            this.btnNhapLai.Size = new System.Drawing.Size(197, 52);
             this.btnNhapLai.TabIndex = 30;
             this.btnNhapLai.Text = "Nhập Lại";
             this.btnNhapLai.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -576,8 +599,9 @@
             this.btnXemHoSo.ForeColor = System.Drawing.Color.White;
             this.btnXemHoSo.Image = ((System.Drawing.Image)(resources.GetObject("btnXemHoSo.Image")));
             this.btnXemHoSo.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnXemHoSo.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnXemHoSo.Location = new System.Drawing.Point(778, 268);
+            this.btnXemHoSo.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnXemHoSo.Location = new System.Drawing.Point(1037, 330);
+            this.btnXemHoSo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnXemHoSo.Name = "btnXemHoSo";
             this.btnXemHoSo.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnXemHoSo.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -585,7 +609,7 @@
             this.btnXemHoSo.OnHoverImage = null;
             this.btnXemHoSo.OnPressedColor = System.Drawing.Color.Black;
             this.btnXemHoSo.Radius = 15;
-            this.btnXemHoSo.Size = new System.Drawing.Size(127, 42);
+            this.btnXemHoSo.Size = new System.Drawing.Size(169, 52);
             this.btnXemHoSo.TabIndex = 28;
             this.btnXemHoSo.Text = "Xem";
             this.btnXemHoSo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -604,8 +628,9 @@
             this.btnTimKiemHoSo.ForeColor = System.Drawing.Color.White;
             this.btnTimKiemHoSo.Image = ((System.Drawing.Image)(resources.GetObject("btnTimKiemHoSo.Image")));
             this.btnTimKiemHoSo.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnTimKiemHoSo.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnTimKiemHoSo.Location = new System.Drawing.Point(778, 211);
+            this.btnTimKiemHoSo.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnTimKiemHoSo.Location = new System.Drawing.Point(1037, 260);
+            this.btnTimKiemHoSo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnTimKiemHoSo.Name = "btnTimKiemHoSo";
             this.btnTimKiemHoSo.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnTimKiemHoSo.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -613,7 +638,7 @@
             this.btnTimKiemHoSo.OnHoverImage = null;
             this.btnTimKiemHoSo.OnPressedColor = System.Drawing.Color.Black;
             this.btnTimKiemHoSo.Radius = 15;
-            this.btnTimKiemHoSo.Size = new System.Drawing.Size(127, 42);
+            this.btnTimKiemHoSo.Size = new System.Drawing.Size(169, 52);
             this.btnTimKiemHoSo.TabIndex = 27;
             this.btnTimKiemHoSo.Text = "Tìm Kiếm";
             this.btnTimKiemHoSo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -632,8 +657,9 @@
             this.btnXoaHoSo.ForeColor = System.Drawing.Color.White;
             this.btnXoaHoSo.Image = ((System.Drawing.Image)(resources.GetObject("btnXoaHoSo.Image")));
             this.btnXoaHoSo.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnXoaHoSo.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnXoaHoSo.Location = new System.Drawing.Point(778, 153);
+            this.btnXoaHoSo.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnXoaHoSo.Location = new System.Drawing.Point(1037, 188);
+            this.btnXoaHoSo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnXoaHoSo.Name = "btnXoaHoSo";
             this.btnXoaHoSo.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnXoaHoSo.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -641,7 +667,7 @@
             this.btnXoaHoSo.OnHoverImage = null;
             this.btnXoaHoSo.OnPressedColor = System.Drawing.Color.Black;
             this.btnXoaHoSo.Radius = 15;
-            this.btnXoaHoSo.Size = new System.Drawing.Size(127, 42);
+            this.btnXoaHoSo.Size = new System.Drawing.Size(169, 52);
             this.btnXoaHoSo.TabIndex = 26;
             this.btnXoaHoSo.Text = "Xóa Hồ Sơ";
             this.btnXoaHoSo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -660,8 +686,9 @@
             this.btnSuaHoSo.ForeColor = System.Drawing.Color.White;
             this.btnSuaHoSo.Image = ((System.Drawing.Image)(resources.GetObject("btnSuaHoSo.Image")));
             this.btnSuaHoSo.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnSuaHoSo.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnSuaHoSo.Location = new System.Drawing.Point(778, 95);
+            this.btnSuaHoSo.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnSuaHoSo.Location = new System.Drawing.Point(1037, 117);
+            this.btnSuaHoSo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSuaHoSo.Name = "btnSuaHoSo";
             this.btnSuaHoSo.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnSuaHoSo.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -669,7 +696,7 @@
             this.btnSuaHoSo.OnHoverImage = null;
             this.btnSuaHoSo.OnPressedColor = System.Drawing.Color.Black;
             this.btnSuaHoSo.Radius = 15;
-            this.btnSuaHoSo.Size = new System.Drawing.Size(127, 42);
+            this.btnSuaHoSo.Size = new System.Drawing.Size(169, 52);
             this.btnSuaHoSo.TabIndex = 25;
             this.btnSuaHoSo.Text = "Sửa Hồ Sơ";
             this.btnSuaHoSo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -688,8 +715,9 @@
             this.btnThemHoSo.ForeColor = System.Drawing.Color.White;
             this.btnThemHoSo.Image = ((System.Drawing.Image)(resources.GetObject("btnThemHoSo.Image")));
             this.btnThemHoSo.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnThemHoSo.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnThemHoSo.Location = new System.Drawing.Point(778, 39);
+            this.btnThemHoSo.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnThemHoSo.Location = new System.Drawing.Point(1037, 48);
+            this.btnThemHoSo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnThemHoSo.Name = "btnThemHoSo";
             this.btnThemHoSo.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnThemHoSo.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -697,7 +725,7 @@
             this.btnThemHoSo.OnHoverImage = null;
             this.btnThemHoSo.OnPressedColor = System.Drawing.Color.Black;
             this.btnThemHoSo.Radius = 15;
-            this.btnThemHoSo.Size = new System.Drawing.Size(127, 42);
+            this.btnThemHoSo.Size = new System.Drawing.Size(169, 52);
             this.btnThemHoSo.TabIndex = 24;
             this.btnThemHoSo.Text = "Thêm Hồ Sơ";
             this.btnThemHoSo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -716,8 +744,9 @@
             this.btnChuyenQTCT.ForeColor = System.Drawing.Color.White;
             this.btnChuyenQTCT.Image = ((System.Drawing.Image)(resources.GetObject("btnChuyenQTCT.Image")));
             this.btnChuyenQTCT.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnChuyenQTCT.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnChuyenQTCT.Location = new System.Drawing.Point(192, 540);
+            this.btnChuyenQTCT.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnChuyenQTCT.Location = new System.Drawing.Point(256, 665);
+            this.btnChuyenQTCT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnChuyenQTCT.Name = "btnChuyenQTCT";
             this.btnChuyenQTCT.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnChuyenQTCT.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -725,10 +754,11 @@
             this.btnChuyenQTCT.OnHoverImage = null;
             this.btnChuyenQTCT.OnPressedColor = System.Drawing.Color.Black;
             this.btnChuyenQTCT.Radius = 15;
-            this.btnChuyenQTCT.Size = new System.Drawing.Size(160, 42);
+            this.btnChuyenQTCT.Size = new System.Drawing.Size(213, 52);
             this.btnChuyenQTCT.TabIndex = 31;
             this.btnChuyenQTCT.Text = "Quá Trình Công Tác";
             this.btnChuyenQTCT.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnChuyenQTCT.Click += new System.EventHandler(this.btnChuyenQTCT_Click);
             // 
             // btnChuyenNVCV
             // 
@@ -743,8 +773,9 @@
             this.btnChuyenNVCV.ForeColor = System.Drawing.Color.White;
             this.btnChuyenNVCV.Image = ((System.Drawing.Image)(resources.GetObject("btnChuyenNVCV.Image")));
             this.btnChuyenNVCV.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnChuyenNVCV.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnChuyenNVCV.Location = new System.Drawing.Point(369, 540);
+            this.btnChuyenNVCV.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnChuyenNVCV.Location = new System.Drawing.Point(492, 665);
+            this.btnChuyenNVCV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnChuyenNVCV.Name = "btnChuyenNVCV";
             this.btnChuyenNVCV.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnChuyenNVCV.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -752,7 +783,7 @@
             this.btnChuyenNVCV.OnHoverImage = null;
             this.btnChuyenNVCV.OnPressedColor = System.Drawing.Color.Black;
             this.btnChuyenNVCV.Radius = 15;
-            this.btnChuyenNVCV.Size = new System.Drawing.Size(160, 42);
+            this.btnChuyenNVCV.Size = new System.Drawing.Size(213, 52);
             this.btnChuyenNVCV.TabIndex = 32;
             this.btnChuyenNVCV.Text = "Nhân Viên - Chức Vụ";
             this.btnChuyenNVCV.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -771,8 +802,9 @@
             this.btnChuyenTDCM.ForeColor = System.Drawing.Color.White;
             this.btnChuyenTDCM.Image = ((System.Drawing.Image)(resources.GetObject("btnChuyenTDCM.Image")));
             this.btnChuyenTDCM.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnChuyenTDCM.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnChuyenTDCM.Location = new System.Drawing.Point(540, 540);
+            this.btnChuyenTDCM.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnChuyenTDCM.Location = new System.Drawing.Point(720, 665);
+            this.btnChuyenTDCM.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnChuyenTDCM.Name = "btnChuyenTDCM";
             this.btnChuyenTDCM.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnChuyenTDCM.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -780,7 +812,7 @@
             this.btnChuyenTDCM.OnHoverImage = null;
             this.btnChuyenTDCM.OnPressedColor = System.Drawing.Color.Black;
             this.btnChuyenTDCM.Radius = 15;
-            this.btnChuyenTDCM.Size = new System.Drawing.Size(160, 42);
+            this.btnChuyenTDCM.Size = new System.Drawing.Size(213, 52);
             this.btnChuyenTDCM.TabIndex = 33;
             this.btnChuyenTDCM.Text = "Trình Độ Chuyên Môn";
             this.btnChuyenTDCM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -799,8 +831,9 @@
             this.btnChuyenTDNN.ForeColor = System.Drawing.Color.White;
             this.btnChuyenTDNN.Image = ((System.Drawing.Image)(resources.GetObject("btnChuyenTDNN.Image")));
             this.btnChuyenTDNN.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnChuyenTDNN.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnChuyenTDNN.Location = new System.Drawing.Point(706, 540);
+            this.btnChuyenTDNN.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnChuyenTDNN.Location = new System.Drawing.Point(941, 665);
+            this.btnChuyenTDNN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnChuyenTDNN.Name = "btnChuyenTDNN";
             this.btnChuyenTDNN.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnChuyenTDNN.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -808,23 +841,26 @@
             this.btnChuyenTDNN.OnHoverImage = null;
             this.btnChuyenTDNN.OnPressedColor = System.Drawing.Color.Black;
             this.btnChuyenTDNN.Radius = 15;
-            this.btnChuyenTDNN.Size = new System.Drawing.Size(160, 42);
+            this.btnChuyenTDNN.Size = new System.Drawing.Size(213, 52);
             this.btnChuyenTDNN.TabIndex = 34;
             this.btnChuyenTDNN.Text = "Trình Độ Ngoại Ngữ";
             this.btnChuyenTDNN.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnChuyenTDNN.Click += new System.EventHandler(this.btnChuyenTDNN_Click);
             // 
             // gunaLabel13
             // 
             this.gunaLabel13.AutoSize = true;
             this.gunaLabel13.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel13.Location = new System.Drawing.Point(70, 552);
+            this.gunaLabel13.Location = new System.Drawing.Point(93, 679);
+            this.gunaLabel13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel13.Name = "gunaLabel13";
-            this.gunaLabel13.Size = new System.Drawing.Size(84, 20);
+            this.gunaLabel13.Size = new System.Drawing.Size(108, 25);
             this.gunaLabel13.TabIndex = 35;
             this.gunaLabel13.Text = "Chuyển tới";
             // 
             // dtPickerNS
             // 
+            this.dtPickerNS.BackColor = System.Drawing.Color.Transparent;
             this.dtPickerNS.BaseColor = System.Drawing.Color.White;
             this.dtPickerNS.BorderColor = System.Drawing.Color.Silver;
             this.dtPickerNS.CustomFormat = null;
@@ -832,7 +868,8 @@
             this.dtPickerNS.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.dtPickerNS.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dtPickerNS.ForeColor = System.Drawing.Color.Black;
-            this.dtPickerNS.Location = new System.Drawing.Point(112, 158);
+            this.dtPickerNS.Location = new System.Drawing.Point(149, 194);
+            this.dtPickerNS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtPickerNS.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtPickerNS.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtPickerNS.Name = "dtPickerNS";
@@ -840,13 +877,15 @@
             this.dtPickerNS.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.dtPickerNS.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.dtPickerNS.OnPressedColor = System.Drawing.Color.Black;
-            this.dtPickerNS.Size = new System.Drawing.Size(239, 30);
+            this.dtPickerNS.Radius = 10;
+            this.dtPickerNS.Size = new System.Drawing.Size(319, 37);
             this.dtPickerNS.TabIndex = 36;
             this.dtPickerNS.Text = "Wednesday, June 24, 2020";
             this.dtPickerNS.Value = new System.DateTime(2020, 6, 24, 9, 2, 11, 721);
             // 
             // dtPickerNTD
             // 
+            this.dtPickerNTD.BackColor = System.Drawing.Color.Transparent;
             this.dtPickerNTD.BaseColor = System.Drawing.Color.White;
             this.dtPickerNTD.BorderColor = System.Drawing.Color.Silver;
             this.dtPickerNTD.CustomFormat = null;
@@ -854,7 +893,8 @@
             this.dtPickerNTD.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.dtPickerNTD.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dtPickerNTD.ForeColor = System.Drawing.Color.Black;
-            this.dtPickerNTD.Location = new System.Drawing.Point(514, 63);
+            this.dtPickerNTD.Location = new System.Drawing.Point(685, 78);
+            this.dtPickerNTD.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtPickerNTD.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtPickerNTD.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtPickerNTD.Name = "dtPickerNTD";
@@ -862,17 +902,18 @@
             this.dtPickerNTD.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.dtPickerNTD.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.dtPickerNTD.OnPressedColor = System.Drawing.Color.Black;
-            this.dtPickerNTD.Size = new System.Drawing.Size(239, 30);
+            this.dtPickerNTD.Radius = 10;
+            this.dtPickerNTD.Size = new System.Drawing.Size(319, 37);
             this.dtPickerNTD.TabIndex = 37;
             this.dtPickerNTD.Text = "Wednesday, June 24, 2020";
             this.dtPickerNTD.Value = new System.DateTime(2020, 6, 24, 9, 2, 11, 721);
             // 
             // frmQuanLyHoSo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(74)))));
-            this.ClientSize = new System.Drawing.Size(925, 602);
+            this.ClientSize = new System.Drawing.Size(1233, 741);
             this.Controls.Add(this.dtPickerNTD);
             this.Controls.Add(this.dtPickerNS);
             this.Controls.Add(this.gunaLabel13);
@@ -910,6 +951,7 @@
             this.Controls.Add(this.gunaLabel1);
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmQuanLyHoSo";
             this.Text = "frmQuanLyHoSo";
             this.Load += new System.EventHandler(this.frmQuanLyHoSo_Load);

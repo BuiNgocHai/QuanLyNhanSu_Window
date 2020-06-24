@@ -27,15 +27,21 @@ namespace BUS
         {
 
         }
-        public void layDLNgoaiNgu_BUS(GunaComboBox cb)
+        public void layDLNgoaiNgu_BUS(GunaComboBox cb1, GunaComboBox cb2)
         {
-            ThongKeTrinhDoNgoaiNgu_DAO.Instance.layDLNgoaiNgu_DAO(cb);
-        }
-        public int thongKe_BUS(GunaComboBox cb, GunaDataGridView dgv,int kieu)
-        {
-            return 1;
+            ThongKeTrinhDoNgoaiNgu_DAO.Instance.layDLNgoaiNgu_DAO(cb1);
+            ThongKeTrinhDoNgoaiNgu_DAO.Instance.layDLTrinhDo_DAO(cb2);
 
         }
+
+       
+
+        public int thongKe_BUS(GunaComboBox cb, GunaDataGridView dgv,int kieu)
+        {
+            return ThongKeTrinhDoNgoaiNgu_DAO.Instance.thongKe_DAO(cb, dgv, kieu);
+
+        }
+
 
     }
 }

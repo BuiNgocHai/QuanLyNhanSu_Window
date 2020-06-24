@@ -55,7 +55,7 @@ namespace DAO
                                                  select q;
             cb.DataSource = query;
             cb.DisplayMember = "NGOAINGU";
-            cb.ValueMember = "MANV";
+            cb.ValueMember = "NGOAINGU";
         }
 
         public void layDLTable_DAO(DataGridView gr, string strMaNV)
@@ -73,19 +73,19 @@ namespace DAO
             gr.DataSource = query;
         }
 
-        public int kiemTraTonTai(string strMaNV)
+        public int kiemTraTonTai(string strMaNV, string nn)
         {
             int dem = 0;
-            dem = (from q in db.NHANVIEN_CHUCVU6s
-                   where q.MANV == strMaNV
+            dem = (from q in db.TRINHDONGOAINGU6s
+                   where q.MANV == strMaNV &&  q.NGOAINGU == nn
                    select q).Count();
             return dem;
         }
 
         public bool themNVCV_DAO(string strMaNV, string ngoaingu, string trinhdo)
         {
-            int dem = kiemTraTonTai(strMaNV);
-            if (dem <=  0)
+            int dem = kiemTraTonTai(strMaNV, ngoaingu);
+            if (dem >  0)
             {
                 return false;
             }
@@ -105,7 +105,7 @@ namespace DAO
 
         public bool capnhatNVCV_DAO(string strMaNV, string ngoaingu, string trinhdo)
         {
-            int dem = kiemTraTonTai(strMaNV);
+            int dem = kiemTraTonTai(strMaNV,ngoaingu);
             if (dem <= 0)
             {
                 return false;
@@ -129,7 +129,7 @@ namespace DAO
 
         public bool xoaNVCV_DAO(string strMaNV, string ngoaingu, string trinhdo)
         {
-            int dem = kiemTraTonTai(strMaNV);
+            int dem = kiemTraTonTai(strMaNV,ngoaingu);
             if (dem <= 0)
             {
                 return false;
