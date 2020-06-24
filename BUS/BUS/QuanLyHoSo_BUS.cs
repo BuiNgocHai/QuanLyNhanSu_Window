@@ -113,7 +113,7 @@ namespace BUS
 
         public void xuatFile(GunaTextBox mnv, GunaTextBox ten, GunaDateTimePicker ns, GunaTextBox gt, GunaTextBox sdt, GunaTextBox eml, GunaDateTimePicker ntd, GunaTextBox mpb, DataGridView tdcm, DataGridView tdnn, DataGridView qtct)
         {
-            BaseFont bf = BaseFont.CreateFont(@"C:\Users\HIT.ishiki\Desktop\QuanLyNhanSu_Window\assets\TIMES.ttf", BaseFont.IDENTITY_H, true);
+            BaseFont bf = BaseFont.CreateFont(@"C:\WINDOWS\Fonts\TIMES.TTF", BaseFont.IDENTITY_H, true);
             iTextSharp.text.Font fonttitle = new iTextSharp.text.Font(bf, 15);
             iTextSharp.text.Font font = new iTextSharp.text.Font(bf, 12);
             iTextSharp.text.Font fonttext = new iTextSharp.text.Font(bf, 12);
@@ -231,7 +231,7 @@ namespace BUS
             text4.Add(c16);
             text4.Add(pdfTable2);
 
-            string file_name = "C:\\Users\\HIT.ishiki\\Desktop\\QuanLyNhanSu_Window\\assets\\output_file\\" + "output.pdf";
+            string file_name = "D:\\" + "output.pdf";
             using (FileStream stream = new FileStream(file_name, FileMode.Create))
             {
                 Document pdfDoc = new Document(PageSize.A4, 10f, 20f, 20f, 10f);
