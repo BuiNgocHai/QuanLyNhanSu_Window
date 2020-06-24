@@ -14,7 +14,11 @@ namespace QuanLyNhanSu_Nhom6.Views
 
         private void frmInHoSoNV_Load(object sender, EventArgs e)
         {
-
+            dtPickerNS.Enabled = false;
+            dtPickerNTD.Enabled = false;
+            dtGVTDCM.Enabled = false;
+            dtGVQTCT.Enabled = false;
+            dtGVTDNN.Enabled = false;
         }
 
 
@@ -24,7 +28,7 @@ namespace QuanLyNhanSu_Nhom6.Views
 
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
-            qlhs_bus.timKiemHS(txbMaNV, txbTenNV, txbNgaySinh, txbGioiTinh, txbSoDT, txbEmail, txbNgayTD, txbTenPB,  dtGVTDCM, dtGVTDNN, dtGVQTCT);
+            qlhs_bus.timKiemHS(txbMaNV, txbTenNV, dtPickerNS, txbGioiTinh, txbSoDT, txbEmail, dtPickerNTD, txbTenPB,  dtGVTDCM, dtGVTDNN, dtGVQTCT);
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
@@ -34,7 +38,7 @@ namespace QuanLyNhanSu_Nhom6.Views
 
         private void btnInHoSo_Click(object sender, EventArgs e)
         {
-            qlhs_bus.xuatFile(txbMaNV, txbTenNV, txbNgaySinh, txbGioiTinh, txbSoDT, txbEmail, txbNgayTD, txbTenPB, dtGVTDCM, dtGVTDNN, dtGVQTCT);
+            qlhs_bus.xuatFile(txbMaNV, txbTenNV, dtPickerNS, txbGioiTinh, txbSoDT, txbEmail, dtPickerNTD, txbTenPB, dtGVTDCM, dtGVTDNN, dtGVQTCT);
         }
     }
 }

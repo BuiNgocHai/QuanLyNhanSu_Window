@@ -39,8 +39,8 @@ namespace GUI.Phan_Thanh_Trung
             txbEmail.Text = "";
             txbMaNV.Text = "";
             txbMatKhau.Text = "";
-            txbNgaySinh.Text = "";
-            txbNgayTD.Text = "";
+            dtPickerNS.Value = DateTime.Now;
+            dtPickerNTD.Value = DateTime.Now;
             txbQuyen.Text = "";
             txbSoDT.Text = "";
             txbTaiKhoan.Text = "";
@@ -59,11 +59,11 @@ namespace GUI.Phan_Thanh_Trung
             try { 
                 txbMaNV.Text = dtGridViewHoSo.Rows[index].Cells[0].Value.ToString();
                 txbTenNV.Text = dtGridViewHoSo.Rows[index].Cells[1].Value.ToString();
-                txbNgaySinh.Text = dtGridViewHoSo.Rows[index].Cells[2].Value.ToString();
+                dtPickerNS.Value = Convert.ToDateTime(dtGridViewHoSo.Rows[index].Cells[2].Value);
                 cbBoxGioiTinh.SelectedValue = dtGridViewHoSo.Rows[index].Cells[3].Value.ToString();
                 txbSoDT.Text = dtGridViewHoSo.Rows[index].Cells[4].Value.ToString();
                 txbEmail.Text = dtGridViewHoSo.Rows[index].Cells[5].Value.ToString();
-                txbNgayTD.Text = dtGridViewHoSo.Rows[index].Cells[6].Value.ToString();
+                dtPickerNTD.Value = Convert.ToDateTime(dtGridViewHoSo.Rows[index].Cells[6].Value);
                 cbBoxMaPB.SelectedValue = dtGridViewHoSo.Rows[index].Cells[7].Value.ToString();
                 txbTaiKhoan.Text = dtGridViewHoSo.Rows[index].Cells[8].Value.ToString();
                 txbMatKhau.Text = dtGridViewHoSo.Rows[index].Cells[9].Value.ToString();
@@ -75,92 +75,14 @@ namespace GUI.Phan_Thanh_Trung
                 txbEmail.Text = "";
                 txbMaNV.Text = "";
                 txbMatKhau.Text = "";
-                txbNgaySinh.Text = "";
-                txbNgayTD.Text = "";
+                dtPickerNS.Value = DateTime.Now;
+                dtPickerNTD.Value = DateTime.Now;
                 txbQuyen.Text = "";
                 txbSoDT.Text = "";
                 txbTenNV.Text = "";
                 txbTaiKhoan.Text = "";
 
             }
-            //if (dtGridViewHoSo.Rows[index].Cells[5].Value != null)
-            //{
-            //    txbEmail.Text = dtGridViewHoSo.Rows[index].Cells[5].Value.ToString();
-            //}
-            //else
-            //{
-            //    txbEmail.Text = "";
-            //}
-
-            //if (dtGridViewHoSo.Rows[index].Cells[0].Value != null)
-            //{
-            //    txbMaNV.Text = dtGridViewHoSo.Rows[index].Cells[0].Value.ToString();
-            //}
-            //else
-            //{
-            //    txbMaNV.Text = "";
-            //}
-
-            //if (dtGridViewHoSo.Rows[index].Cells[9].Value != null)
-            //{
-            //    txbMatKhau.Text = dtGridViewHoSo.Rows[index].Cells[9].Value.ToString();
-            //}
-            //else
-            //{
-            //    txbMatKhau.Text = "";
-            //}
-
-            //if (dtGridViewHoSo.Rows[index].Cells[2].Value != null)
-            //{
-            //    txbNgaySinh.Text = dtGridViewHoSo.Rows[index].Cells[2].Value.ToString();
-            //}
-            //else
-            //{
-            //    txbNgaySinh.Text = "";
-            //}
-
-            //if (dtGridViewHoSo.Rows[index].Cells[6].Value != null)
-            //{
-            //    txbNgayTD.Text = dtGridViewHoSo.Rows[index].Cells[6].Value.ToString();
-            //}
-            //else
-            //{
-            //    txbNgayTD.Text = "";
-            //}
-            //if (dtGridViewHoSo.Rows[index].Cells[10].Value != null)
-            //{
-            //    txbQuyen.Text = dtGridViewHoSo.Rows[index].Cells[10].Value.ToString();
-            //}
-            //else
-            //{
-            //    txbQuyen.Text = "";
-            //}
-            //if (dtGridViewHoSo.Rows[index].Cells[4].Value != null)
-            //{
-            //    txbSoDT.Text = dtGridViewHoSo.Rows[index].Cells[4].Value.ToString();
-            //}
-            //else
-            //{
-            //    txbSoDT.Text = "";
-            //}
-            //if (dtGridViewHoSo.Rows[index].Cells[8].Value != null)
-            //{
-            //    txbTaiKhoan.Text = dtGridViewHoSo.Rows[index].Cells[8].Value.ToString();
-            //}
-            //else
-            //{
-            //    txbTaiKhoan.Text = "";
-            //}
-            //if (dtGridViewHoSo.Rows[index].Cells[1].Value != null)
-            //{
-            //    txbTenNV.Text = dtGridViewHoSo.Rows[index].Cells[1].Value.ToString();
-            //}
-            //else
-            //{
-            //    txbTenNV.Text = "";
-            //}
-            //cbBoxGioiTinh.SelectedValue = dtGridViewHoSo.Rows[index].Cells[3].Value.ToString();
-            //cbBoxMaPB.SelectedValue = dtGridViewHoSo.Rows[index].Cells[7].Value.ToString();
             btnChuyenNVCV.Enabled = true;
             btnChuyenQTCT.Enabled = true;
             btnChuyenTDCM.Enabled = true;
@@ -170,7 +92,7 @@ namespace GUI.Phan_Thanh_Trung
 
         private void btnThemHoSo_Click(object sender, EventArgs e)
         {
-            bool output = qlhs_bus.themHoSoNhanVien(txbMaNV, txbTenNV, txbNgaySinh, cbBoxGioiTinh, txbSoDT, txbEmail, txbNgayTD, cbBoxMaPB, txbTaiKhoan, txbMatKhau, txbQuyen);
+            bool output = qlhs_bus.themHoSoNhanVien(txbMaNV, txbTenNV, dtPickerNS, cbBoxGioiTinh, txbSoDT, txbEmail, dtPickerNTD, cbBoxMaPB, txbTaiKhoan, txbMatKhau, txbQuyen);
             if (output)
             {
                 DialogResult k = MessageBox.Show("Thêm thành công", "Thông báo");
@@ -183,7 +105,7 @@ namespace GUI.Phan_Thanh_Trung
 
         private void btnSuaHoSo_Click(object sender, EventArgs e)
         {
-            bool output = qlhs_bus.suaHoSoNhanVien(txbMaNV, txbTenNV, txbNgaySinh, cbBoxGioiTinh, txbSoDT, txbEmail, txbNgayTD, cbBoxMaPB, txbTaiKhoan, txbMatKhau, txbQuyen);
+            bool output = qlhs_bus.suaHoSoNhanVien(txbMaNV, txbTenNV, dtPickerNS, cbBoxGioiTinh, txbSoDT, txbEmail, dtPickerNTD, cbBoxMaPB, txbTaiKhoan, txbMatKhau, txbQuyen);
             if (output)
             {
                 DialogResult k = MessageBox.Show("Sửa thành công", "Thông báo");
