@@ -93,7 +93,7 @@
             this.txbEmail.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txbEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txbEmail.Location = new System.Drawing.Point(675, 244);
-            this.txbEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbEmail.Margin = new System.Windows.Forms.Padding(4);
             this.txbEmail.Name = "txbEmail";
             this.txbEmail.PasswordChar = '\0';
             this.txbEmail.Radius = 10;
@@ -115,7 +115,7 @@
             this.txbSoDT.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txbSoDT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txbSoDT.Location = new System.Drawing.Point(675, 185);
-            this.txbSoDT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbSoDT.Margin = new System.Windows.Forms.Padding(4);
             this.txbSoDT.Name = "txbSoDT";
             this.txbSoDT.PasswordChar = '\0';
             this.txbSoDT.Radius = 10;
@@ -137,7 +137,7 @@
             this.txbTenNV.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txbTenNV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txbTenNV.Location = new System.Drawing.Point(173, 121);
-            this.txbTenNV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbTenNV.Margin = new System.Windows.Forms.Padding(4);
             this.txbTenNV.Name = "txbTenNV";
             this.txbTenNV.PasswordChar = '\0';
             this.txbTenNV.Radius = 10;
@@ -158,7 +158,7 @@
             this.txbMaNV.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txbMaNV.ForeColor = System.Drawing.Color.White;
             this.txbMaNV.Location = new System.Drawing.Point(173, 57);
-            this.txbMaNV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbMaNV.Margin = new System.Windows.Forms.Padding(4);
             this.txbMaNV.Name = "txbMaNV";
             this.txbMaNV.PasswordChar = '\0';
             this.txbMaNV.Radius = 10;
@@ -264,6 +264,7 @@
             this.gunaLabel1.Size = new System.Drawing.Size(246, 35);
             this.gunaLabel1.TabIndex = 23;
             this.gunaLabel1.Text = "In Hồ Sơ Nhân Viên";
+            this.gunaLabel1.Click += new System.EventHandler(this.gunaLabel1_Click);
             // 
             // gunaLabel13
             // 
@@ -313,7 +314,7 @@
             this.btnTimKiem.Image = ((System.Drawing.Image)(resources.GetObject("btnTimKiem.Image")));
             this.btnTimKiem.ImageSize = new System.Drawing.Size(30, 30);
             this.btnTimKiem.Location = new System.Drawing.Point(1013, 62);
-            this.btnTimKiem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTimKiem.Margin = new System.Windows.Forms.Padding(4);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnTimKiem.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -340,7 +341,7 @@
             this.btnInHoSo.Image = ((System.Drawing.Image)(resources.GetObject("btnInHoSo.Image")));
             this.btnInHoSo.ImageSize = new System.Drawing.Size(30, 30);
             this.btnInHoSo.Location = new System.Drawing.Point(1013, 142);
-            this.btnInHoSo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnInHoSo.Margin = new System.Windows.Forms.Padding(4);
             this.btnInHoSo.Name = "btnInHoSo";
             this.btnInHoSo.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnInHoSo.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -387,7 +388,7 @@
             this.dtGVTDCM.EnableHeadersVisualStyles = false;
             this.dtGVTDCM.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtGVTDCM.Location = new System.Drawing.Point(309, 315);
-            this.dtGVTDCM.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtGVTDCM.Margin = new System.Windows.Forms.Padding(4);
             this.dtGVTDCM.Name = "dtGVTDCM";
             this.dtGVTDCM.RowHeadersVisible = false;
             this.dtGVTDCM.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -476,7 +477,7 @@
             this.dtGVTDNN.EnableHeadersVisualStyles = false;
             this.dtGVTDNN.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtGVTDNN.Location = new System.Drawing.Point(309, 453);
-            this.dtGVTDNN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtGVTDNN.Margin = new System.Windows.Forms.Padding(4);
             this.dtGVTDNN.Name = "dtGVTDNN";
             this.dtGVTDNN.RowHeadersVisible = false;
             this.dtGVTDNN.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -521,7 +522,7 @@
             // 
             // dtGVQTCT
             // 
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(237)))), ((int)(((byte)(183)))));
             this.dtGVQTCT.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.dtGVQTCT.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtGVQTCT.BackgroundColor = System.Drawing.Color.White;
@@ -529,7 +530,7 @@
             this.dtGVQTCT.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dtGVQTCT.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
             dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
@@ -543,44 +544,44 @@
             this.denNgay,
             this.noiCongTac});
             dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(243)))), ((int)(((byte)(207)))));
             dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(215)))), ((int)(((byte)(95)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dtGVQTCT.DefaultCellStyle = dataGridViewCellStyle9;
             this.dtGVQTCT.EnableHeadersVisualStyles = false;
-            this.dtGVQTCT.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dtGVQTCT.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(233)))), ((int)(((byte)(170)))));
             this.dtGVQTCT.Location = new System.Drawing.Point(315, 596);
-            this.dtGVQTCT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtGVQTCT.Margin = new System.Windows.Forms.Padding(4);
             this.dtGVQTCT.Name = "dtGVQTCT";
             this.dtGVQTCT.RowHeadersVisible = false;
             this.dtGVQTCT.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtGVQTCT.Size = new System.Drawing.Size(775, 110);
             this.dtGVQTCT.TabIndex = 56;
-            this.dtGVQTCT.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
-            this.dtGVQTCT.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dtGVQTCT.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.SunFlower;
+            this.dtGVQTCT.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(237)))), ((int)(((byte)(183)))));
             this.dtGVQTCT.ThemeStyle.AlternatingRowsStyle.Font = null;
             this.dtGVQTCT.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
             this.dtGVQTCT.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
             this.dtGVQTCT.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
             this.dtGVQTCT.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.dtGVQTCT.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtGVQTCT.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dtGVQTCT.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(233)))), ((int)(((byte)(170)))));
+            this.dtGVQTCT.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
             this.dtGVQTCT.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dtGVQTCT.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             this.dtGVQTCT.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dtGVQTCT.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dtGVQTCT.ThemeStyle.HeaderStyle.Height = 27;
             this.dtGVQTCT.ThemeStyle.ReadOnly = false;
-            this.dtGVQTCT.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dtGVQTCT.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(243)))), ((int)(((byte)(207)))));
             this.dtGVQTCT.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dtGVQTCT.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.dtGVQTCT.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.White;
+            this.dtGVQTCT.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
             this.dtGVQTCT.ThemeStyle.RowsStyle.Height = 22;
-            this.dtGVQTCT.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtGVQTCT.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dtGVQTCT.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(215)))), ((int)(((byte)(95)))));
+            this.dtGVQTCT.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             // 
             // chucVu
             // 
@@ -624,7 +625,7 @@
             this.txbGioiTinh.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txbGioiTinh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txbGioiTinh.Location = new System.Drawing.Point(173, 239);
-            this.txbGioiTinh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbGioiTinh.Margin = new System.Windows.Forms.Padding(4);
             this.txbGioiTinh.Name = "txbGioiTinh";
             this.txbGioiTinh.PasswordChar = '\0';
             this.txbGioiTinh.Radius = 10;
@@ -646,7 +647,7 @@
             this.txbTenPB.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txbTenPB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txbTenPB.Location = new System.Drawing.Point(675, 121);
-            this.txbTenPB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbTenPB.Margin = new System.Windows.Forms.Padding(4);
             this.txbTenPB.Name = "txbTenPB";
             this.txbTenPB.PasswordChar = '\0';
             this.txbTenPB.Radius = 10;
@@ -668,7 +669,7 @@
             this.btnThoat.Image = ((System.Drawing.Image)(resources.GetObject("btnThoat.Image")));
             this.btnThoat.ImageSize = new System.Drawing.Size(30, 30);
             this.btnThoat.Location = new System.Drawing.Point(1013, 222);
-            this.btnThoat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(4);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnThoat.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -692,7 +693,7 @@
             this.dtPickerNS.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dtPickerNS.ForeColor = System.Drawing.Color.Black;
             this.dtPickerNS.Location = new System.Drawing.Point(173, 182);
-            this.dtPickerNS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtPickerNS.Margin = new System.Windows.Forms.Padding(4);
             this.dtPickerNS.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtPickerNS.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtPickerNS.Name = "dtPickerNS";
@@ -717,7 +718,7 @@
             this.dtPickerNTD.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dtPickerNTD.ForeColor = System.Drawing.Color.Black;
             this.dtPickerNTD.Location = new System.Drawing.Point(675, 62);
-            this.dtPickerNTD.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtPickerNTD.Margin = new System.Windows.Forms.Padding(4);
             this.dtPickerNTD.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtPickerNTD.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtPickerNTD.Name = "dtPickerNTD";
@@ -766,7 +767,7 @@
             this.Controls.Add(this.gunaLabel1);
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "frmInHoSoNV";
             this.Text = "frmInHoSoNV";
             this.Load += new System.EventHandler(this.frmInHoSoNV_Load);

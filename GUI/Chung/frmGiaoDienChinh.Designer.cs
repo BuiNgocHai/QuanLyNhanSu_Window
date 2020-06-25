@@ -104,7 +104,7 @@
             this.panelQLDM.MaximumSize = new System.Drawing.Size(318, 151);
             this.panelQLDM.MinimumSize = new System.Drawing.Size(317, 50);
             this.panelQLDM.Name = "panelQLDM";
-            this.panelQLDM.Size = new System.Drawing.Size(317, 151);
+            this.panelQLDM.Size = new System.Drawing.Size(317, 50);
             this.panelQLDM.TabIndex = 1;
             // 
             // btnQLDM
@@ -188,11 +188,11 @@
             this.panelTTNV.Controls.Add(this.btnQLNV);
             this.panelTTNV.Controls.Add(this.btnHoSoNV);
             this.panelTTNV.Controls.Add(this.btnTrinhDoChuyenMon);
-            this.panelTTNV.Location = new System.Drawing.Point(3, 160);
+            this.panelTTNV.Location = new System.Drawing.Point(3, 59);
             this.panelTTNV.MaximumSize = new System.Drawing.Size(317, 297);
             this.panelTTNV.MinimumSize = new System.Drawing.Size(317, 50);
             this.panelTTNV.Name = "panelTTNV";
-            this.panelTTNV.Size = new System.Drawing.Size(317, 297);
+            this.panelTTNV.Size = new System.Drawing.Size(317, 50);
             this.panelTTNV.TabIndex = 6;
             // 
             // btnNhanVienChucVu
@@ -348,13 +348,13 @@
             this.panelTKBC.Controls.Add(this.btnThongKeBaoCao);
             this.panelTKBC.Controls.Add(this.btnInHoSo);
             this.panelTKBC.Controls.Add(this.btnTDCM);
-            this.panelTKBC.Location = new System.Drawing.Point(0, 460);
+            this.panelTKBC.Location = new System.Drawing.Point(0, 112);
             this.panelTKBC.Margin = new System.Windows.Forms.Padding(0);
             this.panelTKBC.MaximumSize = new System.Drawing.Size(317, 261);
             this.panelTKBC.MinimumSize = new System.Drawing.Size(317, 51);
             this.panelTKBC.Name = "panelTKBC";
             this.panelTKBC.Padding = new System.Windows.Forms.Padding(3);
-            this.panelTKBC.Size = new System.Drawing.Size(317, 261);
+            this.panelTKBC.Size = new System.Drawing.Size(317, 51);
             this.panelTKBC.TabIndex = 9;
             // 
             // btnPBCV

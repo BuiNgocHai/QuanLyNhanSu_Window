@@ -51,8 +51,8 @@ namespace DAO
 
         public void layDLCombox_DAO(ComboBox cb)
         {
-            IQueryable<TRINHDONGOAINGU6> query = from q in db.TRINHDONGOAINGU6s
-                                                 select q;
+            var query = (from q in db.TRINHDONGOAINGU6s
+                                                  select new { q.NGOAINGU }).Distinct();
             cb.DataSource = query;
             cb.DisplayMember = "NGOAINGU";
             cb.ValueMember = "NGOAINGU";

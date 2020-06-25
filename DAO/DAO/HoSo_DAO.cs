@@ -129,6 +129,7 @@ namespace DAO
                         item.NGAYTD = ntd;
                         item.MAPB = mpb;
                         item.TAIKHOAN = tk;
+                        item.MATKHAU = mk;
                         item.QUYEN = quyen;
                     }
                     db.SubmitChanges();

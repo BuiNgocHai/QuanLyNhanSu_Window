@@ -93,22 +93,38 @@ namespace BUS
             return output;
         }
 
-        public void timKiemHS(GunaTextBox mnv, GunaTextBox ten, GunaDateTimePicker ns, GunaTextBox gt, GunaTextBox sdt, GunaTextBox eml, GunaDateTimePicker ntd, GunaTextBox mpb, /*GunaTextBox tk, GunaTextBox mk, GunaTextBox q,*/DataGridView tdcm, DataGridView tdnn, DataGridView qtct)
+        public bool timKiemHS(GunaTextBox mnv, GunaTextBox ten, GunaDateTimePicker ns, GunaTextBox gt, GunaTextBox sdt, GunaTextBox eml, GunaDateTimePicker ntd, GunaTextBox mpb, /*GunaTextBox tk, GunaTextBox mk, GunaTextBox q,*/DataGridView tdcm, DataGridView tdnn, DataGridView qtct)
         {
             HoSoNV_DTO nv = qlhs.timKiem(mnv.Text);
-            ten.Text = nv.HoTen;
-            ns.Value = nv.NgaySinh;
-            gt.Text = nv.GioiTinh;
-            sdt.Text = nv.SDT;
-            eml.Text = nv.Email;
-            ntd.Value = nv.NgayTD;
-            mpb.Text = nv.MaPB;
-            //tk.Text = nv.TaiKhoan;
-            //mk.Text = nv.MatKhau;
-            //q.Text = nv.Quyen;
-            qlhs.hienThiTDCM(tdcm, mnv.Text);
-            qlhs.hienThiTDNN(tdnn, mnv.Text);
-            qlhs.hienThiQTCT(qtct, mnv.Text);
+            try
+            {
+                ten.Text = nv.HoTen;
+                ns.Value = nv.NgaySinh;
+                gt.Text = nv.GioiTinh;
+                sdt.Text = nv.SDT;
+                eml.Text = nv.Email;
+                ntd.Value = nv.NgayTD;
+                mpb.Text = nv.MaPB;
+                //tk.Text = nv.TaiKhoan;
+                //mk.Text = nv.MatKhau;
+                //q.Text = nv.Quyen;
+                qlhs.hienThiTDCM(tdcm, mnv.Text);
+                qlhs.hienThiTDNN(tdnn, mnv.Text);
+                qlhs.hienThiQTCT(qtct, mnv.Text);
+
+            }
+            catch(Exception)
+            {
+
+            }
+            if (nv.HoTen!= null)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         public void xuatFile(GunaTextBox mnv, GunaTextBox ten, GunaDateTimePicker ns, GunaTextBox gt, GunaTextBox sdt, GunaTextBox eml, GunaDateTimePicker ntd, GunaTextBox mpb, DataGridView tdcm, DataGridView tdnn, DataGridView qtct)
